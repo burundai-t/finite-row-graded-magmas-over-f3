@@ -1,7 +1,7 @@
-# Sigma-Equivariant Magmas on AG(2,3)
+# σ-Equivariant Magmas on AG(2,3)
 
 This repository accompanies the preprint
-**"Sigma-Equivariant Magmas on AG(2,3): finite landscape, intrinsic selection,
+**"σ-Equivariant Magmas on AG(2,3): finite landscape, intrinsic selection,
 and linearization."**
 
 The paper studies a finite family of sigma-equivariant magmas on
