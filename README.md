@@ -37,6 +37,17 @@ mathcal_H/
   certificate bundle for the global hidden-continuation theorem
 ```
 
+## Requirements
+
+- Python 3.10+
+- `numpy`
+- `z3-solver`
+- C++17 compiler: `clang++` or `g++`
+
+```bash
+python3 -m pip install numpy z3-solver
+```
+
 ## Quick Verification
 
 The compact manuscript-facing verifier checks the repository inventory and then
