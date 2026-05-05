@@ -1,0 +1,10 @@
+left_target_row,right_target_row,products_checked,product_subset_left_W
+0,0,289,True
+0,1,289,True
+0,2,289,True
+1,0,289,True
+1,1,289,True
+1,2,289,True
+2,0,289,True
+2,1,289,True
+2,2,289,True

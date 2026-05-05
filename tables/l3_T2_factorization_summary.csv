@@ -1,0 +1,7 @@
+quantity,value,formula
+binary_term_functions,630,2*21*15
+owner_sectors,2,"leftmost variable in {x,y}"
+same_row_factor,21,|S21|
+cross_unary_factor,15,|U15|
+swap_orbits,315,free x/y involution
+ternary_smoke_cumulative_size6,5577,arity 3 through size 6 only

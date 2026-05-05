@@ -1,0 +1,6 @@
+set_name,criteria,cross_survivors,diagonal_survivors,total_survivors,meaning
+full narrative v0.7,"H_acc, H_diag, nontriviality, diagonal idempotence, min Assoc_000, pure C/J; H auxiliary",1,1,1,best explanatory chain from global to specific
+core finite uniqueness,"H_acc, H_diag, diagonal idempotence, pure C/J",1,1,1,shortest current finite selector once pure C/J is accepted
+algebraic bridge without dynamics,"H_acc, H_diag, diagonal idempotence, nontriviality, min Assoc_000",2,1,2,exposes PAB/row-complement ambiguity
+H-frontier auxiliary,"H_acc, H_diag, diagonal idempotence, H pure frontier on controlled strata",at least 2,1,not unique,PAB and row-complement both lie on the pure H frontier
+diagonal without H_diag,diagonal idempotence only on Delta,unchanged,9,not unique,shows H_diag is independently needed
