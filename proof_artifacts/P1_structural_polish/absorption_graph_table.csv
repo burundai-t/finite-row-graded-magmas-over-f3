@@ -1,7 +1,0 @@
-x,T_alpha_x,T_beta_x,absorbed_vertices,outdegree,matches_Talpha_Tbeta
-01,12,10,10 12,2,True
-02,21,20,20 21,2,True
-10,02,01,01 02,2,True
-12,20,21,20 21,2,True
-20,01,02,01 02,2,True
-21,10,12,10 12,2,True

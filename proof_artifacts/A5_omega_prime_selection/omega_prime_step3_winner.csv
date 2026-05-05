@@ -1,2 +1,0 @@
-rule_id,rule_name,fiber_id,u_f_0_1,v_f_0_2,is_complement_AX2,diagonal,d0,d1,d2,is_constant_diagonal,is_standard_diagonal,H_access_exact,H_access_numeric,H_diag_exact,H_diag_numeric,assoc_count,lambda_assoc_over_729,step1_min_H_access_survivor,step2_min_H_diag_survivor,step3_min_assoc_survivor,global_min_assoc_survivor,is_PAB
-g1,g1_column_blind_PAB,F21,2,1,True,"(0, 0, 0)",0,0,0,True,True,0,0.0,0,0.0,219,0.3004115226337449,True,True,True,False,True

@@ -1,7 +1,0 @@
-rule,H_storage,H_access,Assoc,lambda,min_H_access,min_lambda,selected_by_intersection
-g1,0,0,219,219/729,True,True,True
-g2,1.58496250072,1.58496250072,273,273/729,False,False,False
-g3,1.58496250072,1.58496250072,285,285/729,False,False,False
-g4,1.58496250072,1.58496250072,561,561/729,False,False,False
-g5,0,0,489,489/729,True,False,False
-g6,0,1.58496250072,219,219/729,False,True,False

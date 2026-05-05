@@ -1,7 +1,0 @@
-rule,description,is_sigma_equivariant,orbit_1,orbit_2,orbit_3,orbit_4,orbit_5,orbit_6,orbit_7,orbit_8,orbit_9,orbit_10,orbit_11,orbit_12,orbit_13,orbit_14,orbit_15,orbit_16,orbit_17,orbit_18
-g1,r2 / PAB column-blind,True,1,1,1,2,2,2,1,1,1,2,2,2,1,1,1,2,2,2
-g2,c2 / transparent,True,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2
-g3,c1c2 if c1 != c2 else c1,True,0,2,1,0,2,1,2,1,0,2,1,0,1,0,2,1,0,2
-g4,c1 / echo,True,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2
-g5,r1 / self-referential,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-g6,r2c2 if r2 != c2 else r2,True,2,1,0,1,0,2,2,1,0,1,0,2,2,1,0,1,0,2

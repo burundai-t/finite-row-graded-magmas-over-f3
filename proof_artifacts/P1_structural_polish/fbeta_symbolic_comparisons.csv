@@ -1,6 +1,0 @@
-comparison,Delta_H_access,Delta_lambda,expression,negative_for_all_beta_gt_0,reason
-F_beta(g1)-F_beta(g2),-log2(3),-54/729,-log2(3) + beta*(-54/729),True,H_access gap = -log2(3); lambda(g1)-lambda(g2)=-54/729<=0
-F_beta(g1)-F_beta(g3),-log2(3),-66/729,-log2(3) + beta*(-66/729),True,H_access gap = -log2(3); lambda(g1)-lambda(g3)=-66/729<=0
-F_beta(g1)-F_beta(g4),-log2(3),-342/729,-log2(3) + beta*(-342/729),True,H_access gap = -log2(3); lambda(g1)-lambda(g4)=-342/729<=0
-F_beta(g1)-F_beta(g5),0,-270/729,0 + beta*(-270/729),True,same H_access; lambda(g1)-lambda(g5)=-270/729<0
-F_beta(g1)-F_beta(g6),-log2(3),0/729,-log2(3) + beta*(0/729),True,same lambda as g1; H_access gap = -log2(3)<0

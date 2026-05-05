@@ -1,7 +1,0 @@
-rule,rule_name,RRR_formula,RRS_formula,RSR_formula,SRR_formula,DIST_formula,scope
-g1,column-blind/PAB,"RRR(pdist,ds) (see A3_rrr_formula_table.csv)",9*fixoff,9*fixoff,162,0,Ω_elem only: six distinguished elementary cross-rules × 27 σ-equivariant diagonals
-g2,transparent,"RRR(pdist,ds) (see A3_rrr_formula_table.csv)",6*fix,6*fix,6*fix,162,Ω_elem only: six distinguished elementary cross-rules × 27 σ-equivariant diagonals
-g3,su2-transparent,"RRR(pdist,ds) (see A3_rrr_formula_table.csv)",72-2*fix,54,54,54,Ω_elem only: six distinguished elementary cross-rules × 27 σ-equivariant diagonals
-g4,echo,"RRR(pdist,ds) (see A3_rrr_formula_table.csv)",162,6*fix,162,162,Ω_elem only: six distinguished elementary cross-rules × 27 σ-equivariant diagonals
-g5,self-referential,"RRR(pdist,ds) (see A3_rrr_formula_table.csv)",18*fixdiag,18*fixdiag,162,162,Ω_elem only: six distinguished elementary cross-rules × 27 σ-equivariant diagonals
-g6,anti-complement,"RRR(pdist,ds) (see A3_rrr_formula_table.csv)",6*fix,81-3*fix,6*fix,54,Ω_elem only: six distinguished elementary cross-rules × 27 σ-equivariant diagonals

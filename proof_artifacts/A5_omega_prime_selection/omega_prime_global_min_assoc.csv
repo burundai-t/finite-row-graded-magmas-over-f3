@@ -1,3 +1,0 @@
-rule_id,rule_name,fiber_id,u_f_0_1,v_f_0_2,is_complement_AX2,diagonal,d0,d1,d2,is_constant_diagonal,is_standard_diagonal,H_access_exact,H_access_numeric,H_diag_exact,H_diag_numeric,assoc_count,lambda_assoc_over_729,step1_min_H_access_survivor,step2_min_H_diag_survivor,step3_min_assoc_survivor,global_min_assoc_survivor,is_PAB
-g6,g6_anti_complement,F01,0,1,False,"(2, 0, 1)",2,0,1,False,False,log2(3),1.584962500721156,log2(3),1.584962500721156,135,0.18518518518518517,False,False,False,True,False
-g6,g6_anti_complement,F20,2,0,False,"(1, 2, 0)",1,2,0,False,False,log2(3),1.584962500721156,log2(3),1.584962500721156,135,0.18518518518518517,False,False,False,True,False

@@ -1,9 +1,0 @@
-Automorphism candidates after analytic pruning: 48
-Automorphisms found: 6
-All automorphisms diagonal S3 actions: True
-Endomorphism candidates after square-fiber pruning: 19683
-Endomorphisms found: 9
-Endomorphism kind counts: automorphism=6, constant=3
-Standard canonical assoc counts: {'g1': 219, 'g2': 273, 'g3': 285, 'g4': 561, 'g5': 489, 'g6': 219}
-F_beta symbolic comparisons all negative: True
-Absorption rows: 6; all match T_alpha/T_beta: True

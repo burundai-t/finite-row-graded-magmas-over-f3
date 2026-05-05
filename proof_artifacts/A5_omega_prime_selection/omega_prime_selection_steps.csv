@@ -1,5 +1,0 @@
-step,criterion,survivors,description
-0,full Ω'_elem,1458,9 fiber rules × 6 elementary cross-rules × 27 diagonals
-1,min H_access,486,"9 fiber rules × {g1,g5} × 27 diagonals"
-2,min H_diag among Step 1 survivors,54,"9 fiber rules × {g1,g5} × 3 constant diagonals"
-3,min associativity λ among Step 2 survivors,1,"unique survivor: g1 + complement fiber F21 + standard diagonal (0,0,0)"

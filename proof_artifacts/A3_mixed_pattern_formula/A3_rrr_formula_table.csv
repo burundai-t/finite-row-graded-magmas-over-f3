@@ -1,5 +1,0 @@
-pdist,ds_condition,RRR,fiber_associativity,notes
-1,any,57,19/27,constant base diagonal
-2,0,33,11/27,"two values, no base fixed position"
-2,>=1,39,13/27,"two values, at least one base fixed position"
-3,any possible,27,9/27,base diagonal is a permutation of S
