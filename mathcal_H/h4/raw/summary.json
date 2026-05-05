@@ -1,0 +1,30 @@
+{
+  "checked_points": 10460353203,
+  "end_index": 10460353203,
+  "high_impure_points": 12,
+  "high_points": 12,
+  "high_pure_points": 0,
+  "max_H_tot": 7302,
+  "max_N_neg_values": [
+    3
+  ],
+  "max_count": 12,
+  "max_rawH": 1217,
+  "max_word": "000000000111111111220",
+  "min_H_tot": -2268,
+  "min_count": 8,
+  "min_rawH": -378,
+  "min_word": "012120201012120201012",
+  "next_index": 10460353203,
+  "pair_count": 1,
+  "pair_min_rawH": 1171,
+  "rawH_values": [
+    1217
+  ],
+  "remaining_points": 0,
+  "start_index": 0,
+  "status": "complete",
+  "stored_witnesses": 12,
+  "witness_min_rawH": 1217,
+  "witness_overflow": 0
+}

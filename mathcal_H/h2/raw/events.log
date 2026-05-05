@@ -1,0 +1,122 @@
+2026-05-02T14:28:33+00:00 plan {"chunk_size": 162, "depth": 9, "effective_end_offset": 18540, "end_offset": 18540, "frontier_total": 18540, "run_dir": "/Users/burundai/Documents/Ternary Algebra/stage6/overnight_h2_4860_18540", "start_offset": 4860, "target_rawH": 1171, "timeout_ms": 300000, "window_chunks": 8, "window_nodes": 1296}
+2026-05-02T14:28:33+00:00 generating live frontier domains up to offset 18540
+2026-05-02T14:29:35+00:00 generated 18540 domains in 62.792s
+2026-05-02T14:29:35+00:00 WINDOW 0 start offset=4860 end=6156
+2026-05-02T14:29:46+00:00 WINDOW 0 built context build=10.794s assertions=265 weighted_terms=4374
+2026-05-02T14:31:35+00:00 CHUNK offset=4860 nodes=162 counts={'unsat': 162} seconds=109.001 next=5022
+2026-05-02T14:33:16+00:00 CHUNK offset=5022 nodes=162 counts={'unsat': 162} seconds=101.223 next=5184
+2026-05-02T14:35:40+00:00 CHUNK offset=5184 nodes=162 counts={'unsat': 162} seconds=143.353 next=5346
+2026-05-02T14:38:07+00:00 CHUNK offset=5346 nodes=162 counts={'unsat': 162} seconds=147.156 next=5508
+2026-05-02T14:40:27+00:00 CHUNK offset=5508 nodes=162 counts={'unsat': 162} seconds=140.518 next=5670
+2026-05-02T14:42:10+00:00 CHUNK offset=5670 nodes=162 counts={'unsat': 162} seconds=102.219 next=5832
+2026-05-02T14:43:12+00:00 CHUNK offset=5832 nodes=162 counts={'unsat': 162} seconds=61.918 next=5994
+2026-05-02T14:44:08+00:00 CHUNK offset=5994 nodes=162 counts={'unsat': 162} seconds=56.204 next=6156
+2026-05-02T14:44:08+00:00 WINDOW 0 done nodes=1296 counts={'unsat': 1296} build=10.794s checks=861.594s elapsed=872.403s next=6156
+2026-05-02T14:44:08+00:00 WINDOW 1 start offset=6156 end=7452
+2026-05-02T14:44:18+00:00 WINDOW 1 built context build=10.697s assertions=265 weighted_terms=4374
+2026-05-02T14:45:17+00:00 CHUNK offset=6156 nodes=162 counts={'unsat': 162} seconds=58.062 next=6318
+2026-05-02T14:46:19+00:00 CHUNK offset=6318 nodes=162 counts={'unsat': 162} seconds=62.231 next=6480
+2026-05-02T14:47:03+00:00 CHUNK offset=6480 nodes=162 counts={'unsat': 162} seconds=44.65 next=6642
+2026-05-02T14:48:38+00:00 CHUNK offset=6642 nodes=162 counts={'unsat': 162} seconds=94.921 next=6804
+2026-05-02T14:50:20+00:00 CHUNK offset=6804 nodes=162 counts={'unsat': 162} seconds=101.8 next=6966
+2026-05-02T14:51:58+00:00 CHUNK offset=6966 nodes=162 counts={'unsat': 162} seconds=97.73 next=7128
+2026-05-02T14:53:31+00:00 CHUNK offset=7128 nodes=162 counts={'unsat': 162} seconds=93.178 next=7290
+2026-05-02T14:54:52+00:00 CHUNK offset=7290 nodes=162 counts={'unsat': 162} seconds=80.817 next=7452
+2026-05-02T14:54:52+00:00 WINDOW 1 done nodes=1296 counts={'unsat': 1296} build=10.697s checks=633.391s elapsed=644.090s next=7452
+2026-05-02T14:54:52+00:00 WINDOW 2 start offset=7452 end=8748
+2026-05-02T14:55:03+00:00 WINDOW 2 built context build=10.736s assertions=265 weighted_terms=4374
+2026-05-02T14:56:30+00:00 CHUNK offset=7452 nodes=162 counts={'unsat': 162} seconds=87.077 next=7614
+2026-05-02T14:57:22+00:00 CHUNK offset=7614 nodes=162 counts={'unsat': 162} seconds=52.428 next=7776
+2026-05-02T14:58:42+00:00 CHUNK offset=7776 nodes=162 counts={'unsat': 162} seconds=80.062 next=7938
+2026-05-02T15:00:40+00:00 CHUNK offset=7938 nodes=162 counts={'unsat': 162} seconds=117.416 next=8100
+2026-05-02T15:03:07+00:00 CHUNK offset=8100 nodes=162 counts={'unsat': 162} seconds=147.197 next=8262
+2026-05-02T15:06:05+00:00 CHUNK offset=8262 nodes=162 counts={'unsat': 162} seconds=178.669 next=8424
+2026-05-02T15:07:59+00:00 CHUNK offset=8424 nodes=162 counts={'unsat': 162} seconds=113.851 next=8586
+2026-05-02T15:09:54+00:00 CHUNK offset=8586 nodes=162 counts={'unsat': 162} seconds=114.742 next=8748
+2026-05-02T15:09:54+00:00 WINDOW 2 done nodes=1296 counts={'unsat': 1296} build=10.736s checks=891.446s elapsed=902.184s next=8748
+2026-05-02T15:09:54+00:00 WINDOW 3 start offset=8748 end=10044
+2026-05-02T15:10:05+00:00 WINDOW 3 built context build=10.695s assertions=265 weighted_terms=4374
+2026-05-02T15:11:15+00:00 CHUNK offset=8748 nodes=162 counts={'unsat': 162} seconds=69.746 next=8910
+2026-05-02T15:12:19+00:00 CHUNK offset=8910 nodes=162 counts={'unsat': 162} seconds=64.922 next=9072
+2026-05-02T15:13:23+00:00 CHUNK offset=9072 nodes=162 counts={'unsat': 162} seconds=63.166 next=9234
+2026-05-02T15:14:29+00:00 CHUNK offset=9234 nodes=162 counts={'unsat': 162} seconds=65.938 next=9396
+2026-05-02T15:16:02+00:00 CHUNK offset=9396 nodes=162 counts={'unsat': 162} seconds=93.471 next=9558
+2026-05-02T15:17:16+00:00 CHUNK offset=9558 nodes=162 counts={'unsat': 162} seconds=74.18 next=9720
+2026-05-02T15:17:54+00:00 CHUNK offset=9720 nodes=162 counts={'unsat': 162} seconds=37.894 next=9882
+2026-05-02T15:19:09+00:00 CHUNK offset=9882 nodes=162 counts={'unsat': 162} seconds=74.53 next=10044
+2026-05-02T15:19:09+00:00 WINDOW 3 done nodes=1296 counts={'unsat': 1296} build=10.695s checks=543.847s elapsed=554.543s next=10044
+2026-05-02T15:19:09+00:00 WINDOW 4 start offset=10044 end=11340
+2026-05-02T15:19:19+00:00 WINDOW 4 built context build=10.688s assertions=265 weighted_terms=4374
+2026-05-02T15:20:40+00:00 CHUNK offset=10044 nodes=162 counts={'unsat': 162} seconds=80.783 next=10206
+2026-05-02T15:22:36+00:00 CHUNK offset=10206 nodes=162 counts={'unsat': 162} seconds=115.752 next=10368
+2026-05-02T15:24:17+00:00 CHUNK offset=10368 nodes=162 counts={'unsat': 162} seconds=101.261 next=10530
+2026-05-02T15:25:20+00:00 CHUNK offset=10530 nodes=162 counts={'unsat': 162} seconds=62.996 next=10692
+2026-05-02T15:26:18+00:00 CHUNK offset=10692 nodes=162 counts={'unsat': 162} seconds=57.852 next=10854
+2026-05-02T15:28:02+00:00 CHUNK offset=10854 nodes=162 counts={'unsat': 162} seconds=104.009 next=11016
+2026-05-02T15:29:36+00:00 CHUNK offset=11016 nodes=162 counts={'unsat': 162} seconds=94.118 next=11178
+2026-05-02T15:30:57+00:00 CHUNK offset=11178 nodes=162 counts={'unsat': 162} seconds=81.251 next=11340
+2026-05-02T15:30:57+00:00 WINDOW 4 done nodes=1296 counts={'unsat': 1296} build=10.688s checks=698.024s elapsed=708.714s next=11340
+2026-05-02T15:30:57+00:00 WINDOW 5 start offset=11340 end=12636
+2026-05-02T15:31:08+00:00 WINDOW 5 built context build=10.686s assertions=265 weighted_terms=4374
+2026-05-02T15:31:58+00:00 CHUNK offset=11340 nodes=162 counts={'unsat': 162} seconds=49.87 next=11502
+2026-05-02T15:32:35+00:00 CHUNK offset=11502 nodes=162 counts={'unsat': 162} seconds=36.842 next=11664
+2026-05-02T15:33:24+00:00 CHUNK offset=11664 nodes=162 counts={'unsat': 162} seconds=48.71 next=11826
+2026-05-02T15:33:47+00:00 CHUNK offset=11826 nodes=162 counts={'unsat': 162} seconds=23.632 next=11988
+2026-05-02T15:34:19+00:00 CHUNK offset=11988 nodes=162 counts={'unsat': 162} seconds=31.525 next=12150
+2026-05-02T15:34:43+00:00 CHUNK offset=12150 nodes=162 counts={'unsat': 162} seconds=24.808 next=12312
+2026-05-02T15:35:20+00:00 CHUNK offset=12312 nodes=162 counts={'unsat': 162} seconds=36.012 next=12474
+2026-05-02T15:35:46+00:00 CHUNK offset=12474 nodes=162 counts={'unsat': 162} seconds=26.584 next=12636
+2026-05-02T15:35:46+00:00 WINDOW 5 done nodes=1296 counts={'unsat': 1296} build=10.686s checks=277.983s elapsed=288.670s next=12636
+2026-05-02T15:35:46+00:00 WINDOW 6 start offset=12636 end=13932
+2026-05-02T15:35:57+00:00 WINDOW 6 built context build=10.709s assertions=265 weighted_terms=4374
+2026-05-02T15:36:33+00:00 CHUNK offset=12636 nodes=162 counts={'unsat': 162} seconds=36.621 next=12798
+2026-05-02T15:37:05+00:00 CHUNK offset=12798 nodes=162 counts={'unsat': 162} seconds=31.942 next=12960
+2026-05-02T15:38:01+00:00 CHUNK offset=12960 nodes=162 counts={'unsat': 162} seconds=55.562 next=13122
+2026-05-02T15:39:04+00:00 CHUNK offset=13122 nodes=162 counts={'unsat': 162} seconds=63.333 next=13284
+2026-05-02T15:40:22+00:00 CHUNK offset=13284 nodes=162 counts={'unsat': 162} seconds=77.822 next=13446
+2026-05-02T15:41:50+00:00 CHUNK offset=13446 nodes=162 counts={'unsat': 162} seconds=88.126 next=13608
+2026-05-02T15:43:42+00:00 CHUNK offset=13608 nodes=162 counts={'unsat': 162} seconds=111.644 next=13770
+2026-05-02T15:45:27+00:00 CHUNK offset=13770 nodes=162 counts={'unsat': 162} seconds=105.427 next=13932
+2026-05-02T15:45:27+00:00 WINDOW 6 done nodes=1296 counts={'unsat': 1296} build=10.709s checks=570.478s elapsed=581.189s next=13932
+2026-05-02T15:45:27+00:00 WINDOW 7 start offset=13932 end=15228
+2026-05-02T15:45:38+00:00 WINDOW 7 built context build=10.705s assertions=265 weighted_terms=4374
+2026-05-02T15:47:08+00:00 CHUNK offset=13932 nodes=162 counts={'unsat': 162} seconds=89.624 next=14094
+2026-05-02T15:49:26+00:00 CHUNK offset=14094 nodes=162 counts={'unsat': 162} seconds=138.727 next=14256
+2026-05-02T15:51:06+00:00 CHUNK offset=14256 nodes=162 counts={'unsat': 162} seconds=99.908 next=14418
+2026-05-02T15:53:10+00:00 CHUNK offset=14418 nodes=162 counts={'unsat': 162} seconds=123.974 next=14580
+2026-05-02T15:55:26+00:00 CHUNK offset=14580 nodes=162 counts={'unsat': 162} seconds=136.213 next=14742
+2026-05-02T15:57:11+00:00 CHUNK offset=14742 nodes=162 counts={'unsat': 162} seconds=104.956 next=14904
+2026-05-02T15:58:31+00:00 CHUNK offset=14904 nodes=162 counts={'unsat': 162} seconds=79.897 next=15066
+2026-05-02T15:59:12+00:00 CHUNK offset=15066 nodes=162 counts={'unsat': 162} seconds=40.633 next=15228
+2026-05-02T15:59:12+00:00 WINDOW 7 done nodes=1296 counts={'unsat': 1296} build=10.705s checks=813.934s elapsed=824.640s next=15228
+2026-05-02T15:59:12+00:00 WINDOW 8 start offset=15228 end=16524
+2026-05-02T15:59:23+00:00 WINDOW 8 built context build=10.696s assertions=265 weighted_terms=4374
+2026-05-02T16:00:28+00:00 CHUNK offset=15228 nodes=162 counts={'unsat': 162} seconds=65.54 next=15390
+2026-05-02T16:01:39+00:00 CHUNK offset=15390 nodes=162 counts={'unsat': 162} seconds=70.654 next=15552
+2026-05-02T16:03:24+00:00 CHUNK offset=15552 nodes=162 counts={'unsat': 162} seconds=105.142 next=15714
+2026-05-02T16:05:17+00:00 CHUNK offset=15714 nodes=162 counts={'unsat': 162} seconds=113.124 next=15876
+2026-05-02T16:07:05+00:00 CHUNK offset=15876 nodes=162 counts={'unsat': 162} seconds=107.979 next=16038
+2026-05-02T16:09:10+00:00 CHUNK offset=16038 nodes=162 counts={'unsat': 162} seconds=124.382 next=16200
+2026-05-02T16:10:43+00:00 CHUNK offset=16200 nodes=162 counts={'unsat': 162} seconds=93.223 next=16362
+2026-05-02T16:11:48+00:00 CHUNK offset=16362 nodes=162 counts={'unsat': 162} seconds=65.14 next=16524
+2026-05-02T16:11:48+00:00 WINDOW 8 done nodes=1296 counts={'unsat': 1296} build=10.696s checks=745.186s elapsed=755.883s next=16524
+2026-05-02T16:11:48+00:00 WINDOW 9 start offset=16524 end=17820
+2026-05-02T16:11:59+00:00 WINDOW 9 built context build=10.712s assertions=265 weighted_terms=4374
+2026-05-02T16:13:15+00:00 CHUNK offset=16524 nodes=162 counts={'unsat': 162} seconds=76.828 next=16686
+2026-05-02T16:14:34+00:00 CHUNK offset=16686 nodes=162 counts={'unsat': 162} seconds=78.696 next=16848
+2026-05-02T16:16:05+00:00 CHUNK offset=16848 nodes=162 counts={'unsat': 162} seconds=90.491 next=17010
+2026-05-02T16:17:19+00:00 CHUNK offset=17010 nodes=162 counts={'unsat': 162} seconds=74.453 next=17172
+2026-05-02T16:19:11+00:00 CHUNK offset=17172 nodes=162 counts={'unsat': 162} seconds=112.254 next=17334
+2026-05-02T16:20:44+00:00 CHUNK offset=17334 nodes=162 counts={'unsat': 162} seconds=93.086 next=17496
+2026-05-02T16:22:25+00:00 CHUNK offset=17496 nodes=162 counts={'unsat': 162} seconds=100.792 next=17658
+2026-05-02T16:23:36+00:00 CHUNK offset=17658 nodes=162 counts={'unsat': 162} seconds=71.089 next=17820
+2026-05-02T16:23:36+00:00 WINDOW 9 done nodes=1296 counts={'unsat': 1296} build=10.712s checks=697.690s elapsed=708.404s next=17820
+2026-05-02T16:23:36+00:00 WINDOW 10 start offset=17820 end=18540
+2026-05-02T16:23:47+00:00 WINDOW 10 built context build=10.73s assertions=265 weighted_terms=4374
+2026-05-02T16:25:43+00:00 CHUNK offset=17820 nodes=162 counts={'unsat': 162} seconds=115.474 next=17982
+2026-05-02T16:27:04+00:00 CHUNK offset=17982 nodes=162 counts={'unsat': 162} seconds=80.993 next=18144
+2026-05-02T16:28:12+00:00 CHUNK offset=18144 nodes=162 counts={'unsat': 162} seconds=68.486 next=18306
+2026-05-02T16:29:10+00:00 CHUNK offset=18306 nodes=162 counts={'unsat': 162} seconds=58.256 next=18468
+2026-05-02T16:29:29+00:00 CHUNK offset=18468 nodes=72 counts={'unsat': 72} seconds=19.105 next=18540
+2026-05-02T16:29:29+00:00 WINDOW 10 done nodes=720 counts={'unsat': 720} build=10.73s checks=342.314s elapsed=353.046s next=18540
+2026-05-02T16:29:29+00:00 COMPLETE next_offset=18540 totals={'unsat': 13680}

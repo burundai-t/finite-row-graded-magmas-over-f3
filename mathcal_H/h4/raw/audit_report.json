@@ -1,0 +1,42 @@
+{
+  "checked_points": 10460353203,
+  "checkpoint_status": "complete",
+  "chunks": 2093,
+  "elapsed_seconds": 14248.77,
+  "end_index": 10460353203,
+  "errors": [],
+  "expect_default_h4": true,
+  "high_impure_points": 12,
+  "high_points": 12,
+  "high_pure_points": 0,
+  "max_N_neg_values": [
+    3
+  ],
+  "max_count": 12,
+  "pair_count": 1,
+  "pair_min_rawH": 1171,
+  "range_H_tot": [
+    -2268,
+    7302
+  ],
+  "range_rawH": [
+    -378,
+    1217
+  ],
+  "rawH_rows": 1,
+  "rawH_values": [
+    1217
+  ],
+  "rerun": "sample",
+  "rerun_chunks": 8,
+  "run_dir": "/Users/burundai/Documents/Ternary Algebra/stage6/h4_signed_full",
+  "start_index": 0,
+  "status": "PASS",
+  "sum_points": 10460353203,
+  "total_core_seconds": 14239.603,
+  "updated_utc": "2026-05-03T10:51:22+00:00",
+  "verified_witnesses": 12,
+  "witness_min_rawH": 1217,
+  "witness_overflow": 0,
+  "witness_rows": 12
+}
