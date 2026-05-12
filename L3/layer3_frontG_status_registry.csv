@@ -1,8 +1,0 @@
-claim,status,support
-carrier k[M] ~= Mat3(k),closed,basis table + rank check
-matrix companion bracket is gl3,closed,structure constants verified
-gl3 = kI + sl3 and k[M] = 1 + 8,closed,center/sl3 direct-sum audit
-so3 is S3-stable compact 3D subalgebra,closed,S3 stability + Killing negative audit
-Cartan split sl3 = so3 + p,closed,bracket containment audit
-compact group type SU3 x SU2 x U1,closed as companion package,standard compact forms attached to verified Lie pieces
-PAB product equals matrix product,not claimed,"operation boundary audit; same carrier, distinct products"

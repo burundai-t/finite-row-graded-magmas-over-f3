@@ -1,7 +1,0 @@
-item,status,claim
-finite C/J geometry,closed,"C^3=1, J^2=1, JCJ=C^{-1}; PAB AbsTrans={C,J}"
-q/p chart,closed,"q_i=(i,i+1), p_i=J(q_-i); C preserves sectors; J exchanges sectors"
-literal unsigned J,closed guardrail,anti-symplectic
-signed lift,closed,"C_hat,J_hat in Sp(6); projective D3"
-continuous path,closed,"explicit smooth C_t,J_t in Sp(6)"
-selector dependency,guardrail,not a replacement for finite pure C/J selector

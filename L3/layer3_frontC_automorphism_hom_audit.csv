@@ -1,7 +1,0 @@
-endomorphism,type,permutation,constraint_rank_mod_1000003,dimension_upper_bound,generator,generator_intertwines,dimension
-phi_012,automorphism,012,80,1,P_rho,True,1
-phi_021,automorphism,021,80,1,P_rho,True,1
-phi_102,automorphism,102,80,1,P_rho,True,1
-phi_120,automorphism,120,80,1,P_rho,True,1
-phi_201,automorphism,201,80,1,P_rho,True,1
-phi_210,automorphism,210,80,1,P_rho,True,1

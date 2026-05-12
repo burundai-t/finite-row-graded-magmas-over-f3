@@ -1,4 +1,0 @@
-r,idempotent,fixed_space,basis_1,basis_2,dimension,reason
-0,"(0,0)","Fix(L_(0,0))","e_(0,0)","e_(0,1)+e_(0,2)",2,"L_(r,r) maps into F_r and swaps the two off-diagonal columns inside F_r"
-1,"(1,1)","Fix(L_(1,1))","e_(1,1)","e_(1,0)+e_(1,2)",2,"L_(r,r) maps into F_r and swaps the two off-diagonal columns inside F_r"
-2,"(2,2)","Fix(L_(2,2))","e_(2,2)","e_(2,0)+e_(2,1)",2,"L_(r,r) maps into F_r and swaps the two off-diagonal columns inside F_r"

@@ -1,7 +1,0 @@
-object,check,result,detail
-C_hat,A^T Omega A,symplectic,sector-preserving continuation lift
-J_unsigned,A^T Omega A,anti-symplectic,literal q/p swap is anti-symplectic
-J_signed,A^T Omega A,symplectic,signed sector exchange is symplectic
-C_hat^3,equals I,True,exact
-J_signed^2,equals -I,True,projective involution
-J_signed C_hat J_signed^{-1},equals C_hat^{-1},True,projective D3

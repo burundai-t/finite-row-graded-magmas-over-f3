@@ -1,8 +1,0 @@
-check,status
-all L_x have rank 3,PASS
-diagonal B blocks satisfy B^2=I,PASS
-off-diagonal B blocks satisfy B^3=B and rank 2,PASS
-diagonal L_x satisfy L^3=L with minpoly t(t-1)(t+1),PASS
-off-diagonal L_x satisfy L^4=L^2 but L^3!=L,PASS
-"off-diagonal zero eigenspace has alg mult 7, geom mult 6",PASS
-off-diagonal Jordan zero structure is one J2(0) plus five J1(0),PASS

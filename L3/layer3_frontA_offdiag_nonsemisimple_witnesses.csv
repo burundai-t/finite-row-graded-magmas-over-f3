@@ -1,7 +1,0 @@
-x,source_witness_y_in_F_c,L_x_y,L_x_cubed_y,conclusion
-"(0, 1)","(1, 0)","(0, 1)","(0, 2)",L^3 != L; the t factor at 0 must be squared
-"(0, 2)","(2, 0)","(0, 2)","(0, 1)",L^3 != L; the t factor at 0 must be squared
-"(1, 0)","(0, 0)","(1, 0)","(1, 2)",L^3 != L; the t factor at 0 must be squared
-"(1, 2)","(2, 0)","(1, 2)","(1, 0)",L^3 != L; the t factor at 0 must be squared
-"(2, 0)","(0, 0)","(2, 0)","(2, 1)",L^3 != L; the t factor at 0 must be squared
-"(2, 1)","(1, 0)","(2, 1)","(2, 0)",L^3 != L; the t factor at 0 must be squared

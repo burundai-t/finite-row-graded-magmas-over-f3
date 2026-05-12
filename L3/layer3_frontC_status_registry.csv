@@ -1,5 +1,0 @@
-front,claim,status,support
-L3-C,Closed form for Hom_{e_r},closed,rank audit + explicit formula basis + collapse-tree proof lemma
-L3-C,"dim Hom_{e_r}=2 for r=0,1,2",closed,constraint rank 79 over F_1000003 and 2 formula basis elements
-L3-C,Hom_{phi_rho}=R P_rho for automorphisms,retained/checked,constraint rank 80 and permutation generator
-L3-C,sum dim Hom_phi = 12,closed,6 automorphisms of dimension 1 plus 3 constants of dimension 2

@@ -1,4 +1,0 @@
-object,elements,span_dim,interpretation
-"restricted same-row unary semigroup <beta_0,beta_1,beta_2>",6,5,not Mat_3; this is the old A_r guardrail
-full row-target component W_r,17,9,dimension-9 object used by Layer 3 v1.2
-full composition envelope E,51,27,E = W_0 direct-sum W_1 direct-sum W_2

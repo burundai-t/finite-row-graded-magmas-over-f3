@@ -1,6 +1,0 @@
-block,actual_triples,I_tot,B_tot,H_tot,rawI_normalized,rawB_normalized,rawH_normalized,assoc_count,B_zero_count,H_value_counts
-RRR,81,804,48,756,134,8,126,57,57,0:15;4:12;10:12;14:42
-RRS,162,2268,756,1512,378,126,252,0,0,8:108;12:54
-RSR,162,2916,756,2160,486,126,360,0,0,12:108;16:54
-RSS,162,0,0,0,0,0,0,162,162,0:162
-RST,162,2916,324,2592,486,54,432,0,0,16:162

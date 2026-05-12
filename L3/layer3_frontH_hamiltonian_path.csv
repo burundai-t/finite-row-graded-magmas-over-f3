@@ -1,7 +1,0 @@
-step,transition,state,edge,unique_so_far
-0,start,q0,"(0, 1)",1
-1,C,q1,"(1, 2)",2
-2,J,p2,"(2, 1)",3
-3,C,p0,"(1, 0)",4
-4,C,p1,"(0, 2)",5
-5,J,q2,"(2, 0)",6

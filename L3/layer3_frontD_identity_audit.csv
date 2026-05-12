@@ -1,8 +1,0 @@
-label,lhs,rhs,lhs_size,rhs_size,holds_in_PAB,role
-I1,((x*y)*(x*y)),(x*x),4,2,yes,classical size-4 identity
-I2,((x*x)*(y*y)),((x*y)*(y*x)),4,4,yes,classical size-4 identity
-I3,((x*x)*(y*x)),((x*y)*(y*y)),4,4,yes,classical size-4 identity
-star,(z*(z*w)),((z*w)*z),3,3,yes,inside-fiber commutativity identity
-U1,(x*(x*(x*x))),(x*x),4,2,yes,unary power-cycle consequence: x*(x*(x*x)) = x*x
-U2,((x*x)*(x*(x*x))),x,5,1,yes,unary power-cycle consequence: (x*x)*(x*(x*x)) = x
-D5_sample,(x*(y*y)),(x*((y*(x*y))*x)),3,5,yes,sample PAB identity not forced by compact package through U1/U2

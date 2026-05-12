@@ -1,9 +1,0 @@
-object,dimension,description
-k[M] / Mat3 carrier,9,"matrix-unit carrier e_(r,c) <-> E_rc"
-center kI,1,trivial adjoint module
-sl3,8,traceless adjoint module
-adjoint split,1+8,k[M] = 1 plus 8 under the companion commutator
-so3,3,skew-symmetric S3-stable compact subalgebra inside sl3
-p,5,symmetric traceless complement
-Cartan split,3+5,sl3 = so3 plus p; bracket containments verified
-compact group type,8+3+1,"SU(3) x SU(2) x U(1) attached to sl3, selected so3, and center"
