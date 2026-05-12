@@ -1,0 +1,7 @@
+step=14
+action=git hygiene, commit, tag, release archive
+repository=finite-row-graded-magmas-over-f3
+tag=v2.0-current-support
+manifest_regenerated_before_git_commit=YES
+release_archive_created_by=git archive
+archive_output_location=outside_repository

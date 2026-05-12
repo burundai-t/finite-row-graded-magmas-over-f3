@@ -1,0 +1,21 @@
+PASS: all checked referenced paths exist
+paper/main.tex
+paper/main.pdf
+README.md
+SUPPORT_INDEX.txt
+tools/run_quick_checks.sh
+tools/run_mathcal_H_audit.sh
+L1/scripts/verify_layer1_v3_final.py
+L2/scripts/verify_layer2_selection_final.py
+L3/scripts/verify_layer3_frontA.py
+L3/scripts/verify_layer3_frontB.py
+L3/scripts/verify_layer3_frontC.py
+L3/scripts/verify_layer3_frontD.py
+L3/scripts/verify_layer3_frontE.py
+L3/scripts/verify_layer3_frontF.py
+L3/scripts/verify_layer3_frontG.py
+L3/scripts/verify_layer3_frontH.py
+L3/scripts/verify_layer3_frontB_envelope.py
+L3/scripts/verify_layer3_linearization_final.py
+mathcal_H/verify_mathcal_H_bundle.py
+mathcal_H/h2/verify_h2_coverage_light.py

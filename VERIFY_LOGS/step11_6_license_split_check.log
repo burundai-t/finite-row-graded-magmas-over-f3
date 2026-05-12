@@ -1,0 +1,6 @@
+PASS LICENSE
+PASS paper/LICENSE.md
+PASS README.md
+PASS PACKAGE_NOTE.md
+PASS SUPPORT_INDEX.txt
+PASS license split files, prose checks, and duplicate-section checks

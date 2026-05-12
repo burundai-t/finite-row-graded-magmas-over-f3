@@ -1,0 +1,48 @@
+Step 11.6 license split
+Generated: 2026-05-12T17:04:03Z
+Files:
+-rw-r--r-- 1 root root  1320 May 12 17:04 LICENSE
+-rw-r--r-- 1 root root  3729 May 12 17:04 PACKAGE_NOTE.md
+-rw-r--r-- 1 root root  7401 May 12 17:04 README.md
+-rw-r--r-- 1 root root 13536 May 12 17:04 SUPPORT_INDEX.txt
+-rw-r--r-- 1 root root   591 May 12 17:04 paper/LICENSE.md
+
+License mentions:
+LICENSE:1:MIT License
+LICENSE:3:This MIT License applies to all files in this repository except files under
+LICENSE:4:`paper/`, which are licensed separately under the Creative Commons Attribution
+LICENSE:5:4.0 International License (CC BY 4.0); see `paper/LICENSE.md`.
+LICENSE:12:limitation the rights to use, copy, modify, merge, publish, distribute,
+LICENSE:13:sublicense, and/or sell copies of the Software, and to permit persons to whom
+LICENSE:20:IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+paper/LICENSE.md:1:# Manuscript license
+paper/LICENSE.md:4:are licensed under the Creative Commons Attribution 4.0 International License
+paper/LICENSE.md:5:(CC BY 4.0), unless a file states otherwise.
+paper/LICENSE.md:7:SPDX-License-Identifier: CC-BY-4.0
+paper/LICENSE.md:11:Under CC BY 4.0, reuse, redistribution, and adaptation are permitted with
+paper/LICENSE.md:12:appropriate attribution. The license summary and legal code are available from
+paper/LICENSE.md:16:https://creativecommons.org/licenses/by/4.0/
+paper/LICENSE.md:17:https://creativecommons.org/licenses/by/4.0/legalcode
+README.md:26:  LICENSE
+README.md:32:    LICENSE.md
+README.md:282:`--max-points`, `--max-nodes`, and `--time-limit-hours` options. Inspect each
+README.md:297:## License
+README.md:301:- `paper/` is licensed under CC BY 4.0. This applies to the manuscript source
+README.md:303:  `paper/LICENSE.md`.
+README.md:304:- All files outside `paper/` are licensed under the MIT License; see `LICENSE`.
+README.md:306:The split keeps the article text under a standard open manuscript license while
+README.md:307:keeping the verifier/repository machinery under a standard software license.
+SUPPORT_INDEX.txt:38:License policy
+SUPPORT_INDEX.txt:40:paper/      CC BY 4.0 manuscript license; see paper/LICENSE.md
+SUPPORT_INDEX.txt:42:            MIT License; see LICENSE
+SUPPORT_INDEX.txt:46:            MIT License; see LICENSE
+SUPPORT_INDEX.txt:391:License
+SUPPORT_INDEX.txt:395:- paper/ is licensed under CC BY 4.0. This includes paper/main.tex and
+SUPPORT_INDEX.txt:396:  paper/main.pdf. See paper/LICENSE.md.
+SUPPORT_INDEX.txt:397:- All files outside paper/ are licensed under the MIT License. This includes
+SUPPORT_INDEX.txt:399:  README/support documentation, and verification logs. See LICENSE.
+PACKAGE_NOTE.md:25:## License policy
+PACKAGE_NOTE.md:30:paper/                         CC BY 4.0
+PACKAGE_NOTE.md:31:all files outside paper/        MIT License, unless a file states otherwise
+PACKAGE_NOTE.md:35:`paper/LICENSE.md`.  The verifier scripts, finite support tables, tools, logs,
+PACKAGE_NOTE.md:36:and support documentation outside `paper/` are covered by the root `LICENSE`.

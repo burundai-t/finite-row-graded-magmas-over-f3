@@ -1,0 +1,15 @@
+Step 12 file inventory before final manifest:
+-rw-r--r-- 1 root root  1410 May 12 17:04 LICENSE
+-rw-r--r-- 1 root root 49700 May 12 17:16 MANIFEST.sha256
+-rw-r--r-- 1 root root  4273 May 12 17:15 PACKAGE_NOTE.md
+-rw-r--r-- 1 root root  7577 May 12 17:15 README.md
+-rw-r--r-- 1 root root  7838 May 12 17:16 SUPPORT_INDEX.txt
+-rw-r--r-- 1 root root   741 May 12 17:13 paper/LICENSE.md
+-rwxr-xr-x 1 root root   665 May 12 17:15 tools/make_manifest.sh
+
+Step 12 log files:
+step12.status
+step12_inventory_before_manifest.log
+step12_make_manifest_syntax.log
+step12_manifest_summary.log
+step12_public_word_scan.log

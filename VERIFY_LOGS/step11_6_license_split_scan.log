@@ -1,0 +1,33 @@
+License files:
+-rw-r--r-- 1 root root 1547 May 12 17:03 LICENSE
+-rw-r--r-- 1 root root  624 May 12 17:03 paper/LICENSE.md
+
+License mentions:
+README.md:26:  LICENSE
+README.md:32:    LICENSE.md
+README.md:33:    LICENSE.md
+README.md:299:This repository uses split licensing:
+README.md:302:  licensed under the Creative Commons Attribution 4.0 International License
+README.md:303:  (CC BY 4.0); see `paper/LICENSE.md`.
+README.md:306:  verification logs, are licensed under the MIT License; see `LICENSE`.
+SUPPORT_INDEX.txt:382:This repository uses split licensing:
+SUPPORT_INDEX.txt:384:- paper/ is licensed under CC BY 4.0. This includes paper/main.tex and
+SUPPORT_INDEX.txt:385:  paper/main.pdf. See paper/LICENSE.md.
+SUPPORT_INDEX.txt:386:- All files outside paper/ are licensed under the MIT License. This includes
+SUPPORT_INDEX.txt:388:  README/support documentation, and verification logs. See LICENSE.
+SUPPORT_INDEX.txt:401:  paper/        CC BY 4.0, see paper/LICENSE.md
+SUPPORT_INDEX.txt:402:  outside paper MIT License, see LICENSE
+PACKAGE_NOTE.md:103:This repository uses split licensing.
+PACKAGE_NOTE.md:105:- `paper/` is licensed under CC BY 4.0. This applies to the manuscript source
+PACKAGE_NOTE.md:107:  `paper/LICENSE.md`.
+PACKAGE_NOTE.md:108:- All files outside `paper/` are licensed under the MIT License; see `LICENSE`.
+PACKAGE_NOTE.md:138:- `paper/` is licensed under CC BY 4.0. See `paper/LICENSE.md`.
+PACKAGE_NOTE.md:139:- All files outside `paper/` are licensed under the MIT License. See `LICENSE`.
+LICENSE:1:MIT License
+LICENSE:4:Except for files under `paper/`, this MIT License applies to all files in this
+LICENSE:9:licensed separately under the Creative Commons Attribution 4.0 International
+LICENSE:10:License (CC BY 4.0); see `paper/LICENSE.md`.
+paper/LICENSE.md:4:are licensed under the Creative Commons Attribution 4.0 International License
+paper/LICENSE.md:5:(CC BY 4.0), unless a file in this directory explicitly states otherwise.
+paper/LICENSE.md:9:License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+paper/LICENSE.md:15:appropriate attribution, as specified by CC BY 4.0.

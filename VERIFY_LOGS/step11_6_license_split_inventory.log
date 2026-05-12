@@ -1,0 +1,5 @@
+STEP 11.6 LICENSE SPLIT
+root LICENSE: MIT for all non-paper files
+paper/LICENSE.md: CC BY 4.0 for paper/main.tex and paper/main.pdf
+./LICENSE
+./paper/LICENSE.md

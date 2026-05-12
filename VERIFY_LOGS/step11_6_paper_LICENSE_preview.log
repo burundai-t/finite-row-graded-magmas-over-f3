@@ -1,0 +1,26 @@
+# Manuscript license
+
+SPDX-License-Identifier: CC-BY-4.0
+
+The manuscript files in this directory, including `main.tex`, `main.pdf`, and
+derivative paper outputs built from them, are licensed under the Creative
+Commons Attribution 4.0 International License (CC BY 4.0), unless a file states
+otherwise.
+
+Copyright (c) 2026 Burundai Taryi / burundai-t.
+
+Manuscript title:
+
+```text
+Finite Row-Graded Magmas over F_3: Intrinsic Selection and Linearization
+```
+
+License references:
+
+```text
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+Legal code:             https://creativecommons.org/licenses/by/4.0/legalcode
+```
+
+Attribution should include the author name, the manuscript title, the
+repository URL, and a link to the CC BY 4.0 license when practical.
