@@ -1,0 +1,14 @@
+claim,status,value
+dim span{L_x}=9,checked,9
+rank L_x=3 for all x,checked,all
+diagonal minpoly t(t-1)(t+1),checked,3 operators
+off-diagonal minpoly t^2(t-1)(t+1),checked,6 operators
+composition envelope span decomposes into three W_r of dimension 9 and W_r W_s subset W_r,checked,monoid size 51; span dim 27
+"S3 character on M^x is (6,0,0)",checked,"(6, 0, 0)"
+"A_abs=(C+J)^T spectrum {2,0,0,0,-1,-1}",checked,"{2: 1, -1: 2, 0: 3}"
+End(M)=6 automorphisms + 3 constants,checked,9
+sum dim Hom_phi=12,checked,12
+cross-row formula AJB^T,checked,basis
+"I1,I2,I3,star",checked,"{'I1': True, 'I2': True, 'I3': True, 'star': True}"
+"H profile PAB=row-complement=(7020,7020,0,0)",checked,"(7020, 7020, 0, 0)"
+free magma counts through level 6,checked,dynamic function-DP

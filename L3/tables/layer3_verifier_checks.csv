@@ -1,0 +1,88 @@
+check,passed,detail
+dim_span_Lx,True,9
+"image_L_(0, 0)_in_F_row",True,
+"rank_L_(0, 0)",True,3
+"diag_minpoly_cubic_(0, 0)",True,
+"diag_not_smaller_rank_(0, 0)",True,
+"image_L_(0, 1)_in_F_row",True,
+"rank_L_(0, 1)",True,3
+"offdiag_quartic_(0, 1)",True,
+"offdiag_not_cubic_(0, 1)",True,
+"offdiag_one_J2_zero_(0, 1)",True,1
+"image_L_(0, 2)_in_F_row",True,
+"rank_L_(0, 2)",True,3
+"offdiag_quartic_(0, 2)",True,
+"offdiag_not_cubic_(0, 2)",True,
+"offdiag_one_J2_zero_(0, 2)",True,1
+"image_L_(1, 0)_in_F_row",True,
+"rank_L_(1, 0)",True,3
+"offdiag_quartic_(1, 0)",True,
+"offdiag_not_cubic_(1, 0)",True,
+"offdiag_one_J2_zero_(1, 0)",True,1
+"image_L_(1, 1)_in_F_row",True,
+"rank_L_(1, 1)",True,3
+"diag_minpoly_cubic_(1, 1)",True,
+"diag_not_smaller_rank_(1, 1)",True,
+"image_L_(1, 2)_in_F_row",True,
+"rank_L_(1, 2)",True,3
+"offdiag_quartic_(1, 2)",True,
+"offdiag_not_cubic_(1, 2)",True,
+"offdiag_one_J2_zero_(1, 2)",True,1
+"image_L_(2, 0)_in_F_row",True,
+"rank_L_(2, 0)",True,3
+"offdiag_quartic_(2, 0)",True,
+"offdiag_not_cubic_(2, 0)",True,
+"offdiag_one_J2_zero_(2, 0)",True,1
+"image_L_(2, 1)_in_F_row",True,
+"rank_L_(2, 1)",True,3
+"offdiag_quartic_(2, 1)",True,
+"offdiag_not_cubic_(2, 1)",True,
+"offdiag_one_J2_zero_(2, 1)",True,1
+"image_L_(2, 2)_in_F_row",True,
+"rank_L_(2, 2)",True,3
+"diag_minpoly_cubic_(2, 2)",True,
+"diag_not_smaller_rank_(2, 2)",True,
+composition_monoid_size,True,51
+composition_envelope_span_dim,True,27
+W_0_dim,True,9
+W_1_dim,True,9
+W_2_dim,True,9
+W_0_times_W_0_subset_W_0,True,
+W_0_times_W_1_subset_W_0,True,
+W_0_times_W_2_subset_W_0,True,
+W_1_times_W_0_subset_W_1,True,
+W_1_times_W_1_subset_W_1,True,
+W_1_times_W_2_subset_W_1,True,
+W_2_times_W_0_subset_W_2,True,
+W_2_times_W_1_subset_W_2,True,
+W_2_times_W_2_subset_W_2,True,
+S3_offdiag_character_corrected,True,"{'chi_id': 6, 'chi_3cycle': 0, 'chi_transposition': 0, 'triv': 1, 'sign': 1, 'std': 2}"
+S3_offdiag_decomposition,True,"{'chi_id': 6, 'chi_3cycle': 0, 'chi_transposition': 0, 'triv': 1, 'sign': 1, 'std': 2}"
+A_abs_equals_C_plus_J_transpose,True,
+A_abs_spectrum,True,"{2: 1, -1: 2, 0: 3}"
+endomorphism_count,True,9
+endomorphism_classes,True,"{'constant_0': 1, 'automorphism': 6, 'constant_1': 1, 'constant_2': 1}"
+hom_dim_constant_0,True,2
+hom_dim_auto_1,True,1
+hom_dim_auto_2,True,1
+hom_dim_auto_3,True,1
+hom_dim_constant_4,True,2
+hom_dim_auto_5,True,1
+hom_dim_auto_6,True,1
+hom_dim_auto_7,True,1
+hom_dim_constant_8,True,2
+total_Hom_dimension,True,12
+row_contraction_AJBt_cross_basis,True,
+matrix_product_coincidences,True,9
+identity_I1,True,
+identity_I2,True,
+identity_I3,True,
+identity_star,True,
+H_PAB_profile,True,"(7020, 7020, 0, 0)"
+H_row_complement_same_profile,True,"(7020, 7020, 0, 0)"
+free_count_size_1,True,"{'size': 1, 'words': 2, 'new_functions': 2, 'total_distinct': 2}"
+free_count_size_2,True,"{'size': 2, 'words': 4, 'new_functions': 4, 'total_distinct': 6}"
+free_count_size_3,True,"{'size': 3, 'words': 16, 'new_functions': 12, 'total_distinct': 18}"
+free_count_size_4,True,"{'size': 4, 'words': 80, 'new_functions': 18, 'total_distinct': 36}"
+free_count_size_5,True,"{'size': 5, 'words': 448, 'new_functions': 50, 'total_distinct': 86}"
+free_count_size_6,True,"{'size': 6, 'words': 2688, 'new_functions': 52, 'total_distinct': 138}"
