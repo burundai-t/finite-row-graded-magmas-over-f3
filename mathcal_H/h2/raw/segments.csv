@@ -1,0 +1,8 @@
+segment,start_offset,end_offset,nodes,certified_unsat,sat,unknown,unresolved,source
+CERTPACK1,0,162,162,162,0,0,0,static_prefix
+CERTPACK2,162,324,162,162,0,0,0,static_prefix
+CERTPACK5,324,972,648,648,0,0,0,targeted_unknown_closure
+CERTPACK6,972,2268,1296,1296,0,0,0,wide_timeout_prefix
+CERTPACK7,2268,3564,1296,1296,0,0,0,wide_timeout_prefix
+CERTPACK8,3564,4860,1296,1296,0,0,0,wide_timeout_prefix
+CERTPACK9,4860,18540,13680,13680,0,0,0,overnight_tail_raw_logs

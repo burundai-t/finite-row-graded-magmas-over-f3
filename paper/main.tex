@@ -1,0 +1,3083 @@
+
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\sloppy
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\renewcommand{\qedsymbol}{$\square$}
+\newcommand{\RP}{\mathsf{RP}}
+\newcommand{\RC}{\mathsf{RC}}
+
+\makeatletter
+\renewcommand{\verbatim@font}{\normalfont\ttfamily\small}
+\makeatother
+
+
+\title{Finite Row-Graded Magmas over \(\mathbb F_3\): Intrinsic Selection and Linearization}
+\author{Burundai Taryi\thanks{Independent researcher, \href{mailto:burundai.taryi@gmail.com}{burundai.taryi@gmail.com}.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study a finite family of \(\sigma\)-equivariant row-graded magmas over \(\mathbb F_3\), with carrier \[
+M=S\times S,\qquad S=\mathbb F_3,
+\] left-row output, and a fixed same-row Steiner rule. The normal
+form is \[
+\Omega'\cong S^{18}\times S^3\cong S^{21},\qquad |\Omega'|=3^{21}.
+\]
+
+The paper has three layers. First, it maps the finite landscape: the
+certified associativity atlas gives \[
+63\le \operatorname{Assoc}\le 597,
+\] with endpoint loci and exact partition function, while the global
+\(\mathcal H\)-frontier theorem gives \[
+\min H_{tot}=-2268,\qquad \max H_{tot}=7302,
+\qquad \max_{N_-=0}H_{tot}=7020.
+\] The layer above the pure frontier consists of twelve impure
+signed-cancellation maximizers.
+
+Second, the central selection theorem isolates one magma by four
+internal finite conditions: \[
+\boxed{
+\mathcal H_{acc}=0,
+\qquad
+H_{diag}=0,
+\qquad
+\text{row-anchor idempotence},
+\qquad
+\text{pure }C/J.
+}
+\] These conditions force the right-row projection magma \(\RP\), whose multiplication is \[
+(r_1,c_1)\cdot(r_2,c_2)=
+\begin{cases}
+(r_1,r_2),&r_1\ne r_2,\\[1mm]
+(r_1,\overline{c_1c_2}),&r_1=r_2,
+\ c_1\ne c_2,\\[1mm]
+(r_1,r_1),&r_1=r_2,
+\ c_1=c_2.
+\end{cases}
+\]
+
+Third, after selection, \(\RP\) admits a linear/operator passport:
+rank-three left translations, a finite composition envelope,
+endomorphism and intertwiner structure, a binary term algebra of size \[
+|T_2(\RP)|=630,
+\] a row-contraction matrix bridge, a hidden-continuation operator
+identity, and companion carrier-level Lie and signed symplectic
+structures.
+
+The organizing implication is \[
+\boxed{\text{finite landscape}}
+\Longrightarrow
+\boxed{\text{intrinsic finite selection}}
+\Longrightarrow
+\boxed{\text{linearization of the selected magma}}.
+\]
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\setcounter{section}{-1}
+\section{Introduction}\label{introduction}
+
+\subsection{Object and aim}\label{aim}
+
+The object of the paper is a finite landscape of row-graded
+multiplications on
+\[
+M=S\times S,\qquad S=\mathbb F_3.
+\]
+The first coordinate is the row and the second coordinate is the column.
+The family is defined by left-row output \(\mathrm{AX0}\), a fixed
+same-row off-diagonal Steiner rule \(\mathrm{AX2}\), and equivariance for
+\[
+\sigma(r,c)=(r+1,c+1).
+\]
+These constraints leave exactly twenty-one ternary coordinates,
+\[
+\Omega'\cong S^{18}\times S^3\cong S^{21},
+\qquad |\Omega'|=3^{21}=10\,460\,353\,203.
+\]
+
+The paper follows one spine:
+\[
+\boxed{\text{finite row-graded landscape}}
+\quad\Longrightarrow\quad
+\boxed{\text{intrinsic finite selection}}
+\quad\Longrightarrow\quad
+\boxed{\text{linearization after selection}}.
+\]
+The global atlases describe the ambient landscape.  The compact selector
+isolates one point of this landscape.  The operator, term-function,
+matrix-carrier, Lie, and symplectic structures then describe the selected
+magma.
+
+\subsection{Main theorem}\label{main-theorem}
+
+\begin{theorem}[Main theorem package]\label{thm:main}
+Let \(\Omega'\) be the row-graded landscape on \(M=S\times S\), with
+left-row output, the fixed same-row off-diagonal Steiner rule, and
+\(\sigma\)-equivariance for \(\sigma(r,c)=(r+1,c+1)\).  Then the following
+hold.
+
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item The landscape has normal form
+\[
+\Omega'\cong S^{18}\times S^3\cong S^{21}.
+\]
+
+\item The finite associativity atlas satisfies
+\[
+63\le \operatorname{Assoc}\le 597,
+\]
+with endpoint loci and exact partition function.  The global
+\(\mathcal H\)-frontier satisfies
+\[
+\min H_{tot}=-2268,
+\qquad
+\max H_{tot}=7302,
+\qquad
+\max_{N_-=0}H_{tot}=7020.
+\]
+The layer above the pure frontier consists of twelve impure
+signed-cancellation maximizers.
+
+\item The four internal conditions
+\[
+\mathcal H_{acc}=0,
+\qquad
+H_{diag}=0,
+\qquad
+\text{row-anchor idempotence},
+\qquad
+\text{pure }C/J
+\]
+select a unique magma in \(\Omega'\).  This selected magma is the
+right-row projection magma \(\RP\), with multiplication
+\[
+(r_1,c_1)\cdot(r_2,c_2)=
+\begin{cases}
+(r_1,r_2), & r_1\ne r_2,\\[1mm]
+(r_1,\overline{c_1c_2}), & r_1=r_2,\ c_1\ne c_2,\\[1mm]
+(r_1,r_1), & r_1=r_2,\ c_1=c_2.
+\end{cases}
+\]
+
+\item After selection, \(\RP\) has a finite linear/operator passport:
+every left translation has rank \(3\), the positive composition envelope
+has \(51\) maps, the endomorphism monoid consists of the six simultaneous
+symbol permutations and the three diagonal collapses, and the binary
+term-function algebra has
+\[
+T_2(\RP)\cong \{x,y\}\times\mathcal S_{21}\times\mathcal U_{15},
+\qquad |T_2(\RP)|=630.
+\]
+The carrier linearization
+\[
+k[M]\cong \operatorname{Mat}_3(k),
+\qquad e_{(r,c)}\leftrightarrow E_{rc},
+\]
+supports a row-contraction bridge, a hidden-continuation operator identity,
+carrier-level compact matrix companions, and a signed symplectic lift of the
+pure \(C/J\) directed-edge geometry.
+
+\item The proof package is finite.  The normal form, information selectors,
+diagonal compression, and compact selection theorem are hand finite
+arguments.  The associativity and post-selection passport data are checked
+against finite tables.  The global \(\mathcal H\)-frontier is certified
+by a separate finite frontier bundle.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+This theorem is the conjunction of the main results proved below.  The
+normal form is Theorem~\ref{thm:1.1}.  The associativity atlas is
+Theorem~\ref{thm:5.2}, with endpoint and partition data in
+Theorems~\ref{thm:6.1} and~\ref{thm:6.2}.  The \(\mathcal H\)-frontier
+is Theorem~\ref{thm:7.2}.  The compact selection theorem is
+Theorem~\ref{thm:12.3}.  The operator and term-function statements are
+Lemma~\ref{lem:13.1}, Theorems~\ref{thm:14.2},~\ref{thm:15.2},
+\ref{thm:16.2}, and~\ref{thm:18.3}.  The matrix, hidden-continuation
+operator, carrier Lie, and signed symplectic bridges are
+Proposition~\ref{prop:16.3} and Theorems~\ref{thm:17.1},~\ref{thm:19.1},
+and~\ref{thm:20.1}.  The finite proof interface is summarized in
+Section~\ref{finite-certificate-protocol}.
+\end{proof}
+
+\subsection{The selected point and the second finalist}\label{selected-point-and-second-finalist}
+
+We denote the selected magma by \(\RP\), for \emph{right-row projection}.
+The second local finalist is denoted by \(\RC\), for \emph{row-complement}.
+The historical support alias \(\mathrm{PAB}\) refers to \(\RP\); the
+mathematical text uses \(\RP\) for the selected object.
+
+The two finalists have the same global placement in the \(\mathcal H\)-frontier:
+\[
+H_{tot}=7020,
+\qquad
+N_-=0.
+\]
+They are separated by the directed-edge geometry on
+\[
+M^\times=\{(r,c):r\ne c\}.
+\]
+The selected magma realizes the literal continuation/reversal pair
+\(\{C,J\}\), while the second finalist realizes the drifted pair
+\(\{C^{-1},C^{-1}J\}\).  The final selector is the undrifted finite
+\(C/J\) geometry.
+
+\subsection{Information selectors}\label{information-selectors}
+
+The first two selectors are information-theoretic observables on finite
+random variables.  The hidden-column access functional is
+\[
+\mathcal H_{acc}=I(C_{out};C_1,C_2\mid R_1,R_2).
+\]
+Its zero set is exactly the column-blind cross-row locus: once the ordered
+row pair is known, the output column is constant over the hidden input
+columns.  This is the Landauer-facing economy selector.
+
+The diagonal selector is the Shannon entropy of the same-point diagonal
+output multiset,
+\[
+H_{diag}=-\sum_s p_s\log_2 p_s.
+\]
+Its zero set is the constant diagonal sector.  Row-anchor idempotence is
+the anchor condition
+\[
+(r,r)\cdot(r,r)=(r,r)\qquad(r\in S),
+\]
+and, after diagonal compression, it fixes the constant diagonal to
+\(d=000\).  Equivalently, every same-point square then returns to the row
+anchor \((r,r)\).  The pure \(C/J\) condition completes the selection by
+imposing literal directed-edge head-continuation and reversal.
+Appendix~\ref{appendix-information-theoretic-interpretation} records the
+information-theoretic reading of these selectors and of the selected magma.
+
+\subsection{Landscape atlases versus selection}\label{landscape-atlases-versus-selection}
+
+The global atlases and the selector have different roles.  The associativity
+atlas and the \(\mathcal H\)-frontier atlas map the ambient finite landscape
+\(\Omega'\).  The compact selector is a local finite theorem inside that
+landscape: after access-zero, diagonal entropy zero, and row-anchor
+idempotence, the pure \(C/J\) condition already forces \(\RP\).
+
+A longer explanatory chain is retained because it shows the intermediate
+strata:
+\[
+\Omega'
+\xrightarrow{\mathcal H_{acc}=0,
+\ H_{diag}=0}
+9\times3
+\xrightarrow{a\ne b,
+\ d=000}
+6\times1
+\xrightarrow{\min\operatorname{Assoc}_{000}}
+2\times1
+\xrightarrow{\text{pure }C/J}
+1.
+\]
+This chain displays the \(\RP\)/\(\RC\) ambiguity before the undrifted
+\(C/J\) separation.  The compact proof in Theorem~\ref{thm:12.3} is the
+shorter logical core.
+
+\subsection{Linearization after selection}\label{linearization-after-selection}
+
+The post-selection part of the paper records the finite passport of
+\(\RP\).  The row-owner law says that every nonempty term has output row
+equal to the row of its leftmost variable.  The left translations have rank
+\(3\) and image a row fiber.  Their positive composition envelope has
+\(51\) maps and a three-component row-target product law.
+
+The carrier vector space has a natural matrix-unit identification
+\[
+k[M]\cong\operatorname{Mat}_3(k),
+\qquad e_{(r,c)}\leftrightarrow E_{rc}.
+\]
+Under this identification the cross-row part of \(\RP\) is represented by
+the row-contraction bridge
+\[
+\mu_{cross}(A,B)=AJ_3B^\top=(A\mathbf1)(B\mathbf1)^\top,
+\qquad
+E_{ij}J_3E_{kl}^{\top}=E_{ik}.
+\]
+The carrier-level Lie and signed symplectic structures are developed at
+this linearized level.
+
+\subsection{Proof architecture and support}\label{proof-architecture-and-support}
+
+The proof package uses the following finite support modes.
+
+\begin{longtable}{@{}p{0.30\linewidth}p{0.32\linewidth}p{0.30\linewidth}@{}}
+\toprule
+result family & role & support \\
+\midrule
+\endhead
+normal form, access-zero, diagonal compression, compact \(\RP\) selector & hand finite theorems & text; L2 audit tables record survivor counts \\
+associativity range, endpoints, partition function & finite landscape atlas & \texttt{L1/} tables plus L1 verifier \\
+global \(\mathcal H\)-frontier & finite frontier theorem & separate \texttt{mathcal\_H/} bundle \\
+operator, endomorphism, composition, \(T_2\) structure & post-selection passport & text plus \texttt{L3/} realization and audit tables \\
+carrier Lie and signed symplectic structures & bridge layer & \texttt{L3/} bridge audit tables \\
+\bottomrule
+\end{longtable}
+
+The distributed support corpus keeps the frozen finite layers and the
+\(\mathcal H\)-frontier certificate bundle separate:
+\[
+\texttt{L1/},
+\qquad
+\texttt{L2/},
+\qquad
+\texttt{L3/},
+\qquad
+\texttt{mathcal\_H/}.
+\]
+The reviewer-facing finite-layer audit is
+\begin{verbatim}
+tools/run_quick_checks.sh
+\end{verbatim}
+The \(\mathcal H\)-frontier certificate bundle is kept under
+\texttt{mathcal\_H/}; its command-level interface is recorded in
+\texttt{SUPPORT\_INDEX.txt}.
+
+\subsection{Positioning}\label{positioning}
+
+The selection layer uses standard finite information observables in the
+language of Landauer, Bennett, Shannon, and Cover--Thomas
+\cite{Landauer1961,Bennett1973,Bennett1982,Shannon1948,CoverThomas2006}.
+The finite magma, term-function, and clone-theoretic context is standard
+universal algebra
+\cite{Birkhoff1935,Cohn1965,BurrisSankappanavar1981,Post1941,Rosenberg1970,Szendrei1986,Lau2006}.
+The same-row rule is the three-point Steiner multiplication, in the
+classical nonassociative and quasigroup background
+\cite{Bruck1958,DenesKeedwell1974,Pflugfelder1990,ColbournDinitz2007}.
+The certificate layer belongs to computer-assisted finite mathematics
+\cite{AppelHaken1977,AppelHakenKoch1977,Gonthier2008,McCune1997,Hales2005,HalesEtAl2017}.
+The carrier-level matrix, Lie, and symplectic terminology follows standard
+conventions
+\cite{HornJohnson2012,FultonHarris1991,Hall2015,GuilleminSternberg1990,McDuffSalamon2017}.
+
+
+\subsection{Notation}\label{notation}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+notation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+meaning
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(S\) & the field \(\mathbb F_3\) \\
+\(M\) & the carrier \(S\times S\) \\
+\(\sigma\) & the simultaneous shift \((r,c)\mapsto(r+1,c+1)\) \\
+\(F_r\) & the row fiber \(\{r\}\times S\) \\
+\(M^\times\) & the six off-diagonal points \(\{(r,c):r\ne c\}\) \\
+\(\Omega'\) & the landscape satisfying AX0, AX2, and \(\sigma\)-equivariance \\
+\((A,B,d)\) & normal coordinates in \(S^{18}\times S^3\) \\
+\(h_{a,b}\) & column-blind cross-row rule with anchors \(h(0,1)=a\),
+\(h(0,2)=b\) \\
+\(\operatorname{Assoc}\) & total number of associative triples in
+\(M^3\) \\
+\(\operatorname{Assoc}_{000}\) & local associativity statistic after
+fixing \(d=000\) \\
+\(\mathcal H_{acc}\) & hidden-column access observable \\
+\(H_{diag}\) & entropy of the diagonal output multiset \\
+\(h_q,H_{tot},N_-\) & hidden-continuation local contribution, total
+value, and negative local count \\
+\(C,J\) & continuation and reversal maps on \(M^\times\) \\
+\(T_2(\RP)\) & binary term-function algebra of \(\RP\) \\
+\end{longtable}
+
+\part{The finite landscape}
+
+
+\section{Carrier, axioms, and normal
+form}\label{carrier-axioms-and-normal-form}
+
+\subsection{Carrier and shift}\label{carrier-and-shift}
+
+Let
+\[
+S=\mathbb F_3,
+\qquad
+M=S\times S.
+\]
+All arithmetic in row and column coordinates is in \(S\).  For
+\(x=(r,c)\in M\), write
+\[
+\operatorname{row}(x)=r,
+\qquad
+\operatorname{col}(x)=c,
+\]
+and let
+\[
+F_r=\{r\}\times S
+\]
+be the row fiber.  We use the cyclic shift
+\[
+\sigma(r,c)=(r+1,c+1).
+\]
+Thus \(\sigma\) translates rows and columns simultaneously.
+
+For distinct \(i,j\in S\), write \(\overline{ij}\) for the third element
+of \(S\setminus\{i,j\}\).  Equivalently, in \(\mathbb F_3\),
+\[
+\overline{ij}=-i-j
+\qquad (i\ne j).
+\]
+
+\subsection{Axioms}\label{axioms}
+
+The landscape \(\Omega'\) consists of binary operations \(\cdot\) on \(M\)
+satisfying the following three conditions.
+
+\begin{description}[leftmargin=3.2em,style=nextline]
+\item[AX0, left-row output.]
+For all \(x,y\in M\),
+\[
+\operatorname{row}(x\cdot y)=\operatorname{row}(x).
+\]
+Equivalently, \(x\cdot y\in F_{\operatorname{row}(x)}\).
+
+\item[\(\sigma\)-equivariance.]
+For all \(x,y\in M\),
+\[
+\sigma(x\cdot y)=\sigma(x)\cdot \sigma(y).
+\]
+
+\item[AX2, same-row off-diagonal Steiner rule.]
+For all \(r,i,j\in S\) with \(i\ne j\),
+\[
+(r,r+i)\cdot(r,r+j)=(r,r+\overline{ij}).
+\]
+Equivalently, in absolute column notation,
+\[
+(r,c_1)\cdot(r,c_2)=(r,\overline{c_1c_2})
+\qquad(c_1\ne c_2).
+\]
+This is the Steiner multiplication on a three-point row fiber
+\cite{Pflugfelder1990,ColbournDinitz2007}.
+\end{description}
+
+AX0 fixes only the output row.  The output column remains free in the
+cross-row branch and on the same-point diagonal branch.
+
+\subsection{Normal coordinates}\label{normal-coordinates}
+
+It is convenient to use row-relative coordinates.  A point of row \(r\) is
+written as \((r,r+i)\), where \(i\in S\) is the column offset from the row.
+
+A normal coordinate is a triple
+\[
+(A,B,d)\in S^9\times S^9\times S^3,
+\]
+where
+\[
+A=(A_{ij})_{i,j\in S},
+\qquad
+B=(B_{ij})_{i,j\in S},
+\qquad
+ d=(d_0,d_1,d_2).
+\]
+The associated multiplication is defined by the four formulas
+\[
+(r,r+i)\cdot(r+1,r+1+j)=(r,r+A_{ij}),
+\]
+\[
+(r,r+i)\cdot(r+2,r+2+j)=(r,r+B_{ij}),
+\]
+\[
+(r,r+i)\cdot(r,r+i)=(r,r+d_i),
+\]
+and, for \(i\ne j\),
+\[
+(r,r+i)\cdot(r,r+j)=(r,r+\overline{ij}).
+\]
+The first two arrays record the two ordered cross-row representatives
+\((0,1)\) and \((0,2)\).  The vector \(d\) records the same-point diagonal.
+The fourth formula is AX2.
+
+Conversely, any operation satisfying AX0, \(\sigma\)-equivariance, and AX2
+has a unique coordinate triple \((A,B,d)\): after applying a power of
+\(\sigma\), every cross-row product reduces to one of the two row-pair
+representatives above, and every same-point product reduces to one of the
+three diagonal coordinates.
+
+\subsection{Normal form theorem}\label{normal-form-theorem}
+
+\begin{theorem}
+\label{thm:1.1}
+The AX0+AX2, \(\sigma\)-equivariant landscape has normal form
+\[
+\Omega'\cong S^{18}\times S^3\cong S^{21}.
+\]
+Consequently
+\[
+|\Omega'|=3^{21}=10\,460\,353\,203.
+\]
+\end{theorem}
+
+\begin{proof}
+AX0 fixes the output row of every product.  AX2 fixes all same-row
+off-diagonal output columns.  The same-point diagonal branch has three
+row-relative coordinates \(d_0,d_1,d_2\).  For cross-row products,
+\(\sigma\)-equivariance reduces the ordered row-pair data to the two
+representatives \((0,1)\) and \((0,2)\).  Each representative has
+\(3\times3\) column-offset inputs, hence contributes nine independent
+coordinates.  Thus the cross-row branch contributes \(18\) coordinates and
+the diagonal branch contributes \(3\) coordinates.
+
+The coordinate construction above gives a product satisfying AX0,
+\(\sigma\)-equivariance, and AX2 for every \((A,B,d)\in S^9\times S^9
+\times S^3\), and the preceding paragraph recovers these coordinates
+uniquely from any such product.  Hence \(\Omega'\cong S^{21}\), and its
+cardinality is \(3^{21}\).
+\end{proof}
+
+\section{Effective symmetry and orbit
+count}\label{effective-symmetry-and-orbit-count}
+
+The oriented system used in the selection theorem fixes the generator
+\(s\mapsto s+1\) through
+\(\sigma(r,c)=(r+1,c+1)\).  For landscape compression, one may also use the
+normalizer of this cyclic shift in \(\operatorname{Sym}(S)\).  Translations
+\(s\mapsto s+\beta\) commute with the shift and act trivially on the
+row-relative normal coordinates.  The remaining normalizer class is
+represented by the reflection \(\nu(s)=-s\), which conjugates
+\(\sigma\) to \(\sigma^{-1}\).  Since \(\sigma\)-equivariance is equivalent
+to \(\sigma^{-1}\)-equivariance, this reflection preserves \(\Omega'\) as a
+landscape-compression symmetry.
+
+On normal coordinates it induces the involution
+\[
+\iota(A,B,d)=(A',B',d')
+\]
+with indices in \(S\) and
+\[
+A'_{ij}=-B_{-i,-j},
+\qquad
+B'_{ij}=-A_{-i,-j},
+\qquad
+d'_i=-d_{-i}.
+\]
+We denote the resulting residual effective action by
+\[
+G_{\mathrm{eff}}=\langle\iota\rangle\cong C_2.
+\]
+On the diagonal coordinate sector \(\Delta=S^3\), the same residual
+reflection gives the compression
+\[
+|\Delta/G_{\mathrm{eff}}|=\frac{3^3+3}{2}=15.
+\]
+
+\begin{proposition}
+\label{prop:2.1}
+The effective orbit count of the full
+normal-coordinate landscape is
+\[
+|\Omega'/G_{\mathrm{eff}}|=\frac{3^{21}+3^{10}}2.
+\]
+\end{proposition}
+
+\begin{proof}
+Burnside's lemma applies to the displayed involution.  The identity
+contributes \(3^{21}\).  For a fixed point of \(\iota\), the nine entries
+of \(A\) are free and then determine \(B\) by
+\(B_{ij}=-A_{-i,-j}\).  The diagonal equations are
+\[
+d_0=-d_0,
+\qquad
+d_1=-d_2,
+\qquad
+d_2=-d_1,
+\]
+so \(d_0=0\) and \(d_1\) is free.  Hence the fixed locus has
+\(9+1=10\) ternary degrees of freedom and size \(3^{10}\).  Therefore
+\[
+|\Omega'/G_{\mathrm{eff}}|=
+\frac{3^{21}+3^{10}}2.
+\]
+\end{proof}
+
+The orbit count is a landscape compression.  The residual reflection is
+not used to identify the two directed-edge absorption geometries in the
+selection theorem; the pure \(C/J\) maps are defined intrinsically on the
+directed-edge set in Section~\ref{pure-cj-and-the-selection-theorem}.
+
+\section{Hidden-column access}\label{hidden-column-access}
+
+The first selection functional is information-theoretic. It measures
+whether the cross-row rule has functional dependence on hidden column
+coordinates after the row pair is known. Its vanishing is the
+Landauer-facing condition that the cross-row channel admits a
+realization through the row data alone.
+
+\subsection{Column-blind cross-row
+rules}\label{column-blind-cross-row-rules}
+
+A cross-row output rule is \textbf{column-blind} if its output column
+depends only on the two row coordinates: \[
+g(r_1,c_1,r_2,c_2)=h(r_1,r_2).
+\] Equivalently, after the ordered row pair is fixed, the output column
+is constant over the nine column inputs.
+
+By \(\sigma\)-equivariance, a column-blind rule is determined by two
+values \[
+a=h(0,1),
+\qquad
+b=h(0,2).
+\] We call \((a,b)\) the cross-row anchors and write \(h_{a,b}\) for the
+corresponding rule. The remaining ordered row pairs are forced by
+\(\sigma\)-shift: \[
+h(r,r+1)=r+a,
+\qquad
+h(r,r+2)=r+b
+\] with arithmetic in \(\mathbb F_3\). There are \(3^2=9\) column-blind
+cross-row rules.
+
+\subsection{Hidden-column access as a Landauer-facing
+observable}\label{hidden-column-access-as-a-landauer-facing-observable}
+
+Let \[
+\Sigma_{cross}=\{(r_1,c_1,r_2,c_2)\in S^4:r_1\ne r_2\}
+\] with the uniform distribution, and let \[
+C_{out}=g(R_1,C_1,R_2,C_2)
+\] be the output-column random variable. Define the hidden-column access
+observable by \[
+\boxed{
+\mathcal H_{acc}(g)=I(C_{out};C_1,C_2\mid R_1,R_2).
+}
+\] Logarithms are base \(2\), so the value is measured in bits.
+
+This is a structural information observable. It measures how much
+hidden-column information is functionally retained in the cross-row
+output once the row pair is fixed. The Landauer reading is that hidden
+column information which is read and later discarded by an irreversible
+implementation carries thermodynamic cost
+\cite{Landauer1961,Bennett1973,Bennett1982}. Therefore
+\(\mathcal H_{acc}=0\) selects exactly those cross-row rules for which
+that cost is structurally avoidable: the output is computed through
+the public row interface.
+
+The zero condition is used in this implementation-independent structural
+sense: the column-read burden can be avoided altogether.
+
+\subsection{Access-zero theorem}\label{access-zero-theorem}
+
+\begin{theorem}
+\label{thm:3.1}
+For a cross-row rule \(g\), \[
+\mathcal H_{acc}(g)=0
+\quad\Longleftrightarrow\quad
+ g(r_1,c_1,r_2,c_2)=h(r_1,r_2).
+\] There are exactly nine column-blind cross-row rules.
+\end{theorem}
+
+\begin{proof}
+Conditional mutual information vanishes exactly when \[
+C_{out}\perp (C_1,C_2)\mid (R_1,R_2).
+\] Since \(C_{out}\) is a deterministic function of
+\((R_1,C_1,R_2,C_2)\), conditional independence is equivalent to
+constancy in \((C_1,C_2)\) for every fixed ordered row pair
+\((R_1,R_2)\). That is precisely column-blindness.
+
+The two representative cross-row row pairs \((0,1)\) and \((0,2)\) each
+receive one output-column value in \(S\), giving \(3^2=9\)
+\(\sigma\)-equivariant column-blind rules.
+\end{proof}
+
+This theorem is a landscape result and also the first reduction in the
+selection chain.
+
+\section{Associativity master
+formula}\label{associativity-master-formula}
+
+\subsection{The associativity
+statistic}\label{the-associativity-statistic}
+
+For \(x\in\Omega'\), define \[
+\operatorname{Assoc}(x)=
+\#\{(u,v,w)\in M^3:(u\cdot v)\cdot w=u\cdot(v\cdot w)\}.
+\] Since \(|M|=9\), this statistic lies between \(0\) and \(729\).
+
+\begin{theorem}
+\label{thm:4.1}
+In normal coordinates, \[
+\operatorname{Assoc}=3\,rawAssoc,
+\] where \(rawAssoc\) is a normalized sum over \(3^5=243\) triples and
+decomposes as \[
+rawAssoc=rawRRR+rawRRS+rawRSR+rawSRR+rawDIST.
+\] The five blocks correspond to the row patterns \[
+RRR,
+\qquad RRS,
+\qquad RSR,
+\qquad SRR,
+\qquad DIST.
+\]
+\end{theorem}
+
+\begin{proof}
+By \(\sigma\)-equivariance the first row coordinate of a
+triple may be normalized to \(0\). The two remaining row variables and
+the three column variables give \(3^5\) normalized cases; the factor
+\(3\) restores the three translates. The displayed blocks are the five
+equality patterns of the three rows.
+\end{proof}
+
+\subsection{The same-row block}\label{the-same-row-block}
+
+The all-same-row block depends only on the diagonal vector \(d\). Let \[
+E(d)=\#\{(i,j):i\ne j,
+\ d_i=d_j\},
+\qquad
+N(d)=\#\{(i,j):i\ne j,
+\ d_i=j,
+\ d_j=j\}.
+\]
+
+\begin{lemma}
+\label{lem:4.2}
+The same-row contribution is \[
+rawRRR(d)=9+E(d)+2N(d).
+\] The four diagonal classes give raw same-row values \[
+9,\qquad 11,\qquad 13,\qquad 19.
+\] In particular, \[
+rawRRR(000)=19.
+\]
+\end{lemma}
+
+\begin{proof}
+In one row, unequal column pairs use the Steiner rule
+and equal pairs use \(d\). The \(27\) triples split into a baseline
+family plus the two diagonal-sensitive families counted by \(E(d)\) and
+\(N(d)\). This gives the formula and the four class values.
+\end{proof}
+
+\subsection{\texorpdfstring{Column-blind profile at
+\(d=000\)}{Column-blind profile at d=000}}\label{column-blind-profile-at-d000}
+
+Let \(h_{a,b}\) be the column-blind rule \[
+h(r,r+1)=r+a,
+\qquad
+h(r,r+2)=r+b.
+\] At \(d=000\), same-point products satisfy \((r,c)^2=(r,r)\).
+
+\begin{proposition}
+\label{prop:4.3}
+On the column-blind, \(d=000\) stratum, \[
+\begin{aligned}
+&(rawRRR,rawRRS,rawRSR,rawSRR,rawDIST)(a,b,000)\\
+&\quad =
+\bigl(19,\, 9[a=0]+9[b=0],\, 9[a=0]+9[b=0],\\
+&\hspace{7em}54,\,54[a=b]\bigr).
+\end{aligned}
+\] Consequently \[
+\boxed{
+\operatorname{Assoc}_{000}(h_{a,b})
+=
+3\left(73+18[a=0]+18[b=0]+54[a=b]\right).
+}
+\]
+\end{proposition}
+
+\begin{proof}
+The \(RRR\) value is Lemma 4.2. In the \(RRS\) and
+\(RSR\) patterns, the same-row step must return the cross-row anchor; at
+\(d=000\) this contributes \(9\) exactly when the relevant anchor is
+\(0\). In \(SRR\), the final cross-row output ignores same-row column
+processing, giving all \(54\) normalized triples. In \(DIST\), the two
+association orders compare the two cross-row anchors, so all \(54\)
+triples survive exactly when \(a=b\).
+\end{proof}
+
+The nine column-blind rules split as follows:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2400}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3000}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2600}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+representatives
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+profile
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(\operatorname{Assoc}_{000}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+anchored trivial & \((0,0)\) & \((19,18,18,54,54)\) & \(489\) \\
+off-anchor trivial & \((1,1),(2,2)\) & \((19,0,0,54,54)\) & \(381\) \\
+partly anchored nondegenerate & \((0,1),(0,2),(1,0),(2,0)\) &
+\((19,9,9,54,0)\) & \(273\) \\
+fully off-anchor nondegenerate & \((1,2),(2,1)\) & \((19,0,0,54,0)\) &
+\(219\) \\
+\end{longtable}
+
+The fourth class consists of \(\RP\) and \(\RC\).
+
+\section{Global associativity range}\label{global-associativity-range}
+
+\subsection{Exact range}\label{exact-range}
+
+\begin{lemma}[Associativity atlas certificate protocol]
+\label{lem:5.1}
+The
+global associativity atlas is used through five finite obligations.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{A1, block reduction.} The associativity statistic is reduced
+  by \(\sigma\)-normalization to the five row-pattern blocks \[
+  rawAssoc=rawRRR+rawRRS+rawRSR+rawSRR+rawDIST
+  \] of Theorem 4.1.
+\item
+  \textbf{A2, diagonal decomposition.} The same-row block is evaluated
+  from the diagonal vector by Lemma 4.2, giving the four possible values
+  \[
+  9,\quad 11,\quad 13,\quad 19.
+  \]
+\item
+  \textbf{A3, fixed-diagonal cross-range certificates.} For each
+  diagonal class, the certificate verifies the exact range of \[
+  rawCross=rawRRS+rawRSR+rawSRR+rawDIST.
+  \]
+\item
+  \textbf{A4, endpoint witnesses and endpoint counts.} The endpoint
+  certificates verify the normal-coordinate witnesses, endpoint counts,
+  and orbit representatives for \(\operatorname{Assoc}=63\) and
+  \(\operatorname{Assoc}=597\).
+\item
+  \textbf{A5, distribution consistency.} The partition-function
+  certificate gives the full coefficient table for \[
+  Z(q)=\sum_{x\in\Omega'}q^{\operatorname{Assoc}(x)}
+  \] and checks total mass, range, moments, and mode.
+\end{enumerate}
+
+Any certificate satisfying A1--A5 proves the global associativity range,
+endpoint loci, and partition-function claims of Sections 5--6. This is a
+certified atlas statement for the ambient landscape; the compact \(\RP\)
+uniqueness proof in Theorem 12.3 is the separate hand spine in Part II.
+\hfill$\square$
+\end{lemma}
+
+\begin{theorem}[Global associativity atlas]
+\label{thm:5.2}
+On \(\Omega'\), \[
+21\le rawAssoc\le199.
+\] Equivalently, \[
+63\le\operatorname{Assoc}\le597.
+\]
+
+The finite certificate is organized by diagonal class:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2000}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2667}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2667}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+diagonal class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+rawRRR
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+certified rawCross range
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+rawAssoc consequence
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+permutation & 9 & 12..180 & 21..189 \\
+two-valued, no fixed point & 11 & 10..162 & 21..173 \\
+two-valued, with fixed point & 13 & 12..174 & 25..187 \\
+constant & 19 & 12..180 & 31..199 \\
+\end{longtable}
+
+Here \[
+rawCross=rawRRS+rawRSR+rawSRR+rawDIST.
+\] The endpoint values are therefore \(rawAssoc=21\) and
+\(rawAssoc=199\), or \(\operatorname{Assoc}=63\) and
+\(\operatorname{Assoc}=597\).
+\end{theorem}
+
+\begin{proof}
+The hand-readable reduction is Theorem 4.1 plus Lemma
+4.2. After that reduction, the global claim is exactly the A3
+cross-range obligation of Lemma 5.1. Adding the certified cross-row
+ranges to the four possible same-row values gives the displayed global
+range.
+
+The endpoint witnesses, endpoint counts, orbit representatives, and
+partition-function consistency are the A4--A5 obligations of Lemma 5.1.
+They are recorded in the \texttt{L1/tables/} atlas files listed in
+\texttt{SUPPORT\_INDEX.txt} and checked by
+\texttt{L1/scripts/verify\_layer1\_v3\_final.py}.
+\end{proof}
+
+\subsection{Global and local associativity
+roles}\label{global-and-local-associativity-roles}
+
+\(\RP\) has \[
+\operatorname{Assoc}(\RP)=219,
+\] while the landscape minimum is \(63\). The global statistic maps the
+ambient landscape. The selection argument later uses the conditional
+local statistic \(\operatorname{Assoc}_{000}\), after information
+compression and anchoring, to expose the final two-candidate ambiguity.
+
+\section{Endpoint loci and partition
+function}\label{endpoint-loci-and-partition-function}
+
+\subsection{Endpoint loci}\label{endpoint-loci}
+
+\begin{theorem}
+\label{thm:6.1}
+The associativity endpoint loci have sizes \[
+|\mathcal M_{63}|=24,
+\qquad
+|\mathcal M_{63}/\operatorname{Sym}(S)|=12,
+\] and \[
+|\mathcal M_{597}|=6,
+\qquad
+|\mathcal M_{597}/\operatorname{Sym}(S)|=3.
+\] The minimum endpoint block profiles are \[
+(11,2,2,2,4)
+\quad\text{and}\quad
+(9,2,2,4,4),
+\] while the maximum endpoint block profile is \[
+(19,36,36,54,54).
+\]
+\end{theorem}
+
+\begin{proof}
+This is the A4 endpoint part of Lemma 5.1. The endpoint
+certificates record the exact solution counts by diagonal sector, orbit
+representatives, and explicit witnesses in normal coordinates. The
+minimum occurs in the permutation and two-valued/no-fixed diagonal
+classes. The maximum occurs in the constant diagonal class. The block
+profiles are obtained by evaluating the five normalized associativity
+blocks on the endpoint witnesses.
+\end{proof}
+
+\subsection{Exact associativity partition
+function}\label{exact-associativity-partition-function}
+
+\begin{theorem}
+\label{thm:6.2}
+The exact polynomial \[
+Z(q)=\sum_{x\in\Omega'}q^{\operatorname{Assoc}(x)}
+\] has \(167\) nonzero coefficients and total mass \[
+Z(1)=3^{21}.
+\] Its first two moments are \[
+\mathbb E[\operatorname{Assoc}]=245,
+\qquad
+\operatorname{Var}(\operatorname{Assoc})=\frac{27820}{27}.
+\] The mode occurs at \[
+\operatorname{Assoc}=237
+\] with coefficient \[
+426,317,976.
+\]
+\end{theorem}
+
+\begin{proof}
+This is the A5 partition-function part of Lemma 5.1. The
+coefficient certificate in \texttt{L1/tables/} is the exact finite
+distribution of \(\operatorname{Assoc}\) on \(\Omega'\).  The total mass,
+range, mean, variance, and mode are computed directly from that table and
+checked by \texttt{L1/scripts/verify\_layer1\_v3\_final.py}.
+\end{proof}
+
+\section{\texorpdfstring{Hidden continuation and the \(\mathcal H\)-frontier}{Hidden continuation and the H-frontier}}\label{hidden-continuation}
+
+\subsection{Local distance reduction}\label{local-distance-reduction}
+
+The hidden-continuation observable is a finite path-information defect.
+The continuation side keeps the two-step route data, while the
+left-translation side compares only the collapsed endpoint operators.
+Thus \(h_q/2\) is the signed Hamming contrast between a path-resolved
+comparison and an endpoint-resolved comparison. Negative local values
+are precisely the local cancellation failures counted by \(N_-\). The
+normalization \(H_{tot}=6rawH\) is the \(\sigma\)-orbit normalization
+used by the \(\mathcal H\)-frontier certificate.
+
+Its local index is
+\[
+q=(b,t,a,e,f)\in S^5.
+\]
+For a completed normal-form point \(x\in\Omega'\), let \(M_s\) denote
+the local table read: \(M_1\) and \(M_2\) are the two cross-row tables,
+and \(M_0\) is the same-row diagonal/complement rule. All row and column
+arithmetic below is in \(S=\mathbb F_3\). Define
+\[
+xy=M_b(a,e),
+\qquad
+yz=M_{t-b}(e-b,f-b),
+\qquad
+z_R=b+yz,
+\]
+and
+\[
+ep_L=M_t(xy,f),
+\qquad
+ep_R=M_b(a,z_R).
+\]
+
+For \(c\in S\), define the collapsed left-translation signature
+\[
+L_c(i,j)=M_i(c,j)
+\qquad ((i,j)\in S^2).
+\]
+For \(s,\alpha,z\in S\), define the stepwise continuation signature
+\[
+C_{s,\alpha,z}(i,j)
+=
+M_s\!\left(
+\alpha,\,
+s+M_{i-s}(z-s,j-s)
+\right)
+\qquad ((i,j)\in S^2).
+\]
+The associated Hamming distances are
+\[
+D_L(c,c')
+=
+\#\{(i,j)\in S^2:L_c(i,j)\ne L_{c'}(i,j)\},
+\]
+and
+\[
+D_C(s,\alpha,z;s',\alpha',z')
+=
+\#\{(i,j)\in S^2:
+C_{s,\alpha,z}(i,j)\ne C_{s',\alpha',z'}(i,j)\}.
+\]
+
+\paragraph{Direct local definition.}
+For each of the nine test pairs \((i,j)\in S^2\), set
+\[
+\delta^C_{ij}(q;x)
+=
+\mathbf 1\!\left\{
+C_{t,xy,f}(i,j)\ne C_{b,a,z_R}(i,j)
+\right\},
+\]
+and
+\[
+\delta^L_{ij}(q;x)
+=
+\mathbf 1\!\left\{
+L_{ep_L}(i,j)\ne L_{ep_R}(i,j)
+\right\}.
+\]
+The nine direct local summands are
+\[
+\Delta_{ij}(q;x)=2\bigl(\delta^C_{ij}(q;x)-\delta^L_{ij}(q;x)\bigr),
+\]
+displayed as
+\[
+\begin{array}{c|ccc}
+ & j=0 & j=1 & j=2\\
+\hline
+i=0 & \Delta_{00} & \Delta_{01} & \Delta_{02}\\
+i=1 & \Delta_{10} & \Delta_{11} & \Delta_{12}\\
+i=2 & \Delta_{20} & \Delta_{21} & \Delta_{22}
+\end{array}
+\]
+and the direct hidden-continuation contribution is
+\[
+h_q(x)
+=
+\sum_{(i,j)\in S^2}\Delta_{ij}(q;x).
+\]
+
+\begin{theorem}[Local distance reduction]
+\label{thm:7.1}
+For every \(x\in\Omega'\) and \(q\in S^5\),
+\[
+\boxed{
+h_q(x)=
+2\left(
+D_C(t,xy,f;b,a,z_R)-D_L(ep_L,ep_R)
+\right).
+}
+\]
+Consequently the local direct definition and the Hamming-distance formula
+define the same global observables \(rawH\) and \(H_{tot}\).
+\end{theorem}
+
+\begin{proof}
+By definition, \(D_C(t,xy,f;b,a,z_R)\) is the sum of the nine indicators
+\(\delta^C_{ij}(q;x)\), and \(D_L(ep_L,ep_R)\) is the sum of the nine
+indicators \(\delta^L_{ij}(q;x)\). Subtracting these two Hamming
+distances and multiplying by \(2\) gives exactly the displayed sum of
+the nine direct local summands \(\Delta_{ij}\). The symbolic reduction is recorded by the \(\mathcal H\)-frontier
+certificate handles \texttt{HF-RED} and \texttt{HF-CERT-IF}.
+\end{proof}
+
+Then
+\[
+rawH(x)=\sum_{q\in S^5}\frac{h_q(x)}2,
+\qquad
+H_{tot}(x)=6\,rawH(x)=3\sum_{q\in S^5}h_q(x),
+\]
+and
+\[
+\boxed{
+N_-(x)=3\,\#\{q\in S^5:h_q(x)<0\}.
+}
+\]
+Thus purity is the finite system
+\[
+N_-(x)=0
+\quad\Longleftrightarrow\quad
+h_q(x)\ge0\quad(q\in S^5).
+\]
+
+\subsection{Global frontier theorem}\label{global-frontier-theorem}
+
+The global \(\mathcal H\)-frontier theorem is supported by four finite
+certificate obligations.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+handle
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+obligation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+H1 & unrestricted full-landscape range & \(rawH\in[-378,1217]\),
+endpoint counts \(8,12\) \\
+H2 & pure-frontier exclusion &
+\((h_q\ge0\ \forall q)\wedge rawH\ge1171\) is UNSAT \\
+H3 & pure-frontier witnesses & \(\RP\) and \(\RC\) have
+\(rawH=1170\), \(N_-=0\) \\
+H4 & signed-cancellation spike & exactly twelve points above the pure
+frontier, all with \((rawH,N_-)=(1217,3)\) \\
+\end{longtable}
+
+\begin{theorem}[Global frontier of \(\mathcal H\)]
+\label{thm:7.2}
+On
+\(\Omega'=S^{21}\):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The unrestricted range is \[
+  \boxed{
+  \min H_{tot}=-2268,
+  \qquad
+  \max H_{tot}=7302.
+  }
+  \] Equivalently, \(rawH\in[-378,1217]\). The endpoint multiplicities
+  are \(8\) and \(12\).
+\item
+  The pure frontier is \[
+  \boxed{
+  \max\{H_{tot}:N_-=0\}=7020.
+  }
+  \]
+\item
+  The region above the pure frontier is exactly the unrestricted maximum
+  layer: \[
+  \boxed{
+  \{H_{tot}>7020\}=\{H_{tot}=7302\}.
+  }
+  \] This layer has \(12\) points, all with \[
+  rawH=1217,
+  \qquad H_{tot}=7302,
+  \qquad N_-=3,
+  \] \[
+  H_{pos}=7308,
+  \qquad H_{\mathrm{neg\_abs}}=6,
+  \qquad h_{\mathrm{loc,min}}=-2,
+  \qquad h_{\mathrm{loc,max}}=18.
+  \]
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The analytic reduction is Theorem 7.1. H1 covers all
+\(3^{21}\) normal-form words and gives the unrestricted range. For the
+pure frontier, \(N_-=0\) is the system \(h_q\ge0\) for all \(q\in S^5\),
+and \(H_{tot}>7020\) is equivalent to \(rawH\ge1171\). H2 proves \[
+(h_q\ge0\ \forall q\in S^5)\wedge rawH\ge1171
+\] UNSAT on all \(18540\) depth-9 live nodes: \[
+18540/18540\ \mathrm{UNSAT},
+\qquad SAT=0,
+\qquad UNKNOWN=0.
+\] H3 supplies pure witnesses at \(rawH=1170\), and H4 classifies the
+full layer above the pure threshold as the twelve impure maximizers.
+\end{proof}
+
+\subsection{\texorpdfstring{\(\RP\) and \(\RC\) on the pure frontier}{RP and RC on the pure frontier}}\label{rp-and-rc-on-the-pure-frontier}
+
+\begin{corollary}
+\label{cor:7.3}
+\(\RP\) and \(\RC\) satisfy \[
+H_{tot}=7020,
+\qquad rawH=1170,
+\qquad N_-=0.
+\] Thus both lie on the global pure \(\mathcal H\)-frontier.
+\end{corollary}
+
+\begin{proof}
+Direct evaluation of \[
+\RP=111111111222222222000,
+\qquad
+\RC=222222222111111111000
+\] gives the displayed values, and Theorem 7.2 proves that no pure point
+has larger \(H_{tot}\).
+\end{proof}
+
+Part I has now supplied the ambient finite map: normal form, global
+associativity, and the \(\mathcal H\)-frontier. Part II turns from
+atlas data to the intrinsic selector. Its proof uses the access-zero and
+diagonal-compression reductions, then the directed-edge absorption
+geometry; the frontier theorem supplies the global placement of the two
+selection finalists.
+
+\part{Intrinsic finite selection}
+
+\section{Selection core}\label{selection-core}
+
+The selection theorem is the finite hand spine of the paper.  It uses four
+internal conditions:
+\[
+\boxed{
+\mathcal H_{acc}=0,
+\qquad
+H_{diag}=0,
+\qquad
+\text{row-anchor idempotence},
+\qquad
+\text{pure }C/J.
+}
+\]
+Their order follows the row/column geometry of \(\Omega'\).  The first
+condition makes the cross-row branch column-blind, so it has anchors
+\((a,b)\in S^2\).  The second condition compresses the same-point diagonal
+to a constant triple, and row-anchor idempotence fixes this triple to
+\(d=000\).  At that point the absorption geometry on the six directed edges
+\(M^\times\) reads the remaining cross-row anchors directly; the literal
+continuation/reversal criterion forces \((a,b)=(1,2)\).  Thus the compact
+core selects the right-row projection magma \(\RP\).
+
+In normal coordinates, the selected point and the second diagnostic finalist
+are
+\[
+\RP=(a,b,d)=(1,2,000),
+\qquad
+\RC=(a,b,d)=(2,1,000).
+\]
+The distinction between them is geometric: \(\RP\) realizes the undrifted
+pair \(\{C,J\}\) on directed edges, whereas \(\RC\) realizes
+\(\{C^{-1},C^{-1}J\}\).
+
+The longer explanatory chain is retained as a diagnostic path through the
+same finite landscape:
+\[
+\Omega'
+\xrightarrow{\mathcal H_{acc}=0,
+\ H_{diag}=0}
+9\times3
+\xrightarrow{a\ne b,
+\ d=000}
+6\times1
+\xrightarrow{\min\operatorname{Assoc}_{000}}
+2\times1
+\xrightarrow{\text{pure }C/J}
+1.
+\]
+It records how local path-dependence exposes the \(\RP\)/\(\RC\) ambiguity
+before the undrifted \(C/J\) criterion separates the two finalists.  The
+logical core remains Theorem~\ref{thm:12.3}.
+
+\section{Diagonal compression}\label{diagonal-compression}
+
+The access-zero theorem has already compressed the cross-row sector to
+the nine column-blind rules \(h_{a,b}\). The remaining
+information-compression step acts on the same-point diagonal data.
+
+For a diagonal triple \[
+d=(d_0,d_1,d_2)\in S^3,
+\] let \[
+p_s=\frac13\#\{i:d_i=s\}.
+\] Define the diagonal Shannon observable by \[
+\boxed{
+H_{diag}(d)=-\sum_{s\in S}p_s\log_2 p_s.
+}
+\] The possible levels are:
+
+\begin{longtable}[]{@{}lrr@{}}
+\toprule\noalign{}
+diagonal type & multiplicities & \(H_{diag}\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+constant & \((3,0,0)\) & \(0\) \\
+two-valued & \((2,1,0)\) & \(\log_2 3-\frac23\) \\
+permutation & \((1,1,1)\) & \(\log_2 3\) \\
+\end{longtable}
+
+\begin{theorem}
+\label{thm:9.1}
+For diagonal triples, \[
+H_{diag}(d)=0
+\quad\Longleftrightarrow\quad
+ d_0=d_1=d_2.
+\] Thus diagonal compression reduces the diagonal sector from \(27\)
+choices to \[
+000,
+\qquad 111,
+\qquad 222.
+\]
+\end{theorem}
+
+\begin{proof}
+Entropy of a finite distribution vanishes exactly when
+the distribution is concentrated on one symbol. For the empirical
+distribution of \((d_0,d_1,d_2)\), this is precisely constancy of the
+diagonal triple.
+\end{proof}
+
+Together with the access-zero theorem of Section 3, this reduces the
+selection domain to \(9\times3\).
+
+\section{Diagnostic anchors and local
+path-dependence}\label{anchors-and-local-path-dependence}
+
+This section records the explanatory branch of the selection story.  The
+condition \(a\ne b\) and the local statistic \(\operatorname{Assoc}_{000}\)
+are useful diagnostics for the finite landscape: they expose the two
+nearby finalists before the directed-edge criterion makes the final choice.
+
+\subsection{Nondegenerate diagnostic anchors}\label{nondegenerate-anchors}
+
+\begin{proposition}
+\label{prop:10.1}
+Among column-blind cross-row rules
+\(h_{a,b}\), the condition \[
+a\ne b
+\] leaves exactly six rules.
+\end{proposition}
+
+\begin{proof}
+There are nine pairs \((a,b)\in S^2\). The three
+diagonal pairs \((a,a)\) identify the two cross-row representatives under a
+single anchor. The remaining \(3^2-3=6\) pairs are the nondegenerate rules.
+\end{proof}
+
+\begin{proposition}
+\label{prop:10.2}
+After diagonal compression, row-anchor
+idempotence selects the unique constant diagonal \[
+d=000.
+\]
+\end{proposition}
+
+\begin{proof}
+The compressed diagonal sector is \(\{000,111,222\}\).
+Row-anchor idempotence is the condition
+\[
+(r,r)\cdot(r,r)=(r,r)\qquad(r\in S).
+\]
+On the compressed diagonal sector \(d=sss\), this condition gives \(s=0\).
+Thus the unique compressed diagonal compatible with row-anchor idempotence
+is \(d=000\).
+\end{proof}
+
+\subsection{\texorpdfstring{Local associativity at
+\(d=000\)}{Local associativity at d=000}}\label{local-associativity-at-d000}
+
+\begin{proposition}
+\label{prop:10.3}
+With \(d=000\) fixed, the six nontrivial
+column-blind rules have local associativity values \[
+\operatorname{Assoc}_{000}=219
+\] for exactly two rules, and \[
+\operatorname{Assoc}_{000}=273
+\] for the remaining four. The two local minima are \(\RP\) and
+\(\RC\).
+
+The local-minimum profile is \[
+(19,0,0,54,0),
+\] whereas the four discarded rules have profile \[
+(19,9,9,54,0).
+\] The difference comes from the additional \(RRS\) and \(RSR\)
+coincidences in the discarded rules.
+\end{proposition}
+
+\begin{proof}
+Proposition 4.3 gives \[
+\operatorname{Assoc}_{000}(h_{a,b})
+=
+3\left(73+18[a=0]+18[b=0]+54[a=b]\right).
+\] On the nondegenerate stratum \(a\ne b\), this value is minimized
+exactly when neither anchor is \(0\), i.e.~at \((a,b)=(1,2)\) and
+\((2,1)\). These are \(\RP\) and \(\RC\), and both have value
+\(219\). The four remaining nondegenerate pairs contain one zero anchor
+and have value \(273\). The corresponding \texttt{L2/tables/} path-dependence table and
+\texttt{L2/scripts/verify\_layer2\_selection\_final.py} record the same
+six-row audit.
+\end{proof}
+
+This step belongs to the diagnostic chain.  It shows why the two
+rules \(\RP\) and \(\RC\) are the natural local finalists after information
+compression and diagonal anchoring.
+
+\section{Directed-edge geometry}\label{directed-edge-geometry}
+
+Let \[
+M^\times=\{(r,c)\in M:r\ne c\}
+\] be the six-point directed-edge set. Each \((r,c)\in M^\times\) is
+interpreted as the directed edge from \(r\) to \(c\) in the triangle on
+vertex set \(S\).
+
+Define \[
+C(r,c)=(c,\overline{rc}),
+\qquad
+J(r,c)=(c,r).
+\] The map \(C\) advances a directed edge by making the old head the new tail and passing through the third vertex, while
+\(J\) reverses the directed edge.
+
+\begin{theorem}
+\label{thm:11.1}
+On \(M^\times\), \[
+C^3=1,
+\qquad
+J^2=1,
+\qquad
+JCJ=C^{-1}.
+\] Thus \(C\) and \(J\) generate the dihedral geometry of the directed
+triangle.
+\end{theorem}
+
+\begin{proof}
+Applying \(C\) three times traverses \[
+(r,c)\mapsto(c,\overline{rc})\mapsto(\overline{rc},r)\mapsto(r,c).
+\] Applying \(J\) twice reverses the directed edge twice. Finally, \[
+JCJ(r,c)=JC(c,r)=J(r,\overline{rc})=(\overline{rc},r)=C^{-1}(r,c).
+\] The \texttt{L3/} directed-edge audit tables record these finite relation
+checks.
+\end{proof}
+
+\section{\texorpdfstring{Pure \(C/J\) and the selection
+theorem}{Pure C/J and the selection theorem}}\label{pure-cj-and-the-selection-theorem}
+
+\subsection{Intrinsicity of the pure \texorpdfstring{\(C/J\)}{C/J} criterion}\label{intrinsicity-of-the-pure-cj-criterion}
+
+The six-point set \(M^\times\) is canonically the directed-edge set of the
+three-vertex row alphabet.  For an edge \(x=(r,c)\), call \(r\) its tail,
+\(c\) its head, and \(t=\overline{rc}\) the third vertex.  Then
+\[
+C(r,c)=(c,t),
+\qquad
+J(r,c)=(c,r).
+\]
+Thus
+\[
+\{C(x),J(x)\}
+=
+\{y\in M^\times:\operatorname{tail}(y)=\operatorname{head}(x)\}.
+\]
+The pure \(C/J\) condition is therefore the head-row absorption rule:
+for every directed edge \(x\), the absorbed neighbours are exactly the two
+directed edges whose tail is the head of \(x\).
+
+This is not a choice of an external cyclic orientation.  For every relabelling
+\(\rho\in\operatorname{Sym}(S)\), acting on directed edges by
+\(\rho_\times(r,c)=(\rho(r),\rho(c))\), one has
+\[
+\rho_\times C=C\rho_\times,
+\qquad
+\rho_\times J=J\rho_\times.
+\]
+Indeed, \(\rho\) sends the third vertex of \(\{r,c\}\) to the third vertex
+of \(\{\rho(r),\rho(c)\}\).  Hence the undrifted pair \(\{C,J\}\) is an
+intrinsic directed-edge structure.  The drifted pair
+\(\{C^{-1},C^{-1}J\}\) is genuinely different: its two outputs have tail
+\(\overline{rc}\), the third vertex, rather than tail \(c\), the head of
+\((r,c)\).
+
+\subsection{Absorption and absorption
+transitions}\label{absorption-and-absorption-transitions}
+
+For \(x\in M^\times\), define the absorption set \[
+\operatorname{Abs}(x)=\{y\in M^\times\setminus\{x\}:x\cdot y=x\}.
+\] For a column-blind rule \(h_{a,b}\) at \(d=000\), same-row right
+arguments never absorb an off-diagonal \(x\). Thus absorption is
+governed by the cross-row equation \[
+h(r_x,r_y)=c_x.
+\]
+
+A candidate has a two-transition absorption geometry if every
+\(x\in M^\times\) has exactly two absorbed neighbours. In that case the
+two absorbed-neighbour maps define \(\operatorname{AbsTrans}\). The pure
+\(C/J\) criterion requires \[
+\operatorname{AbsTrans}=\{C,J\}
+\] as literal maps on \(M^\times\), i.e. absorption follows the head-row
+continuation/reversal pair.
+
+\subsection{The two diagnostic finalists}\label{the-final-two-candidates}
+
+After local path-dependence, the two diagnostic finalists are \(\RP\) and
+\(\RC\).
+
+\begin{lemma}
+\label{lem:12.1}
+For \(\RP\), \[
+\operatorname{AbsTrans}_{\RP}=\{C,J\}.
+\] For \(\RC\), \[
+\operatorname{AbsTrans}_{\RC}=\{C^{-1},C^{-1}J\}.
+\]
+\end{lemma}
+
+\begin{proof}
+Let \(x=(r,c)\in M^\times\).
+
+For \(\RP\), \(h(r_x,r_y)=r_y\). The absorption equation is \[
+r_y=c.
+\] Hence the two absorbed neighbours of \((r,c)\) are the two
+off-diagonal points in row \(c\): \[
+(c,r),
+\qquad
+(c,\overline{rc}).
+\] These are precisely \[
+J(r,c)=(c,r),
+\qquad
+C(r,c)=(c,\overline{rc}).
+\] So \(\operatorname{AbsTrans}_{\RP}=\{C,J\}\).
+
+For \(\RC\), \(h(r_x,r_y)=\overline{r_xr_y}\). The absorption
+equation is \[
+\overline{r r_y}=c,
+\] so \[
+r_y=\overline{rc}.
+\] The two absorbed neighbours are therefore \[
+(\overline{rc},r),
+\qquad
+(\overline{rc},c),
+\] which are \[
+C^{-1}(r,c)=(\overline{rc},r),
+\qquad
+C^{-1}J(r,c)=(\overline{rc},c).
+\] Thus \(\operatorname{AbsTrans}_{\RC}=\{C^{-1},C^{-1}J\}\).
+\end{proof}
+
+\subsection{Diagnostic separation of the two local
+finalists}\label{final-selector-among-the-two-local-finalists}
+
+\begin{theorem}
+\label{thm:12.2}
+Among the two diagnostic local finalists, the pure \(C/J\)
+directed-edge criterion selects \(\RP\).
+\end{theorem}
+
+\begin{proof}
+By Lemma 12.1, \(\RP\) realizes the undrifted pair
+\(\{C,J\}\). \(\RC\) realizes \(\{C^{-1},C^{-1}J\}\), whose
+continuation and reversal are drifted by \(C^{-1}\). The pure criterion
+selects the literal undrifted pair. The \texttt{L2/} pure-\(C/J\) survivor and transition-factorization
+audit tables record the same comparison.
+\end{proof}
+
+\subsection{Compact uniqueness core}\label{compact-uniqueness-core}
+
+\begin{theorem}
+\label{thm:12.3}
+The four conditions \[
+\mathcal H_{acc}=0,
+\qquad
+H_{diag}=0,
+\qquad
+\text{row-anchor idempotence},
+\qquad
+\text{pure }C/J
+\] select \(\RP\) uniquely inside \(\Omega'\).
+\end{theorem}
+
+\begin{proof}
+The first condition gives column-blindness by Theorem~\ref{thm:3.1}.
+Hence the cross-row rule has the form \[
+h(r,r+1)=r+a,
+\qquad
+h(r,r+2)=r+b
+\] for a unique pair \((a,b)\in S^2\). The second condition gives a constant diagonal by
+Theorem~\ref{thm:9.1}, and row-anchor idempotence fixes this constant to
+\(d=000\) by Proposition~\ref{prop:10.2}.
+
+The remaining condition is pure \(C/J\). Let \(x=(r,c)\in M^\times\)
+and write
+\(\delta=c-r\in\{1,2\}\). At \(d=000\), absorption of an off-diagonal
+point is governed by the cross-row equation \[
+x\cdot y=x
+\quad\Longleftrightarrow\quad
+h(r,r_y)=c.
+\] For the two possible cross rows this becomes \[
+r_y=r+1\Rightarrow a=\delta,
+\qquad
+r_y=r+2\Rightarrow b=\delta.
+\]
+
+The pure \(C/J\) criterion says that the two absorbed neighbours of
+\(x=(r,c)\) are exactly \[
+J(r,c)=(c,r),
+\qquad
+C(r,c)=(c,\overline{rc}).
+\] Both lie in row \(c\). Therefore, when \(\delta=1\), absorption must
+occur in row \(r+1=c\), forcing \(a=1\). When \(\delta=2\), absorption
+must occur in row \(r+2=c\), forcing \(b=2\). Thus \[
+(a,b)=(1,2).
+\] This is precisely the \(\RP\) cross-row rule, and \(d=000\) has already
+been fixed. Hence the four internal conditions select \(\RP\) uniquely.
+\end{proof}
+
+The audit table \texttt{l2\_minimal\_selector\_sets.csv} records the
+same compact core as a finite audit of the survivor condition.
+
+\subsection{Diagnostic explanatory selection
+chain}\label{full-explanatory-selection-chain}
+
+\begin{proposition}
+\label{prop:12.4}
+The finite diagnostic chain
+\[
+\Omega'
+\xrightarrow{\mathcal H_{acc}=0,
+\ H_{diag}=0}
+9\times3
+\xrightarrow{a\ne b,
+\ d=000}
+6\times1
+\xrightarrow{\min\operatorname{Assoc}_{000}}
+2\times1
+\xrightarrow{\text{pure }C/J}
+1
+\]
+has terminal survivor \(\RP\).
+\end{proposition}
+
+\begin{proof}
+The first arrow is Theorems 3.1 and 9.1. The second
+arrow is Propositions 10.1 and 10.2. The third arrow is Proposition
+10.3. The final arrow is Theorem 12.2. The audit table
+\texttt{l2\_selection\_chain.csv} records the survivor count at each
+reduction, and the compact L2 verifier checks the displayed chain.
+\end{proof}
+
+This diagnostic chain is logically subsumed by Theorem~\ref{thm:12.3}.
+After column-blindness, diagonal compression, and row-anchor idempotence, the
+pure \(C/J\) condition itself forces \((a,b)=(1,2)\).  The
+\(\min\operatorname{Assoc}_{000}\) arrow records the local path-dependence
+phenomenon that exposes the \(\RP\)/\(\RC\) ambiguity before the
+undrifted directed-edge criterion separates them.
+
+
+\part{Linear/operator passport after selection}
+
+This part records the finite and carrier-level structures exposed after the
+selection theorem.  The role of the notation is now fixed:
+\(\RP\) is the selected right-row projection magma, and \(\RC\) is the
+second local finalist used for comparison.  The post-selection layer is a passport for the fixed selected
+multiplication: it records the operator, term-function, matrix-carrier,
+and directed-edge structures forced by \(\RP\).
+
+The passport is organized as follows.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+layer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+main invariant
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+support
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+row-owner law & every nonempty term has the row of its leftmost variable & structural induction \\
+left translations & rank three, image a row fiber, nine-dimensional span & L3 operator audit \\
+composition envelope & \(|\operatorname{Mon}^+\langle L_x\rangle|=51\), split into three row-target components & L3 composition tables \\
+endomorphisms & six simultaneous permutations and three diagonal collapses & L3 intertwiner audit \\
+row contraction & \(E_{ij}J_3E_{kl}^{\top}=E_{ik}\), matching the cross-row \(\RP\) rule & L3 matrix bridge \\
+binary terms & \(|T_2(\RP)|=630\), with owner/same-row/cross-row factorization & L3 term tables \\
+carrier bridges & matrix/Lie package and signed projective symplectic lift of pure \(C/J\) & L3 bridge audits \\
+\end{longtable}
+
+\section{The selected operation and row-owner law}\label{the-selected-rp-operation}
+
+\subsection{Selected multiplication and linearization conventions}\label{rp-multiplication-and-ground-fields}
+
+The selected multiplication is
+\[
+(r_1,c_1)\cdot(r_2,c_2)=
+\begin{cases}
+(r_1,r_2), & r_1\ne r_2,\\[2mm]
+(r_1,\overline{c_1c_2}), & r_1=r_2,\ c_1\ne c_2,\\[2mm]
+(r_1,r_1), & r_1=r_2,\ c_1=c_2.
+\end{cases}
+\]
+The first case is the right-row projection branch; the second is the fixed
+same-row Steiner branch; the third is diagonal anchoring.
+
+The finite magma statements are set-theoretic.  When the carrier is
+linearized, let \(k\) be a ground field and let \(k[M]\) be the vector
+space with basis \(e_x\), \(x\in M\).  Rank and image statements for
+individual finite maps are valid over any ground field.  Linear span
+statements are over the chosen \(k\).  Spectral, Jordan, and
+fiber-algebra statements involving \(t\pm1\) or idempotents with
+coefficients \(1/2\) are stated under
+\[
+\operatorname{char}k\ne2.
+\]
+The carrier-level matrix/Lie and signed symplectic bridge statements are
+over \(\mathbb R\) unless stated otherwise.
+
+The carrier vector space has the matrix-unit identification
+\[
+k[M]\cong\operatorname{Mat}_3(k),
+\qquad e_{(r,c)}\leftrightarrow E_{rc}.
+\]
+This identification is used for carrier-level linear structures.  The
+magma multiplication remains the finite operation displayed above.
+
+\subsection{Row-owner principle}\label{row-owner-principle}
+
+For a nonempty term \(t(x_1,\ldots,x_n)\), define its \textbf{owner}
+\(\operatorname{ow}(t)\) to be the leftmost variable appearing in the term
+tree.
+
+\begin{lemma}[Row-owner lemma]
+\label{lem:13.1}
+For every \(\RP\) term \(t(x_1,\ldots,x_n)\),
+\[
+row\bigl(t(x_1,\ldots,x_n)\bigr)
+=
+row\bigl(\operatorname{ow}(t)\bigr).
+\]
+\end{lemma}
+
+\begin{proof}
+The assertion is immediate for a variable.  If \(t=u\cdot v\), then the
+left-row output axiom gives \(row(t)=row(u\cdot v)=row(u)\).  The induction
+hypothesis identifies this row with the row of the leftmost variable of
+\(u\), which is also the leftmost variable of \(u\cdot v\).
+\end{proof}
+
+The row-owner lemma is the common source of the row-target product law for
+left-translation compositions and the owner coordinate in the binary term
+algebra.
+
+\section{Operator passport}\label{left-regular-operators}
+
+For \(x\in M\), write \(L_x(y)=x\cdot y\).
+
+\subsection{Left translations}\label{row-fiber-normal-form}
+
+\begin{proposition}
+\label{prop:14.1}
+For \(x=(r,c)\),
+\[
+L_{(r,c)}(s,d)=
+\begin{cases}
+(r,s), & s\ne r,\\[1mm]
+(r,r), & s=r,\ d=c,\\[1mm]
+(r,\overline{cd}), & s=r,\ d\ne c.
+\end{cases}
+\]
+Consequently \(L_{(r,c)}(M)=F_r\).
+\end{proposition}
+
+\begin{proof}
+The three cases are exactly the cross-row projection, diagonal anchoring,
+and same-row Steiner branches of \(\RP\).  They produce all three points of
+\(F_r\).
+\end{proof}
+
+\begin{theorem}
+\label{thm:14.2}
+For every \(x\in M\),
+\[
+\operatorname{rank}L_x=3,
+\qquad
+\operatorname{Im}L_x=F_{row(x)}.
+\]
+Moreover,
+\[
+\dim\operatorname{span}\{L_x:x\in M\}=9.
+\]
+\end{theorem}
+
+\begin{proof}
+Proposition~\ref{prop:14.1} shows that each \(L_x\) maps onto the
+three-point row fiber \(F_{row(x)}\), hence has rank three after
+linearization.  Operators with different target rows have disjoint
+codomain support.  For a fixed row, the three restrictions to the row
+fiber are linearly independent; in normalized row \(0\) they contain the
+three matrices
+\[
+\begin{pmatrix}1&0&0\\0&0&1\\0&1&0\end{pmatrix},
+\qquad
+\begin{pmatrix}0&1&1\\0&0&0\\1&0&0\end{pmatrix},
+\qquad
+\begin{pmatrix}0&1&1\\1&0&0\\0&0&0\end{pmatrix}.
+\]
+Thus each row contributes dimension \(3\), and the total dimension is
+\(9\).  The \texttt{L3/} operator rank and spectrum audit tables record the
+nine-row calculation.
+\end{proof}
+
+Assume \(\operatorname{char}k\ne2\).
+
+\begin{theorem}
+\label{thm:14.3}
+If \(x=(r,r)\), then
+\[
+\mu_{L_x}(t)=t(t-1)(t+1)
+\]
+and \(L_x\) is semisimple.  If \(x=(r,c)\) with \(r\ne c\), then
+\[
+\mu_{L_x}(t)=t^2(t-1)(t+1),
+\]
+with zero-primary Jordan structure \(J_2(0)\oplus J_1(0)^{\oplus5}\).
+\end{theorem}
+
+\begin{proof}
+Every \(L_{(r,c)}\) maps \(k[M]\) onto \(kF_r\), so the nonzero spectral
+part is the restriction to \(kF_r\).  For \(c=r\), this restriction fixes
+\((r,r)\) and swaps the two off-diagonal basis vectors.  For \(c\ne r\),
+the restriction has eigenvalues \(0,1,-1\), and its one-dimensional kernel
+lies inside the image, producing exactly one length-two zero block.  The
+operator-spectrum table audits the calculation for all nine translations.
+\end{proof}
+
+\subsection{Positive composition envelope}\label{composition-envelope-and-directed-edge-representation}
+
+Let \(\operatorname{Mon}^+\langle L_x\rangle\) be the positive composition
+monoid generated by the nine left translations.  For \(r\in S\), let
+\(\mathcal W_r\) be the component of maps whose image lies in \(F_r\).
+
+For fixed \(r\), define
+\[
+\tau_{r,c}(d)=
+\begin{cases}
+r, & d=c,\\
+\overline{cd}, & d\ne c,
+\end{cases}
+\qquad
+\mathcal P_r=\langle \tau_{r,c}:c\in S\rangle.
+\]
+In normalized row \(0\),
+\[
+\mathcal P_0=\{012,021,200,100,011,022\}.
+\]
+For \(\psi\in\mathcal P_r\) and \(c\in S\), set
+\[
+N_{r,\psi,c}(s,d)=
+\begin{cases}
+(r,\psi(\tau_{r,c}(d))), & s=r,\\
+(r,\psi(s)), & s\ne r,
+\end{cases}
+\]
+and let \(K_{r,t}\) be the constant map to \((r,t)\).
+
+\begin{proposition}[Fixed-row composition normal form]
+\label{prop:15.1}
+For every \(r\in S\),
+\[
+\mathcal W_r=
+\{N_{r,\psi,c}:\psi\in\mathcal P_r,\ c\in S\}
+\cup
+\{K_{r,t}:t\in S\}.
+\]
+There are \(14\) nonconstant maps of the first type and \(3\) constants;
+hence \(|\mathcal W_r|=17\).
+\end{proposition}
+
+\begin{proof}
+A positive composition is owned by its leftmost generator.  If all later
+generators have the same target row \(r\), the word has the displayed
+\(N_{r,\psi,c}\) form.  If some later generator has target row different
+from \(r\), the leftmost row-\(r\) generator sees a cross-row input and
+the composition becomes constant.  The normalized finite count
+\(18-4=14\) for the nonconstant forms is audited in the composition
+envelope table.
+\end{proof}
+
+\begin{theorem}
+\label{thm:15.2}
+The positive monoid generated by the left translations has size
+\[
+|\operatorname{Mon}^+\langle L_x\rangle|=51.
+\]
+More precisely,
+\[
+\operatorname{Mon}^+\langle L_x\rangle
+=
+\mathcal W_0\sqcup\mathcal W_1\sqcup\mathcal W_2,
+\qquad |\mathcal W_r|=17.
+\]
+Its linear envelope decomposes as
+\[
+\mathcal E=W_0\oplus W_1\oplus W_2,
+\qquad
+\dim W_r=9,
+\qquad
+\dim\mathcal E=27,
+\]
+and satisfies \(W_rW_s\subseteq W_r\).
+\end{theorem}
+
+\begin{proof}
+Proposition~\ref{prop:15.1} gives \(|\mathcal W_r|=17\), and the three
+target-row components are disjoint.  The row-owner law gives
+\(W_rW_s\subseteq W_r\).  The linear dimension claim is the row-wise basis-reduction audit recorded
+in the \texttt{L3/} composition-envelope and product-law tables.
+\end{proof}
+
+\subsection{Row-fiber algebra and directed-edge representation}\label{the-five-dimensional-row-fiber-algebra}
+
+Assume \(\operatorname{char}k\ne2\).  For each row \(r\), define
+\[
+A_{5,r}=\langle L_{(r,c)}|_{kF_r}:c\in S\rangle
+\subseteq\operatorname{End}(kF_r).
+\]
+
+\begin{proposition}
+\label{prop:15.3}
+The algebra \(A_{5,r}\) has dimension \(5\).  Its center is \(kI\), its
+radical is two-dimensional and square-zero, and
+\[
+A_{5,r}/\operatorname{Rad}(A_{5,r})\cong k^3.
+\]
+For \(r=0\), one basis is
+\[
+L_{(0,0)}|_{kF_0},\quad L_{(0,1)}|_{kF_0},\quad L_{(0,2)}|_{kF_0},
+\quad I,\quad (L_{(0,1)}|_{kF_0})^2.
+\]
+\end{proposition}
+
+\begin{proof}
+By \(\sigma\)-equivariance it is enough to work in row \(0\).  The five-dimensional multiplication table, center, radical, quotient, and
+operator-boundary checks are recorded in the auxiliary fiber-algebra
+certificate files listed in \texttt{SUPPORT\_INDEX.txt}.
+\end{proof}
+
+\begin{theorem}
+\label{thm:15.4}
+On the six directed edges,
+\[
+\mathbb R[M^\times]\cong\mathbf1\oplus\mathrm{sign}\oplus2\,\mathrm{std}.
+\]
+For \(\RP\), the absorption matrix is
+\[
+A_{abs}=(P_C+P_J)^\top
+\]
+and has spectrum
+\[
+\{2,0,0,0,-1,-1\}.
+\]
+\end{theorem}
+
+\begin{proof}
+The six directed edges carry the permutation representation of the
+directed triangle.  The pure absorption transitions of \(\RP\) are exactly
+\(C\) and \(J\), so the absorption matrix is \((P_C+P_J)^\top\).  The
+transition and spectrum tables audit the finite calculation.
+\end{proof}
+
+\section{Endomorphisms, intertwiners, and matrix row-contraction}\label{endomorphisms-intertwiners-and-row-contraction}
+
+For a map \(\rho:S\to S\), write
+\(\varphi_\rho(r,c)=(\rho(r),\rho(c))\).  For \(t\in S\), write
+\(e_t(r,c)=(t,t)\).
+
+For a row \(r\), set
+\[
+c\star_r d=
+\begin{cases}
+r, & c=d,\\
+\overline{cd}, & c\ne d.
+\end{cases}
+\]
+
+\begin{lemma}[row-fiber homomorphisms]
+\label{lem:16.1}
+If \(\phi:S\to S\) satisfies \(\phi(r)=t\) and
+\[
+\phi(c\star_r d)=\phi(c)\star_t\phi(d)
+\qquad(c,d\in S),
+\]
+then \(\phi\) is either the constant map to \(t\), or a permutation of
+\(S\) sending \(r\) to \(t\).
+\end{lemma}
+
+\begin{proof}
+After translating to \(r=t=0\), write \(\phi(1)=u\), \(\phi(2)=v\).  The
+relations \(0\star_0 1=2\) and \(0\star_0 2=1\) force
+\[
+(u,v)=(0,0),\quad (1,2),\quad (2,1),
+\]
+which are respectively the constant solution and the two permutations
+fixing \(0\).
+\end{proof}
+
+\begin{theorem}
+\label{thm:16.2}
+The endomorphism monoid of the selected \(\RP\) magma is
+\[
+\operatorname{End}(M,\cdot)
+=
+\{\varphi_\rho:\rho\in\operatorname{Sym}(S)\}\cup\{e_0,e_1,e_2\}.
+\]
+\end{theorem}
+
+\begin{proof}
+The idempotents of \(\RP\) are exactly the diagonal points \((r,r)\).
+Thus an endomorphism sends row fibers to row fibers over a map
+\(\rho:S\to S\), and its restriction to each row fiber is governed by
+Lemma~\ref{lem:16.1}.  The cross-row rule forces all nonconstant row
+restrictions to be the same permutation \(\rho\).  If \(\rho\) fails to be
+injective, the cross-row equations force all affected row restrictions to
+collapse, and then the third row collapses as well; the map is one of the
+\(e_t\).  Conversely, simultaneous permutations and diagonal collapses
+preserve the three branches of the \(\RP\) multiplication.
+\end{proof}
+
+For an endomorphism \(\varphi\), let \(\operatorname{Hom}_\varphi\) be the
+space of intertwiners satisfying
+\[
+T L_x=L_{\varphi(x)}T
+\qquad(x\in M).
+\]
+Let \(V=k[M]\), and let
+\[
+\varepsilon:V\to k,
+\qquad
+\varepsilon\!\left(\sum_{m\in M}a_m e_m\right)=\sum_{m\in M}a_m
+\]
+be the total augmentation functional.  For \(r\in S\), set
+\[
+d_r=e_{(r,r)},
+\qquad
+ o_r=\sum_{c\ne r}e_{(r,c)},
+\qquad
+U_r=\operatorname{span}\{d_r,o_r\}.
+\]
+Here \(u\varepsilon\) denotes the rank-one operator
+\(v\mapsto \varepsilon(v)u\).
+
+\begin{proposition}[constant intertwiners]
+\label{prop:constant-intertwiners}
+For each diagonal collapse \(e_r(x)=(r,r)\),
+\[
+\operatorname{Hom}_{e_r}
+=
+\{u\varepsilon:u\in U_r\}
+=
+\left\{
+\left(\alpha e_{(r,r)}+\beta\sum_{c\ne r}e_{(r,c)}\right)\varepsilon:
+\alpha,\beta\in k
+\right\}.
+\]
+In particular, \(\dim\operatorname{Hom}_{e_r}=2\).
+\end{proposition}
+
+\begin{proof}
+Each \(L_x\) is induced by a map \(M\to M\), hence every column of its
+matrix has sum one and \(\varepsilon L_x=\varepsilon\).  If
+\(u\in\operatorname{Fix}(L_{(r,r)})\), then
+\[
+(u\varepsilon)L_x=u\varepsilon
+\qquad\text{and}\qquad
+L_{(r,r)}(u\varepsilon)=(L_{(r,r)}u)\varepsilon=u\varepsilon,
+\]
+so \(u\varepsilon\in\operatorname{Hom}_{e_r}\).
+
+Conversely, if \(T\in\operatorname{Hom}_{e_r}\), then
+\[
+T L_x=L_{(r,r)}T=T L_y
+\qquad(x,y\in M),
+\]
+so \(T\) kills
+\[
+\mathcal D=\operatorname{span}\{(L_x-L_y)v:x,y\in M,\ v\in V\}.
+\]
+Because \(\varepsilon L_x=\varepsilon\), one has
+\(\mathcal D\subseteq\ker\varepsilon\).  The reverse inclusion is finite:
+the graph generated by relations \(x\cdot z\sim y\cdot z\), with common
+source \(z\), is connected.  The Front-C verifier records an explicit
+eight-edge spanning tree, so the differences in \(\mathcal D\) span the
+augmentation-zero hyperplane.  Thus \(\mathcal D=\ker\varepsilon\), and
+\(T\) factors uniquely as \(T=u\varepsilon\).
+
+Substitution into the intertwining equation gives
+\(L_{(r,r)}u=u\).  Finally, \(L_{(r,r)}\) has image in the row fiber
+\(F_r=\operatorname{span}\{e_{(r,c)}:c\in S\}\); on this fiber it fixes
+\(e_{(r,r)}\) and swaps the two off-diagonal basis vectors.  Therefore
+\[
+\operatorname{Fix}(L_{(r,r)})
+=
+\operatorname{span}\left\{e_{(r,r)},\sum_{c\ne r}e_{(r,c)}\right\}=U_r,
+\]
+which proves the formula.
+\end{proof}
+
+For automorphisms, \(\operatorname{Hom}_{\varphi_\rho}=kP_\rho\) has
+dimension \(1\).  The Front-C verifier audits the defining linear
+constraints: the collapse spaces have dimension \(2\), the six
+automorphism spaces have dimension \(1\), and therefore the total audit
+dimension is
+\[
+6\cdot1+3\cdot2=12.
+\]
+
+\subsection{Matrix row-contraction bridge}\label{cross-row-row-contraction}
+
+\begin{proposition}
+\label{prop:16.3}
+Under \(k[M]\cong\operatorname{Mat}_3(k)\), the row-contraction extension
+of the cross-row \(\RP\) rule is
+\[
+\mu_{cross}(A,B)=AJ_3B^\top=(A\mathbf1)(B\mathbf1)^\top.
+\]
+On matrix units with cross rows,
+\[
+E_{ij}J_3E_{kl}^\top=E_{ik}.
+\]
+\end{proposition}
+
+\begin{proof}
+Since \(J_3=\mathbf1\mathbf1^\top\),
+\[
+E_{ij}J_3E_{kl}^\top
+=(e_ie_j^\top)(\mathbf1\mathbf1^\top)(e_le_k^\top)
+=E_{ik}.
+\]
+For \(i\ne k\), this is exactly the cross-row \(\RP\) rule
+\((i,j)\cdot(k,l)=(i,k)\).  The \texttt{L3/} matrix-bridge audit tables record the basis-level bridge.
+\end{proof}
+
+Thus the matrix bridge expresses the same column-blindness selected by
+\(\mathcal H_{acc}=0\): cross-row multiplication factors through row sums.
+The same-row branch remains the Steiner/diagonal row-fiber rule.
+
+\section{Hidden-continuation operator bridge}\label{hidden-continuation-operator-identity}
+
+The local hidden-continuation identity of Section 7 has an operator
+interpretation in the left-regular envelope.  For a normalized local index
+\(q\), \(D_C\) compares the two stepwise continuation signatures, while
+\(D_L\) compares the two collapsed left translations.
+
+\begin{theorem}[Hidden-continuation operator identity]
+\label{thm:17.1}
+Let \(g\in\Omega'\) be a completed normal-form magma and let
+\(q=(b,t,a,e,f)\in S^5\). Define
+\[
+xy,\qquad yz,\qquad z_R,\qquad ep_L,\qquad ep_R
+\]
+from \(g\) as in Theorem~\ref{thm:7.1}. Then
+\[
+\frac{h_q(g)}2
+=
+D_C(t,xy,f;b,a,z_R)-D_L(ep_L,ep_R).
+\]
+For brevity write
+\[
+D_C(q;g)=D_C(t,xy,f;b,a,z_R),
+\qquad
+D_L(q;g)=D_L(ep_L,ep_R).
+\]
+
+After selection, take \(g=\RP\) and write the normalized triple as
+\[
+X=(0,a),\qquad Y=(b,e),\qquad Z=(t,f).
+\]
+Then
+\[
+XY=(0,xy),\qquad YZ=(b,z_R),
+\]
+and
+\[
+(XY)Z=(0,ep_L),\qquad X(YZ)=(0,ep_R).
+\]
+With the convention \(AB=A\circ B\), the continuation distance
+\(D_C(q;\RP)\) is the Hamming-distance contrast between the normalized
+signatures of
+\[
+L_{XY}L_Z
+\quad\text{and}\quad
+L_XL_{YZ},
+\]
+whereas \(D_L(q;\RP)\) is the Hamming-distance contrast between
+\[
+L_{(XY)Z}
+\quad\text{and}\quad
+L_{X(YZ)}.
+\]
+As maps, all four operators lie in
+\(\mathcal W_{\operatorname{row}(X)}\); after linearization they lie in
+\(W_{\operatorname{row}(X)}\).
+
+Define
+\[
+I_{tot}(g)=6\sum_{q\in S^5}D_C(q;g),
+\qquad
+B_{tot}(g)=6\sum_{q\in S^5}D_L(q;g).
+\]
+Thus \(H_{tot}(g)=I_{tot}(g)-B_{tot}(g)\). For \(\RP\),
+\[
+I_{tot}=8904,
+\qquad
+B_{tot}=1884,
+\qquad
+H_{tot}=7020,
+\qquad
+N_-=0.
+\]
+The finalist \(\RC\) has the same pure hidden-continuation profile.
+\end{theorem}
+
+\begin{proof}
+The scalar identity is exactly Theorem~\ref{thm:7.1} divided by \(2\):
+\(D_C\) is the sum of the nine continuation disagreement indicators,
+\(D_L\) is the sum of the nine collapsed left-translation disagreement
+indicators, and \(h_q\) is twice their signed difference.
+
+For \(g=\RP\), the displayed normalized triple identifies the two
+continuation signatures with the signatures of \(L_{XY}L_Z\) and
+\(L_XL_{YZ}\), under the convention \(AB=A\circ B\).  Likewise the
+collapsed signatures are the left translations by the endpoints
+\((XY)Z\) and \(X(YZ)\).  The row-target assertion follows from the
+composition-envelope law \(W_rW_s\subseteq W_r\).  The \texttt{L3/} hidden-continuation bridge audit records the
+\(\RP\)/\(\RC\) comparison and verifies the displayed values.  The global frontier status
+is Theorem~\ref{thm:7.2}.
+\end{proof}
+
+\section{\texorpdfstring{Binary term-function passport: \(T_2(\RP)\)}{Binary term-function passport: T2(RP)}}\label{binary-term-algebra}
+
+A binary term function of \(\RP\) is a function \(M^2\to M\) realized by a
+term in variables \(x,y\).  The set of all such functions is denoted
+\(T_2(\RP)\).
+
+By the row-owner lemma, every binary term has an owner variable
+\(\operatorname{ow}(f)\in\{x,y\}\).  Order the inputs as
+\((o,n)=(\operatorname{owner},\operatorname{nonowner})\).  On the same-row
+sector, normalize the common row to \(0\) and define
+\[
+s_f(i,j)=\operatorname{col}\bigl(f(o=(0,i),n=(0,j))\bigr).
+\]
+On the cross-row sector, normalize the owner row to \(0\) and the nonowner
+row to \(1\); the output column is independent of the nonowner column, so
+\[
+u_f(i)=\operatorname{col}\bigl(f(o=(0,i),n=(1,j))\bigr).
+\]
+The opposite cross-row direction is determined by \(u_f^{-}(i)=-u_f(-i)\).
+
+\begin{proposition}[Binary sector reduction]
+\label{prop:18.1}
+Every binary term function has a normal signature
+\[
+\Theta(f)=\bigl(\operatorname{ow}(f),s_f,u_f\bigr).
+\]
+The same-row signature \(s_f:S^2\to S\) and cross unary signature
+\(u_f:S\to S\) determine the term function on all row sectors.
+\end{proposition}
+
+\begin{proof}
+The owner coordinate is Lemma~\ref{lem:13.1}.  Same-row inputs remain in
+the common input row.  Cross-row inputs are governed by the owner row and a
+unary owner-column signature; the opposite direction is forced by the
+\(\RP\)-compatible relabelling exchanging the two nonowner directions.
+\end{proof}
+
+The realized same-row signatures form a \(21\)-element set
+\(\mathcal S_{21}\).  The realized cross unary signatures form a
+\(15\)-element set \(\mathcal U_{15}\).  The candidate normal forms are
+\[
+\{x,y\}\times\mathcal S_{21}\times\mathcal U_{15}.
+\]
+
+\begin{lemma}[Binary term certificate protocol]
+\label{lem:18.2}
+The binary term theorem is supported by four finite obligations:
+T2-SIG exposes \(\mathcal S_{21}\) and \(\mathcal U_{15}\); T2-REAL
+realizes every triple; T2-TRANS checks closure of the two factor transition
+systems; T2-MULT reconstructs the full \(630\times630\) multiplication
+table from the owner and factor transitions.
+\end{lemma}
+
+\begin{theorem}
+\label{thm:18.3}
+The binary term-function algebra of \(\RP\) is finite and satisfies
+\[
+T_2(\RP)
+\cong
+\{x,y\}\times\mathcal S_{21}\times\mathcal U_{15}.
+\]
+Consequently
+\[
+|T_2(\RP)|=2\cdot21\cdot15=630.
+\]
+\end{theorem}
+
+\begin{proof}
+Proposition~\ref{prop:18.1} gives injectivity of the normal signature.
+The realization certificate supplies one realizing term for every triple,
+and the finite transition tables reconstruct the product law.  Hence the
+cardinality is \(2\cdot21\cdot15\).
+\end{proof}
+
+This is the binary layer of the term algebra.  The all-arity clone is left
+for the open-problem list.
+
+\section{Carrier-level matrix and Lie companion structures}\label{carrier-level-companion-lie-package}
+
+This section records ordinary matrix and Lie structures on the vector-space
+carrier exposed after \(\RP\) selection
+\cite{HornJohnson2012,FultonHarris1991,Hall2015}.  The bridge is
+carrier-level: it uses
+\[
+k[M]\cong\operatorname{Mat}_3(k)
+\]
+and the \(\RP\)-compatible simultaneous symbol-permutation action.  The finite
+\(\RP\) multiplication and ordinary matrix multiplication are two bilinear
+structures on this nine-dimensional carrier.
+
+In this section the reductive decomposition is used only over fields of
+characteristic different from \(3\), and the compact-form statements are over
+\(\mathbb R\) or \(\mathbb C\).  Ordinary matrix multiplication gives
+\[
+\mathfrak{gl}(3,k)=kI\oplus\mathfrak{sl}(3,k),
+\qquad
+\operatorname{Mat}_3(k)=kI\oplus\mathfrak{sl}(3,k)
+\]
+as a vector-space decomposition.  After complex compact form, this is the
+usual central \(\mathfrak u(1)\) plus \(\mathfrak{su}(3)\) picture.
+
+Over \(\mathbb R\), the compact three-dimensional branch
+\[
+\mathfrak{so}(3)=\{X\in\mathfrak{sl}(3,\mathbb R):X^\top=-X\}
+\]
+is stable under simultaneous permutation conjugation.  A split comparator is
+\(\mathfrak{sl}(V_{std})\subset\mathfrak{sl}(3,\mathbb R)\), where
+\(V_{std}=\{v:v_0+v_1+v_2=0\}\).  Compactness selects the
+\(\mathfrak{so}(3)\) branch among these three-dimensional
+\(\operatorname{Sym}(S)\)-stable carrier branches.
+
+\begin{theorem}
+\label{thm:19.1}
+In the real/complex compact-form setting, the carrier identification and
+\(\RP\)-compatible \(\operatorname{Sym}(S)\)-action expose the following
+carrier-level compact companions:
+\[
+SU(3),
+\qquad
+SU(2),
+\qquad
+U(1).
+\]
+Here \(SU(3)\) is the compact form attached to the ordinary
+\(\mathfrak{sl}(3)\) matrix package, \(SU(2)\) is the double cover of the
+selected compact \(SO(3)\) branch, and \(U(1)\) is the compact central
+factor attached to \(kI\).  The assertion is a carrier-level companion
+statement; it does not assert a canonical direct-product action
+\(SU(3)\times SU(2)\times U(1)\) generated by the finite magma.
+\end{theorem}
+
+\begin{proof}
+The matrix-unit carrier gives \(\operatorname{Mat}_3\), hence the usual
+\(\mathfrak{sl}(3)\) compact form and the central circle after complex
+compact form.  The \(\operatorname{Sym}(S)\)-stable compact branch
+\(\mathfrak{so}(3)\) gives \(SO(3)\), with double cover \(SU(2)\).  This
+\(SO(3)\) branch is a selected compact sub-branch of the carrier matrix
+algebra, not an independent factor commuting with \(SU(3)\).  The \texttt{L3/} companion-structure bridge audit records the
+carrier-level compact types.
+\end{proof}
+
+\section{\texorpdfstring{Signed symplectic lift of the pure \(C/J\) geometry}{Signed symplectic lift of the pure C/J geometry}}\label{signed-symplectic-bridge}
+
+This bridge uses the finite pure \(C/J\) directed-edge geometry selected in
+Part II.  The continuous statement is a signed projective symplectic
+realization of that six-edge geometry and completes the carrier-level bridge
+part of the passport \cite{McDuffSalamon2017}.
+
+Let \(V=\mathbb R^6\) have ordered basis
+\[
+(e_{01},e_{12},e_{20},e_{10},e_{02},e_{21})
+\]
+and symplectic matrix
+\[
+\Omega=
+\begin{pmatrix}0&I_3\\-I_3&0\end{pmatrix}.
+\]
+Set
+\[
+P=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix},
+\qquad
+R=\begin{pmatrix}1&0&0\\0&0&1\\0&1&0\end{pmatrix},
+\]
+\[
+\widehat C=\begin{pmatrix}P&0\\0&P\end{pmatrix},
+\qquad
+\widehat J_0=\begin{pmatrix}0&R\\R&0\end{pmatrix},
+\qquad
+\widehat J_s=\begin{pmatrix}0&R\\-R&0\end{pmatrix}.
+\]
+The unsigned \(\widehat J_0\) induces edge reversal but is
+anti-symplectic; the signed \(\widehat J_s\) induces the same projective
+edge reversal and is symplectic.
+
+\begin{theorem}
+\label{thm:20.1}
+The finite pure \(\{C,J\}\) directed-edge geometry admits the signed
+projective dihedral lift displayed above.  The unsigned reversal is
+anti-symplectic, while the signed reversal is symplectic.  The finite tick
+word
+\[
+C,J,C,C,J
+\]
+visits all six directed edges and has a signed symplectic realization.
+\end{theorem}
+
+\begin{proof}
+Direct multiplication gives
+\[
+\widehat C^T\Omega\widehat C=\Omega,
+\qquad
+\widehat J_0^T\Omega\widehat J_0=-\Omega,
+\qquad
+\widehat J_s^T\Omega\widehat J_s=\Omega,
+\]
+and
+\[
+\widehat C^3=I,
+\qquad
+\widehat J_s^2=-I,
+\qquad
+\widehat J_s\widehat C\widehat J_s^{-1}=\widehat C^{-1}.
+\]
+Hence the projective classes satisfy the dihedral relations in
+\(\operatorname{PSp}(V,\omega)\).  On coordinate lines, \(\widehat C\)
+acts as \((01\ 12\ 20)(10\ 02\ 21)\), and \(\widehat J_s\) acts as edge
+reversal.  Starting from \(01\), the tick word gives
+\[
+01\mapsto12\mapsto21\mapsto10\mapsto02\mapsto20.
+\]
+The signed-lift matrices and tick-word audit are recorded in the
+\texttt{L3/} signed-symplectic bridge tables.
+\end{proof}
+
+This completes the post-selection passport: the finite operator structure,
+binary term structure, matrix row-contraction, carrier-level matrix/Lie bridge,
+and signed symplectic lift are all read from the single selected multiplication
+\(\RP\) and its pure directed-edge geometry.
+
+\part{Certificates and open bridges}
+
+\section{Finite certificate protocol}\label{finite-certificate-protocol}
+
+The support package is available at
+\url{https://github.com/burundai-t/finite-row-graded-magmas-over-f3}.
+
+The repository license split is: manuscript files in \texttt{paper/} are
+licensed under CC BY 4.0, while all non-paper support files are licensed
+under MIT.
+
+It separates three repository roles:
+\[
+\texttt{L1/},\texttt{L2/},\texttt{L3/}
+\quad
+\text{frozen finite reference layers},
+\]
+\[
+\texttt{mathcal\_H/}
+\quad
+\text{the global }\mathcal H\text{-frontier bundle},
+\]
+\[
+\texttt{README.md},\ \texttt{SUPPORT\_INDEX.txt},\ \texttt{tools/},\
+\texttt{VERIFY\_LOGS/}
+\quad
+\text{the repository interface}.
+\]
+The frozen \texttt{L1/}, \texttt{L2/}, and \texttt{L3/} layers support the
+manuscript-facing Landscape/Selection/Linearization finite checks.  The
+\texttt{mathcal\_H/} bundle supports the global \(\mathcal H\)-frontier
+theorem of Section 7, and
+\texttt{mathcal\_H/h2/verify\_h2\_coverage\_light.py} provides the
+static coverage check for the accepted H2 raw artifacts.
+
+The reviewer-facing finite-layer check is
+
+\begin{verbatim}
+tools/run_quick_checks.sh
+\end{verbatim}
+
+It runs the frozen L1/L2/L3 audit path:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+layer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+role
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+L1 & finite landscape and associativity reference checks \\
+L2 & compact selection and pure \(C/J\) survivor checks \\
+L3 & selected-\(\RP\) operator, bridge, term-algebra, and companion-structure checks \\
+\end{longtable}
+
+The compact table families are:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+tables
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+purpose
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+L1 landscape atlas & \texttt{L1/tables/} & associativity distribution,
+endpoints, controlled \(\mathcal H\) comparison \\
+L2 selection & \texttt{L2/tables/} & selection chain and pure \(C/J\)
+survivor separation \\
+L3 linearization passport & \texttt{L3/tables/} & operator envelope,
+\(T_2\), matrix bridge, signed symplectic lift, auxiliary fiber algebra \\
+\end{longtable}
+
+The complete file-by-file index, including the bundle root interface and
+H2 light coverage support, is \texttt{SUPPORT\_INDEX.txt}.
+
+
+\subsection{\texorpdfstring{Global \(\mathcal H\)-frontier certificate handles}{Global H-frontier certificate handles}}\label{global-h-frontier-certificate-handles}
+
+The global \(\mathcal H\)-frontier theorem is checked by the separate
+\texttt{mathcal\_H/} bundle.  The manuscript-level implication is
+\[
+\text{local distance reduction}
++
+\text{H1--H4 certificate obligations}
+\Longrightarrow
+\text{Theorem 7.2}.
+\]
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+handle
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+bundle location
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+theorem component
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+HF-RED, HF-CERT-IF & bundle theorem interface & local distance
+reduction \\
+H1 & \texttt{h1/} & unrestricted full-landscape range \\
+H2 & \texttt{h2/} & pure-frontier UNSAT certificate \\
+H3 & embedded verifier check & \(\RP\)/\(\RC\) pure-frontier
+witnesses \\
+H4 & \texttt{h4/} & signed-cancellation spike classifier \\
+\end{longtable}
+
+The exact repository commands for the bundle root and focused H1--H4
+checks are listed in \texttt{SUPPORT\_INDEX.txt}.  The H2 obligation proves
+\[
+(h_q\ge0\ \forall q\in S^5)\wedge rawH\ge1171
+\]
+UNSAT on the depth-9 live frontier:
+\[
+18540/18540\ \mathrm{UNSAT},
+\qquad SAT=0,
+\qquad UNKNOWN=0.
+\]
+The light static H2 coverage verifier checks the accepted raw H2 artifact
+coverage and integrity for the declared live frontier.  This command is the
+artifact-coverage audit for H2:
+
+\begin{verbatim}
+cd mathcal_H/h2
+PYTHONDONTWRITEBYTECODE=1 python3 verify_h2_coverage_light.py
+\end{verbatim}
+
+\subsection{Dependency summary}\label{dependency-summary}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+result family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+support role
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+compact \(\RP\) uniqueness, Theorem 12.3 & hand finite proof; L2 audit
+tables \\
+explanatory selection chain, Proposition 12.4 & didactic chain,
+logically subsumed by Theorem 12.3; local audits \\
+global associativity atlas & finite \texttt{L1/} atlas tables \\
+global \(\mathcal H\)-frontier & separate H1--H4 certificate
+bundle \\
+linearization passport & analytic/classification results with L3 audits \\
+binary term algebra & sector reduction plus realization/transition
+certificates \\
+matrix/Lie and signed symplectic structures & bridge audits \\
+\end{longtable}
+
+\section{Open problems and bridges}\label{open-problems-and-bridges}
+
+The following fronts are subsequent work. The selection theorem and the
+operator passport above are complete at the level stated in this
+manuscript.
+
+\subsection{Closures}\label{closures}
+
+\subsubsection{\texorpdfstring{Functorial \(\RP\)--\(\mathfrak{gl}(3)\)
+bridge}{Functorial RP--gl(3) bridge}}\label{functorial-rp-gl3-bridge}
+
+The carrier identification \[
+k[M]\cong\operatorname{Mat}_3(k)
+\] supports two bilinear operations: \(\RP\) multiplication and ordinary
+matrix multiplication. The cross-row contraction \[
+\mu_{cross}(A,B)=AJ_3B^\top
+\] and the carrier-level compact companions give partial alignments. The
+closure question is whether there is a universal or functorial
+construction from the \(\RP\) magma to the matrix/Lie package, beyond the
+shared carrier.
+
+\subsubsection{\texorpdfstring{Symplectic development of pure
+\(C/J\)}{Symplectic development of pure C/J}}\label{symplectic-development-of-pure-cj}
+
+The finite pure \(C/J\) geometry has an explicit signed symplectic lift.
+The next problem is to develop the associated continuous symplectic
+geometry, including canonical \((q,p)\)-charts, Hamiltonian paths, and
+coordinate-free separation of pure reversal from drifted reversal.
+
+\subsubsection{Unified selection principle}\label{unified-selection-principle}
+
+Theorem~\ref{thm:12.3} selects \(\RP\) by the conjunction of four finite
+selectors of distinct nature: information-theoretic, entropic,
+algebraic, and combinatorial-geometric. It remains open whether these
+selectors arise from a single natural, non-tautological
+information-theoretic or algebraic functional whose global minimizers on
+\(\Omega'\) are exactly the \(\RP\) representative. In such a formulation,
+\(\RP\) would appear as a global extremum of one canonical object rather
+than as the intersection of four independently stated extrema.
+
+\subsection{Extensions}\label{extensions}
+
+\subsubsection{All-arity term algebra}\label{all-arity-term-algebra}
+
+The binary term algebra satisfies \[
+|T_2(\RP)|=630,
+\qquad
+T_2(\RP)\cong\{x,y\}\times\mathcal S_{21}\times\mathcal U_{15}.
+\] The all-arity term algebra remains open: the main question is whether
+the binary factorization extends to a general clone structure or is
+genuinely binary \cite{Post1941,Szendrei1986,Lau2006}.
+
+\subsubsection{Larger carriers}\label{larger-carriers}
+
+Natural generalizations include analogues over larger carriers
+\(S\times S\), especially finite fields or cyclic sets, and
+directed-edge \(C/J\) geometries beyond the triangle.
+
+\subsubsection{Relaxing AX2}\label{relaxing-ax2}
+
+The landscape \(\Omega'\) fixes the same-row Steiner axiom. The larger
+relaxed landscape asks whether the same-row Steiner rule can itself be
+selected by intrinsic criteria.
+
+\subsection{Status summary}\label{status-summary}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Front
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Global \(\mathcal H\)-frontier certificate & closed by Theorem 7.2 and the
+\texttt{mathcal\_H/} certificate bundle \\
+Functorial \(\RP\)--\(\mathfrak{gl}(3)\) bridge & open \\
+Unified selection principle & open \\
+Symplectic development of pure \(C/J\) & open \\
+All-arity term algebra & open \\
+Larger carriers & open \\
+Relaxing AX2 & open \\
+\end{longtable}
+
+\section{Conclusion}\label{conclusion}
+
+The \(\RP\) magma is selected from the finite normal-form landscape
+\(\Omega'\cong S^{21}\) by four internal finite criteria: \[
+\mathcal H_{acc}=0,
+\qquad
+H_{diag}=0,
+\qquad
+\text{row-anchor idempotence},
+\qquad
+\text{pure }C/J.
+\] The surrounding landscape is mapped by the certified associativity atlas and
+the \(\mathcal H\)-frontier atlas, and the selected magma then exposes its
+linear/operator passport, binary term algebra, carrier-level compact Lie
+companions, and signed symplectic bridge.
+
+Thus the theorem package has the intended three-layer form: \[
+\boxed{\text{finite landscape}}
+\qquad
+\boxed{\text{intrinsic finite selection}}
+\qquad
+\boxed{\text{linearization of }\RP}.
+\]
+
+
+\appendix
+\section{Information-theoretic interpretation of the selected magma}\label{appendix-information-theoretic-interpretation}
+
+This appendix records the information-theoretic reading behind the four
+selectors used in Theorem~\ref{thm:12.3} and the six basic properties of
+the selected magma \(\RP\).  The proofs and finite classifications are in the
+main text; the purpose here is to keep the Landauer and Shannon motivations
+visible in the final mathematical form of the paper.
+
+\subsection{Two axes: economy and content}\label{two-axes-economy-and-content}
+
+The selected magma is read along two coupled axes.
+
+The first axis is \emph{economy}.  It records which distinctions the
+operation can avoid reading, storing, or drifting.  The hidden-column access
+selector
+\[
+\mathcal H_{acc}=I(C_{out};C_1,C_2\mid R_1,R_2)
+\]
+implements this axis on the cross-row branch.  Its zero value is exactly
+column-blindness: after the ordered row pair is known, the output column is
+constant over the hidden input columns.  In the Landauer reading, a column
+coordinate that is read and then irreversibly discarded contributes a
+thermodynamic bookkeeping cost \cite{Landauer1961,Bennett1973,Bennett1982}.
+The condition \(\mathcal H_{acc}=0\) selects the rules whose cross-row output
+can be computed through the public row interface.
+
+The second axis is \emph{content}.  It records which finite distinctions the
+operation preserves: directed public contact, bracket-sensitive histories,
+row-fixed self-action, and literal directed-edge continuation/reversal.  The
+selected point is economical because the cross-row channel uses only public
+row data, and it is nontrivial because the right public row remains visible
+in the output.
+
+The rows are therefore the public interface of the interaction, while columns
+are the hidden internal coordinate.  The selected cross-row rule
+\[
+(r_1,c_1)\cdot(r_2,c_2)=(r_1,r_2),
+\qquad r_1\ne r_2,
+\]
+keeps the left row as owner of the result and writes the right row as the
+output column.
+
+\subsection{Shannon diagonal compression}\label{shannon-diagonal-compression}
+
+The diagonal selector is the Shannon entropy of the empirical same-point
+output distribution
+\[
+H_{diag}(d)=-\sum_{s\in S}p_s\log_2 p_s.
+\]
+Shannon entropy measures the number of bits needed to encode the diagonal
+output type \cite{Shannon1948,CoverThomas2006}.  The zero-entropy condition
+is the finite compression rule: all same-point diagonal outputs carry one
+symbol.  Row-anchor idempotence then chooses the normalized row base,
+\[
+(r,c)^2=(r,r),
+\]
+so the compressed self-action returns to the diagonal point of the same row.
+
+Thus \(H_{diag}=0\) is the diagonal economy selector, while row-anchor
+idempotence is the semantic stabilization of that compressed sector.
+
+\subsection{Six properties of \texorpdfstring{\(\RP\)}{RP}}\label{six-properties-of-rp}
+
+The following table summarizes the interpretation of the six basic properties
+that appear across the selection and linearization layers.
+
+\begin{longtable}{@{}p{0.29\linewidth}p{0.16\linewidth}p{0.47\linewidth}@{}}
+\toprule
+Property of \(\RP\) & Axis & Physical-theoretical unfolding \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\(\mathcal H_{acc}=0\) & economy & The cross-row channel uses public rows alone.  In the Landauer reading, the column-read burden is structurally avoided. \\
+\((a,b)=(1,2)\) & content & The right public direction remains visible: \(h(r_1,r_2)=r_2\).  Interaction keeps a finite directional distinction while staying column-blind. \\
+Low local \(\operatorname{Assoc}_{000}\) among nontrivial column-blind rules & content & Bracket placement carries finite path information.  The diagnostic local selector exposes the two finalist histories before the directed-edge criterion separates them. \\
+Pure undrifted \(C/J\) & economy/content & Directed-edge absorption is literal continuation and reversal, \(\operatorname{AbsTrans}_{\RP}=\{C,J\}\).  At the linear level this finite geometry admits the signed symplectic lift of Section~\ref{signed-symplectic-bridge}. \\
+\(H_{diag}=0\) & economy & The same-point diagonal stores one output type.  This is the Shannon compression of the diagonal sector. \\
+\((r,c)^2=(r,r)\) & content & Self-application returns to the row-fixed point.  Each row has a stable diagonal anchor for self-action. \\
+\end{longtable}
+
+The local associativity entry is a diagnostic part of the explanatory chain,
+while the compact uniqueness theorem uses the four-condition core
+\[
+\mathcal H_{acc}=0,
+\qquad
+H_{diag}=0,
+\qquad
+\text{row-anchor idempotence},
+\qquad
+\text{pure }C/J.
+\]
+After the first three conditions, pure \(C/J\) already forces the cross-row
+anchors \((a,b)=(1,2)\), hence the right-row projection rule.
+
+\subsection{Variational reading}\label{variational-reading}
+
+The four-condition selector can be read as a finite variational principle:
+\[
+\boxed{
+\text{minimize hidden information expenditure}
+\quad\text{while preserving directed interaction content}.
+}
+\]
+The economy side is supplied by zero hidden-column access and zero diagonal
+entropy.  The content side is supplied by row-anchor idempotence, directed public
+row dependence, bracket-sensitive local histories, and pure \(C/J\) geometry.
+
+The linear structures appearing after selection are compatible with this
+reading:
+\[
+\begin{aligned}
+\mathcal H_{acc}=0
+&\leadsto
+\text{column-blind row interface and row-contraction},\\
+H_{diag}=0
+&\leadsto
+\text{diagonal compression},\\
+(r,c)^2=(r,r)
+&\leadsto
+\text{row-fixed self-action},\\
+(a,b)=(1,2)
+&\leadsto
+\text{right-row projection},\\
+\text{low local }\operatorname{Assoc}_{000}
+&\leadsto
+\text{path-sensitive interaction},\\
+\text{pure }C/J
+&\leadsto
+\text{dihedral directed-edge geometry and signed symplectic lift}.
+\end{aligned}
+\]
+
+This semantic reading explains the post-selection passport: the operator,
+matrix, term-function, Lie-compatible, and signed symplectic structures are
+linear shadows of the same finite row/column economy and content constraints.
+
+
+\section*{Note on AI assistance}
+\addcontentsline{toc}{section}{Note on AI assistance}
+
+This work was developed with the assistance of large language models.
+
+The author specified the conceptual framework, constraints, and target
+properties of the objects under study. Within this framework, AI tools
+were used for computational exploration, code drafting, and structuring
+intermediate results.
+
+All mathematical definitions, statements, and theorems presented in the
+paper were established and independently verified by the author. The
+finite claims are backed by exhaustive checks recorded in the
+accompanying support package.
+
+\newpage
+\begin{thebibliography}{99}
+\bibitem{AppelHaken1977} K. Appel and W. Haken, ``Every planar map is four colorable. Part I:
+Discharging,'' \emph{Illinois Journal of Mathematics} \textbf{21}
+(1977), no. 3, 429--490. doi:10.1215/ijm/1256049011.
+
+\bibitem{AppelHakenKoch1977} K. Appel, W. Haken, and J. Koch, ``Every planar map is four colorable.
+Part II: Reducibility,'' \emph{Illinois Journal of Mathematics}
+\textbf{21} (1977), no. 3, 491--567. doi:10.1215/ijm/1256049012.
+
+\bibitem{Bennett1973} C. H. Bennett, ``Logical reversibility of computation,'' \emph{IBM
+Journal of Research and Development} \textbf{17} (1973), no. 6,
+525--532. doi:10.1147/rd.176.0525.
+
+\bibitem{Bennett1982} C. H. Bennett, ``The thermodynamics of computation---a review,''
+\emph{International Journal of Theoretical Physics} \textbf{21} (1982),
+no. 12, 905--940. doi:10.1007/BF02084158.
+
+\bibitem{Birkhoff1935} G. Birkhoff, ``On the structure of abstract algebras,''
+\emph{Proceedings of the Cambridge Philosophical Society} \textbf{31}
+(1935), no. 4, 433--454. doi:10.1017/S0305004100013463.
+
+\bibitem{Bruck1958} R. H. Bruck, \emph{A Survey of Binary Systems}, Ergebnisse der
+Mathematik und ihrer Grenzgebiete, Neue Folge, Heft 20, Springer,
+Berlin, 1958.
+
+\bibitem{BurrisSankappanavar1981} S. Burris and H. P. Sankappanavar, \emph{A Course in Universal Algebra},
+Graduate Texts in Mathematics 78, Springer-Verlag, New York, 1981.
+doi:10.1007/978-1-4613-8130-3.
+
+\bibitem{Cohn1965} P. M. Cohn, \emph{Universal Algebra}, Harper's Series in Modern
+Mathematics, Harper \& Row, New York, 1965.
+
+\bibitem{ColbournDinitz2007} C. J. Colbourn and J. H. Dinitz, eds., \emph{Handbook of Combinatorial
+Designs}, 2nd ed., Chapman \& Hall/CRC, Boca Raton, 2007.
+
+\bibitem{CoverThomas2006} T. M. Cover and J. A. Thomas, \emph{Elements of Information Theory}, 2nd
+ed., Wiley-Interscience, Hoboken, 2006. doi:10.1002/047174882X.
+
+\bibitem{DenesKeedwell1974} J. Dénes and A. D. Keedwell, \emph{Latin Squares and Their
+Applications}, Academic Press, New York, 1974.
+
+\bibitem{FultonHarris1991} W. Fulton and J. Harris, \emph{Representation Theory: A First Course},
+Graduate Texts in Mathematics 129, Springer-Verlag, New York, 1991.
+doi:10.1007/978-1-4612-0979-9.
+
+\bibitem{Gonthier2008} G. Gonthier, ``Formal proof---the four-color theorem,'' \emph{Notices of
+the American Mathematical Society} \textbf{55} (2008), no. 11,
+1382--1393.
+
+\bibitem{GuilleminSternberg1990} V. Guillemin and S. Sternberg, \emph{Symplectic Techniques in Physics},
+Cambridge University Press, Cambridge, 1990.
+
+\bibitem{Hales2005} T. C. Hales, ``A proof of the Kepler conjecture,'' \emph{Annals of
+Mathematics} \textbf{162} (2005), no. 3, 1065--1185.
+doi:10.4007/annals.2005.162.1065.
+
+\bibitem{HalesEtAl2017} T. Hales, M. Adams, G. Bauer, T. D. Dang, J. Harrison, L. T. Hoang, C.
+Kaliszyk, V. Magron, S. McLaughlin, T. T. Nguyen, Q. T. Nguyen, T.
+Nipkow, S. Obua, J. Pleso, J. Rute, A. Solovyev, T. H. A. Ta, N. T.
+Tran, T. D. Trieu, J. Urban, K. Vu, and R. Zumkeller, ``A formal proof
+of the Kepler conjecture,'' \emph{Forum of Mathematics, Pi} \textbf{5}
+(2017), e2. doi:10.1017/fmp.2017.1.
+
+\bibitem{Hall2015} B. C. Hall, \emph{Lie Groups, Lie Algebras, and Representations: An
+Elementary Introduction}, 2nd ed., Graduate Texts in Mathematics 222,
+Springer, Cham, 2015. doi:10.1007/978-3-319-13467-3.
+
+\bibitem{HornJohnson2012} R. A. Horn and C. R. Johnson, \emph{Matrix Analysis}, 2nd ed., Cambridge
+University Press, Cambridge, 2012.
+
+\bibitem{Landauer1961} R. Landauer, ``Irreversibility and heat generation in the computing
+process,'' \emph{IBM Journal of Research and Development} \textbf{5}
+(1961), no. 3, 183--191. doi:10.1147/rd.53.0183.
+
+\bibitem{Lau2006} D. Lau, \emph{Function Algebras on Finite Sets: A Basic Course on
+Many-Valued Logic and Clone Theory}, Springer Monographs in Mathematics,
+Springer, Berlin, 2006. doi:10.1007/3-540-36023-9.
+
+\bibitem{McCune1997} W. McCune, ``Solution of the Robbins problem,'' \emph{Journal of
+Automated Reasoning} \textbf{19} (1997), no. 3, 263--276.
+doi:10.1023/A:1005843212881.
+
+\bibitem{McDuffSalamon2017} D. McDuff and D. Salamon, \emph{Introduction to Symplectic Topology},
+3rd ed., Oxford Graduate Texts in Mathematics 27, Oxford University
+Press, Oxford, 2017.
+
+\bibitem{Pflugfelder1990} H. O. Pflugfelder, \emph{Quasigroups and Loops: Introduction}, Sigma
+Series in Pure Mathematics 7, Heldermann Verlag, Berlin, 1990.
+
+\bibitem{Post1941} E. L. Post, \emph{The Two-Valued Iterative Systems of Mathematical
+Logic}, Annals of Mathematics Studies 5, Princeton University Press,
+Princeton, 1941.
+
+\bibitem{Rosenberg1970} I. G. Rosenberg, ``Über die funktionale Vollständigkeit in den
+mehrwertigen Logiken,'' \emph{Rozpravy Československé Akademie Věd, Řada
+matematických a přírodních věd} \textbf{80} (1970), no. 4, 3--93.
+
+\bibitem{Shannon1948} C. E. Shannon, ``A mathematical theory of communication,'' \emph{Bell
+System Technical Journal} \textbf{27} (1948), 379--423 and 623--656.
+doi:10.1002/j.1538-7305.1948.tb01338.x;
+doi:10.1002/j.1538-7305.1948.tb00917.x.
+
+\bibitem{Szendrei1986} Á. Szendrei, \emph{Clones in Universal Algebra}, Séminaire de
+mathématiques supérieures 99, Presses de l'Université de Montréal,
+Montréal, 1986.
+\end{thebibliography}
+
+\end{document}
