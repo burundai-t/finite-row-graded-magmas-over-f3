@@ -1,0 +1,3 @@
+countermodel,carrier_size,table_row_major,satisfies,violates,witness_assignment,lhs_value,rhs_value,conclusion
+CM1,3,0 0 1 0 0 1 1 1 0,"I1,I2,I3,star",U1: x*(x*(x*x)) = x*x,{'x': 2},1,0,I1/I2/I3/star are not a complete PAB identity basis
+CM2,3,0 1 2 1 0 1 2 1 0,"I1,I2,I3,star,U1,U2",D5_sample: x*(y*y)=x*((y*(x*y))*x),"{'x': 2, 'y': 1}",2,0,even the compact-plus-unary package is not yet a complete compact basis

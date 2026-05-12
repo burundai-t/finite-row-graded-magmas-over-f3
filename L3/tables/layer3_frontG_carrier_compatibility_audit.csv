@@ -1,0 +1,5 @@
+claim,status,detail
+same carrier,PASS,"e_(r,c) <-> E_rc gives a 9D matrix-unit carrier"
+cross-row AJB^T,PASS,"for i!=k, PAB(Eij,Ekl)=Eik=Eij J Ekl^T"
+basis coincidences,PASS,9 basis pairs coincide with ordinary matrix multiplication
+operation boundary,PASS,PAB multiplication and ordinary matrix multiplication are distinct operations on the same carrier

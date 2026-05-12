@@ -1,0 +1,4 @@
+candidate,absorptions,pure_J_kick,signed_symplectic_bridge,selector_role
+PAB,"{C,J}",yes,clean C/J bridge,selected
+row-complement,"{C^{-1},C^{-1}J}",no,only if drifted reversal is allowed,rejected by finite pure C/J
+policy,-,-,"post-selection bridge, not selector dependency",guardrail

@@ -1,0 +1,10 @@
+claim,status,value
+composition closure has 51 maps,checked,51
+each target row contains 17 maps,checked,"{0: 17, 1: 17, 2: 17}"
+unary same-row semigroup has 6 maps,checked,6
+restricted same-row span dimension is 5,checked,5
+normal-form theorem: 3 constants + 14 nonconstant types per row,checked,17
+"dim W_r=9 for r=0,1,2",checked,"[9, 9, 9]"
+dim E=27,checked,27
+W_r W_s subset W_r,checked,all 9 row products
+chosen 9-element basis spans all 17 row types,checked,"[0, 11, 16, 4, 13, 9, 3, 5, 1]"

@@ -1,0 +1,10 @@
+check,result,detail
+representative_count,True,rows=630
+multiplication_table_shape,True,"rows=630, cols=630"
+representative_ids,True,ids=0..629
+max_minimal_size,True,max=15
+size_distribution_final_cumulative,True,final=630
+multiplication_entries_closed,True,all entries in 0..629
+identity_truth_in_PAB,True,"I1,I2,I3,star,U1,U2,D5 hold"
+CM1_countermodel,True,"witness=({'x': 2}, 1, 0)"
+CM2_countermodel,True,"witness=({'x': 2, 'y': 1}, 2, 0)"

@@ -1,0 +1,4 @@
+constant_endomorphism,formula,epsilon,basis_1_u,basis_2_u,closed_form,dimension
+e_0,T = u eps^T,total augmentation: eps(e_x)=1 for all x,"(0, 0):1","(0, 1):1; (0, 2):1","u in span{e_(0,0), e_(0,1)+e_(0,2)}",2
+e_1,T = u eps^T,total augmentation: eps(e_x)=1 for all x,"(1, 1):1","(1, 0):1; (1, 2):1","u in span{e_(1,1), e_(1,0)+e_(1,2)}",2
+e_2,T = u eps^T,total augmentation: eps(e_x)=1 for all x,"(2, 2):1","(2, 0):1; (2, 1):1","u in span{e_(2,2), e_(2,0)+e_(2,1)}",2

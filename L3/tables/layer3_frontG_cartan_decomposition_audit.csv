@@ -1,0 +1,4 @@
+containment,target,status
+"[so3,so3]",so3,PASS
+"[so3,p]",p,PASS
+"[p,p]",so3,PASS

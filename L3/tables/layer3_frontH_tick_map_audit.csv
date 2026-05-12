@@ -1,0 +1,4 @@
+sequence,check,result,detail
+"C,J,C,C,J",finite path visits all six directed edges,True,starting at q0
+"C,J,C,C,J",signed lift symplectic,symplectic,composition of signed lifts
+"C,J,C,C,J",signed entries present,True,signs encode symplectic orientation

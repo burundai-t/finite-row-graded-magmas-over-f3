@@ -1,0 +1,4 @@
+quantity,value,formula,status
+sum_dim_Hom_phi_over_End,12,6*1 + 3*2,checked
+constant_Hom_closed_form,"Hom_e_r = Fix(L_(r,r)) tensor epsilon","{u eps^T : u in span(e_(r,r), sum_{c!=r} e_(r,c))}",checked
+orientation_guardrail,"target freedom, source augmentation",not source row-fiber functionals,checked
