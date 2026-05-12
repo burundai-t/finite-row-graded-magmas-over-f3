@@ -1,6 +1,0 @@
-claim,result,detail
-C^3=1 on M^x,True,finite continuation order 3
-J^2=1 on M^x,True,finite reversal involution
-J C J = C^{-1},True,dihedral relation
-"PAB AbsTrans={C,J}",True,pure C/J
-"row-complement AbsTrans={C^{-1},C^{-1}J}",True,drifted reversal

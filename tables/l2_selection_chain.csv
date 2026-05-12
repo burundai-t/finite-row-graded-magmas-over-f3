@@ -1,7 +1,0 @@
-stage,criterion,cross_rules,diagonals,total,note
-0,Omega',3^18,27,3^21,Layer 1 normal form
-1,H_acc=0 and H_diag=0,9,3,27,information compression; Front B closed
-2,nontriviality and diagonal idempotence,6,1,6,nondegenerate anchors; Front C closed
-3,min Assoc_000 inside nontrivial column-blind,2,1,2,PAB / row-complement ambiguity; Front D closed
-4,finite pure C/J drift-kick,1,1,1,finite directed-edge separation; Front E closed
-G,hidden continuation contrast H,no required reduction,no required reduction,unchanged,auxiliary bridge; Front G closed

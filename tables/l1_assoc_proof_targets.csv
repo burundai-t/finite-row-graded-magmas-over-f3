@@ -1,7 +1,0 @@
-side,diagonal_condition,required_statement,equality_pattern,status
-minimum,"permutation equality-support: d in {120,201}","rawRRR=9 => rawCross >= 12 for equality-support; exact min rawAssoc=21 only at 120,201 among permutation diagonals","(9,2,2,4,4)","[V-certified/computational], proof target"
-minimum,"two-valued/no-fixed equality-support: d in {100,101,121,200,220,221}",rawRRR=11 => rawCross >= 10 for equality-support; exact min rawAssoc=21 in these six sectors,"(11,2,2,2,4)","[V-certified/computational], proof target"
-minimum,all other diagonals,"fixed-diagonal exact histograms give rawAssoc >= 25,27,30,31 depending on orbit; no minimum support",none for raw=21,[V-certified/computational]
-maximum,"constant d in {000,111,222}",rawRRR=19 and rawCross <= 180; equality gives rawAssoc=199,"(19,36,36,54,54)","[V-certified/computational], proof target"
-maximum,nonconstant d,exact fixed-diagonal histograms give rawAssoc <= 189; hence no maximum support,none for raw=199,[V-certified/computational]
-maximum,all d,computationally suggested/certified universal cross ceiling rawCross <= 180; independent block ceilings are not enough,full max requires additionally rawRRR=19,"[V-certified/computational], analytic proof target"
