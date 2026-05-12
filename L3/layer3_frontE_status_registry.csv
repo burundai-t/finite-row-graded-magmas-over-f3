@@ -1,0 +1,7 @@
+claim,status,detail
+T2 factorization,closed,"T2 = {x,y}-owner x S21 x U15, hence 630=2*21*15"
+leftmost row source,closed,row of every binary term is row of its leftmost variable
+cross-block unary collapse,closed,cross blocks ignore the other column and are paired by phi(u)(c)=-u(-c)
+factorized multiplication,closed,630x630 Front D table reproduced from 21x21/15x15 factor tables plus owner law
+binary stabilization,imported from Front D,"630 functions, no new binary functions after size 15"
+all-arity free algebra,open,ternary smoke grows to 5577 functions by size 6; no all-arity finite/infinite theorem claimed

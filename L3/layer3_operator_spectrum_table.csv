@@ -1,0 +1,10 @@
+x,type,eigenvalues,minimal_polynomial,zero_alg_mult,zero_geom_mult,J2_blocks_at_zero
+"(0, 0)",diagonal,-1:1;0:6;1:2,t(t-1)(t+1),6,6,0
+"(0, 1)",off_diagonal,-1:1;0:7;1:1,t^2(t-1)(t+1),7,6,1
+"(0, 2)",off_diagonal,-1:1;0:7;1:1,t^2(t-1)(t+1),7,6,1
+"(1, 0)",off_diagonal,-1:1;0:7;1:1,t^2(t-1)(t+1),7,6,1
+"(1, 1)",diagonal,-1:1;0:6;1:2,t(t-1)(t+1),6,6,0
+"(1, 2)",off_diagonal,-1:1;0:7;1:1,t^2(t-1)(t+1),7,6,1
+"(2, 0)",off_diagonal,-1:1;0:7;1:1,t^2(t-1)(t+1),7,6,1
+"(2, 1)",off_diagonal,-1:1;0:7;1:1,t^2(t-1)(t+1),7,6,1
+"(2, 2)",diagonal,-1:1;0:6;1:2,t(t-1)(t+1),6,6,0

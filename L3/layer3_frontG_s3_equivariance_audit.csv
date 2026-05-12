@@ -1,0 +1,7 @@
+permutation,parity,bracket_equivariant,PAB_automorphism,so3_stable,p_stable
+012,1,True,True,True,True
+021,-1,True,True,True,True
+102,-1,True,True,True,True
+120,1,True,True,True,True
+201,1,True,True,True,True
+210,-1,True,True,True,True

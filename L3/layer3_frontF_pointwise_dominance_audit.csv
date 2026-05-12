@@ -1,0 +1,3 @@
+kind,triples,min_H,max_H,negative_H_count,zero_H_count,positive_H_count,H_plus,H_minus,N_minus,status
+PAB,729,0,16,0,177,552,7020,0,0,PASS
+row-complement,729,0,16,0,177,552,7020,0,0,PASS

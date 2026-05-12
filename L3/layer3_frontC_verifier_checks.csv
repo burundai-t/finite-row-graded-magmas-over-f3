@@ -1,0 +1,17 @@
+check,result,detail
+Hom_e0_basis_1_intertwines,True,"T=e_(0,0) eps^T"
+Hom_e0_basis_2_intertwines,True,T=(offsum in row 0) eps^T
+Hom_e0_constraint_dimension,True,"rank=79, dim_upper=2, formula_rank=2"
+Hom_e1_basis_1_intertwines,True,"T=e_(1,1) eps^T"
+Hom_e1_basis_2_intertwines,True,T=(offsum in row 1) eps^T
+Hom_e1_constraint_dimension,True,"rank=79, dim_upper=2, formula_rank=2"
+Hom_e2_basis_1_intertwines,True,"T=e_(2,2) eps^T"
+Hom_e2_basis_2_intertwines,True,T=(offsum in row 2) eps^T
+Hom_e2_constraint_dimension,True,"rank=79, dim_upper=2, formula_rank=2"
+Hom_phi_012_dimension,True,"rank=80, dim_upper=1, P_rho=True"
+Hom_phi_021_dimension,True,"rank=80, dim_upper=1, P_rho=True"
+Hom_phi_102_dimension,True,"rank=80, dim_upper=1, P_rho=True"
+Hom_phi_120_dimension,True,"rank=80, dim_upper=1, P_rho=True"
+Hom_phi_201_dimension,True,"rank=80, dim_upper=1, P_rho=True"
+Hom_phi_210_dimension,True,"rank=80, dim_upper=1, P_rho=True"
+collapse_tree_generates_kernel_epsilon,True,"tree_edges=8, rank=8, augmentation_zero=True"

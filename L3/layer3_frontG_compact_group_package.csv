@@ -1,0 +1,5 @@
+component,lie_algebra,compact_form_or_cover,dimension,status
+traceless companion algebra,sl3,SU(3),8,structural
+selected compact subalgebra,so3 ~= su2/center,SU(2),3,structural
+center,u1,U(1),1,structural
+package type,sl3 + selected so3 + u1,SU(3) x SU(2) x U(1),12,gauge-isomorphic compact Lie group type

@@ -1,0 +1,7 @@
+check,result
+finite D3 relations,PASS
+absorption relations,PASS
+signed symplectic audit,PASS
+continuous path samples,PASS
+Hamiltonian path,PASS
+tick signed lift,PASS

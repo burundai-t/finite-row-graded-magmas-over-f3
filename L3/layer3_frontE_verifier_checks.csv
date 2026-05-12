@@ -1,0 +1,14 @@
+check,result,detail
+frontD_representative_count,True,rows=630
+frontD_multiplication_shape,True,rows=630
+leftmost_owner_split,True,"{'x': 315, 'y': 315}"
+S21_count,True,"x=21, y=21"
+U15_count,True,"x=15, y=15"
+owner_x_factor_product,True,pairs=315=21*15
+owner_y_factor_product,True,pairs=315=21*15
+cross_unary_phi_law,True,"plus=u(owner_col), minus=phi(u)(owner_col), phi(u)(c)=-u(-c)"
+S21_closed,True,21x21 table closes
+U15_closed,True,15x15 table closes
+factorized_630_multiplication,True,630x630 table reproduced from S21/U15 factor law
+variable_swap_orbits,True,"fixed=0, two_cycles=315"
+ternary_growth_smoke_size6,True,final=5577

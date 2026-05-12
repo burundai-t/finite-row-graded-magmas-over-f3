@@ -1,0 +1,8 @@
+claim,status,support
+"For PAB, L_(xy)L_z and L_xL_(yz) lie in the L3-B composition envelope E",[V-structural/computational],LuLv formula + envelope membership summary
+"For every PAB triple, all four operators in H lie in W_row(x)",[V],Front F verifier
+"PAB H profile is H_tot=7020, H_-=0, N_-=0",[V],distance type table
+PAB triple-level H is pointwise nonnegative,[V],distance type table
+PAB and row-complement have the same d=000 H profile,[V],PAB/competitor guardrail table
+H separates PAB from row-complement,rejected,same H profile
+Global Omega pure-frontier theorem max{H_tot:N_-=0}=7020,[Open],Layer 1H controlled theorem only
