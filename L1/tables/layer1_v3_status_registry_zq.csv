@@ -1,0 +1,8 @@
+claim,status,note
+Full Z(q) coefficient table,[V-certified/computational],Exact orbit-weighted sum over 15 fixed-diagonal histograms
+Total mass equals 3^21,[V-check],Verified from coefficient CSV
+Mean Assoc = 245,[V-check],Exact first moment
+Var Assoc = 27820/27,[V-check],Exact second central moment
+Global min/max 63/597 reconfirmed by Z(q),[V-check],Coefficients [q^63]=24 and [q^597]=6
+Closed old Layer 1 open: full Assoc distribution,[V-certified/computational],Now known as coefficient table
+Hand analytic derivation of Z(q),open,Not required for Layer 1 v3; coefficient table is exact computational census

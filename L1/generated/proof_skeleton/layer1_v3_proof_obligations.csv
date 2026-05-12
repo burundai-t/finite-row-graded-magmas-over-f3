@@ -1,0 +1,6 @@
+side,statement,equality_locus,status
+min,rawRRR=9 => rawCross >= 12,"permutation diagonals 120,201 inside M_63",V-certified target; hand proof open
+min,rawRRR=11 => rawCross >= 10,two-valued_no_fixed diagonals in M_63,V-certified target; hand proof open
+max,constant d => rawCross <= 180,"constant diagonals 000,111,222 inside M_597",V-certified target; hand proof open
+max,nonconstant d => rawAssoc <= 189,none at raw 199,V-certified target; hand proof open
+compatibility,independent block extrema do not sum to global extrema,global extrema require compatible cross-block assignments,structural warning; use in proof narrative

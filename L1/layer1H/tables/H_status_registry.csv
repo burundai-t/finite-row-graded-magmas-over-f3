@@ -1,0 +1,20 @@
+id,claim,status,support
+H1,"Operator definitions of I,B,H",V-definition,finite magma definition
+H2,Four-point combinatorial form,V,basis-map Hilbert--Schmidt count
+H3,"I_tot,B_tot,H_tot are isomorphism invariants",V,orthogonal permutation conjugation
+H4,Master formula H_tot=6 rawH,V-computational/formula,h_master_formula_verify.py
+H5,PAB H_tot=7020,V-computational,standard-six verifier
+H6,"column-blind x Delta range [1836,7302]",V-exact enumeration,243 points
+H7,"affine x Delta range [-2268,7302]",V-exact enumeration,19683 points
+H8,"degree <=2 exact range [-2268,7302]",V-exact enumeration,14348907 points; H_degree2_exact_summary.csv
+H9,"controlled purity frontier max{H_tot:N_-=0}=7020 on column-blind, affine, degree<=2",V-exact enumeration,H_controlled_summary.csv; H_degree2_exact_summary.csv
+H10,degree <=2 frontier orbit atlas,V-computational,H_degree2_frontier_orbits.csv
+H11,frontier signed-class split: Hmin has two signed-spectrum classes,V-computational,H_frontier_locus_class_summary.csv
+H12,frontier term signatures,V-computational,H_frontier_term_signature_summary.csv
+H13,radius-1 and radius-2 Hamming shell integration around seven centers,V-exact enumeration,H_local_shell_summary.csv
+H14,global H-range on Omega prime,Open,future certificate
+H15,global pure-frontier theorem on Omega prime,Open,future certificate
+H16,"full H distribution Z_H or joint (I,B,H,N_-) distribution",Open,future census/certificate
+H17,Controlled frontier theorem package compressed in Layer1H_controlled_frontier_theorem.md,V-documentation,Theorem H1-H4; final verifier
+H18,Layer 1 v3 appendix patch for H-extension prepared,V-documentation,Layer1H_appendix_for_layer1_v3.md
+H19,degree<=2 chunk aggregation script included,V-infrastructure,scripts/h_degree2_aggregate_chunks.py

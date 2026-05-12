@@ -1,0 +1,15 @@
+center,radius,center_H_tot,neighbors,min_H_tot,mean_H_tot_num,mean_H_tot_den,max_H_tot,below_center,equal_center,above_center,min_Assoc,max_Assoc,min_N_neg,max_N_neg,pure_neighbors
+PAB,1,7020,42,5604,264936,42,7302,40,0,2,189,270,0,42,10
+PAB,2,7020,840,4524,4764540,840,6924,840,0,0,159,309,0,78,63
+row_complement,1,7020,42,5604,264936,42,7302,40,0,2,189,270,0,42,10
+row_complement,2,7020,840,4524,4764540,840,6924,840,0,0,159,309,0,78,63
+affine_Hmin_assoc81_representative,1,-2268,42,-1398,-53676,42,-954,0,0,42,93,120,186,303,0
+affine_Hmin_assoc81_representative,2,-2268,840,-1458,-377712,840,384,0,0,840,81,165,117,342,0
+affine_Hmin_assoc189_representative,1,-2268,42,-1830,-52896,42,-624,0,0,42,174,231,381,453,0
+affine_Hmin_assoc189_representative,2,-2268,840,-1560,-379920,840,468,0,0,840,162,276,339,453,0
+degree2_Hmax_representative,1,7302,42,5688,275676,42,7302,41,1,0,168,255,0,42,5
+degree2_Hmax_representative,2,7302,840,4554,4962996,840,6924,840,0,0,147,312,0,102,51
+global_Assoc_min_representative,1,1482,42,288,82350,42,2934,7,0,35,63,150,69,369,0
+global_Assoc_min_representative,2,1482,840,-6,1958160,840,3870,129,1,710,66,219,9,378,0
+global_Assoc_max_representative,1,2352,42,1830,107040,42,3420,18,0,24,486,579,12,111,0
+global_Assoc_max_representative,2,2352,840,1296,2231208,840,4464,263,4,573,393,567,0,192,2

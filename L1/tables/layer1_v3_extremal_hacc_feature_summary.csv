@@ -1,0 +1,3 @@
+mode,points,S3_orbits,diagonals,d_classes,column_blind_points,Hacc_bits,Hacc_bin_cross_rules,Hacc_bin_fraction_of_G,Hacc_LE_fraction_of_G,Hacc_GE_fraction_of_G,dep_pairs,degree_pairs,A_affine_points,B_affine_points,idempotents_values
+max,6,3,000 111 222,constant:6,0,0.9910760598382222,571536,0.0014752343157565938,0.010597160234341658,0.9908780740814149,ae/ae:6,4/4:6,0,0,3:6
+min,24,12,100 101 120 121 200 201 220 221,permutation:12;two-valued_no_fixed:12,0,1.468303307937274,10160640,0.02622638783567278,0.6550501488835816,0.3711762389520912,ae/e:12;e/ae:12,1/4:12;4/1:12,12,12,0:24

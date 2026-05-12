@@ -1,0 +1,16 @@
+locus,block,points,terms,always_pos_terms,always_zero_terms,always_neg_terms,sign_stable_terms,sign_variable_terms,value_stable_terms,value_variable_terms,pos_union_terms,zero_union_terms,neg_union_terms,local_H_min,local_H_max,block_H_tot_per_point_min,block_H_tot_per_point_max,block_H_tot_per_point_mean_num,block_H_tot_per_point_mean_den,aggregate_block_H_total_over_points
+Hmax,RRR,12,27,21,0,0,21,6,3,24,27,6,6,-2,18,930,930,11160,12,11160
+Hmax,RRS,12,54,54,0,0,54,0,0,54,54,0,0,4,14,1512,1512,18144,12,18144
+Hmax,RSR,12,54,54,0,0,54,0,0,54,54,0,0,12,16,2268,2268,27216,12,27216
+Hmax,SRR,12,54,0,54,0,54,0,54,0,0,54,0,0,0,0,0,0,12,0
+Hmax,DIST,12,54,54,0,0,54,0,54,0,54,0,0,16,16,2592,2592,31104,12,31104
+Hmin,RRR,8,27,6,15,6,27,0,27,0,6,15,6,-6,6,0,0,0,8,0
+Hmin,RRS,8,54,0,0,0,0,54,0,54,54,0,54,-14,10,-2268,-648,-8424,8,-8424
+Hmin,RSR,8,54,0,0,6,6,48,0,54,48,0,54,-14,16,0,0,0,8,0
+Hmin,SRR,8,54,0,18,0,18,36,18,36,36,54,36,-6,6,0,0,0,8,0
+Hmin,DIST,8,54,0,0,0,0,54,0,54,0,54,54,-10,0,-1620,0,-9720,8,-9720
+pure_frontier,RRR,6,27,12,0,0,12,15,0,27,27,15,0,0,14,756,756,4536,6,4536
+pure_frontier,RRS,6,54,54,0,0,54,0,0,54,54,0,0,8,12,1512,1512,9072,6,9072
+pure_frontier,RSR,6,54,54,0,0,54,0,0,54,54,0,0,12,16,2160,2160,12960,6,12960
+pure_frontier,SRR,6,54,0,54,0,54,0,54,0,0,54,0,0,0,0,0,0,6,0
+pure_frontier,DIST,6,54,54,0,0,54,0,54,0,54,0,0,16,16,2592,2592,15552,6,15552

@@ -1,0 +1,4 @@
+stratum,points,H_min,H_max,H_mean_num,H_mean_den,pure_count,pure_H_max,N_neg_max,count_above_PAB_7020,count_ge_PAB_7020
+column_blind_x_Delta,243,1836,7302,1280448,243,159,7020,108,12,18
+affine_x_Delta,19683,-2268,7302,46574352,19683,723,7020,441,12,18
+degree_le2_x_Delta_exact,14348907,-2268,7302,37222127640,14348907,3177,7020,468,12,18

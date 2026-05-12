@@ -1,0 +1,2 @@
+stratum,function_count,points,H_min,H_min_count,H_max,H_max_count,H_mean_num,H_mean_den,pure_count,pure_H_max,pure_H_max_count,N_neg_max,count_above_PAB_7020,count_ge_PAB_7020,count_below_affine_min_minus2268,count_above_affine_max_7302,Assoc_min,Assoc_max,stored_Hmin_rows,stored_Hmax_rows,stored_pure_frontier_rows
+degree_le2_total_x_Delta,729,1000000,-2268,3,6114,2,2512783332,1000000,31,5310,1,468,0,0,0,0,69,507,3,2,1

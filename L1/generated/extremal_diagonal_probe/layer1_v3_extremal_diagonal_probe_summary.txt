@@ -1,0 +1,7 @@
+Layer 1 v3 final-pack extremal diagonal endpoint verification
+global-min representative diagonals raw=21: ['100', '101', '120', '121']
+global-min all diagonal members raw=21: ['100', '101', '120', '121', '200', '201', '220', '221']
+global-max representative diagonals raw=199: ['000', '111']
+global-max all diagonal members raw=199: ['000', '111', '222']
+independently verified listed endpoint witnesses: 30
+all direct 9^3 and master 3^5 checks agree
