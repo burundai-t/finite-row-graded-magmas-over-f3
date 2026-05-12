@@ -1,0 +1,8 @@
+PASS
+mathcal_H bundle copied into repository.
+Public wrapper added: mathcal_H/verify_mathcal_H_bundle.py
+mathcal_H/README.md updated to use public mathcal_H naming while retaining the historical implementation verifier filename.
+Wrapper help exposes expected focused audit flags.
+Focused H1/H3/H4 audits passed.
+H2 light coverage audit passed.
+The heavier H2 certpack audit command was smoke-tested with a 120s window and did not complete in that window; it remains documented as a heavier focused check / optional audit path.

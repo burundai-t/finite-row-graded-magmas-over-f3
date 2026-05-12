@@ -1,0 +1,6 @@
+Layer 3 Front C verifier: PASS
+  constant intertwiners: Hom_e_r = {u eps^T : u in Fix(L_(r,r))}, dim 2
+  fixed space: span{e_(r,r), sum_{c!=r} e_(r,c)} for each r
+  collapse lemma: differences of left translations generate ker(eps), so every Hom_e_r factors through eps
+  automorphism intertwiners: Hom_phi_rho = R P_rho, dim 1
+  total Hom dimension: 6*1 + 3*2 = 12

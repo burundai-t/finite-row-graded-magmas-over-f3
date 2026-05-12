@@ -1,0 +1,12 @@
+Usage:
+  tools/run_mathcal_H_audit.sh
+  tools/run_mathcal_H_audit.sh --include-h2-full
+
+Default mode:
+  - H1 artifact audit
+  - H3 PAB/row-complement witness audit
+  - H4 signed-cancellation artifact audit
+  - H2 light coverage/consistency audit
+
+The default mode does not run the heavier H2 full artifact audit.
+Use --include-h2-full to add that focused H2 audit. The alias --full-h2 is also accepted.

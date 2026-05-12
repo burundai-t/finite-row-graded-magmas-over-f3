@@ -1,0 +1,6 @@
+Step 7 quick-check script inventory
+===================================
+script: tools/run_quick_checks.sh
+syntax: bash -n PASS
+quick log: VERIFY_LOGS/quick_checks.log
+status: PASS

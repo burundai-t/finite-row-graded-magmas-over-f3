@@ -1,0 +1,18 @@
+Step 3 smoke checks: PASS
+
+Commands run successfully:
+  python3 -S L1/scripts/verify_layer1_v3_final.py
+  python3 -S L2/scripts/verify_layer2_selection_final.py
+  python3 L3/scripts/verify_layer3_frontA.py
+  python3 L3/scripts/verify_layer3_frontB.py
+  python3 L3/scripts/verify_layer3_frontC.py
+  python3 L3/scripts/verify_layer3_frontD.py
+  python3 L3/scripts/verify_layer3_frontE.py
+  python3 L3/scripts/verify_layer3_frontF.py
+  python3 L3/scripts/verify_layer3_frontG.py
+  python3 L3/scripts/verify_layer3_frontH.py
+  python3 L3/scripts/verify_layer3_linearization_final.py
+
+Notes:
+  - L1/L2/L3 directory structures were copied from cycle2_L1_L2_L3_frozen_reference_v1.zip and preserved.
+  - This is a frozen-layer smoke pass. Root README/SUPPORT_INDEX will later separate L1/L2/L3 from mathcal_H.

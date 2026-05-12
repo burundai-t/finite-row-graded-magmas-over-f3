@@ -1,0 +1,8 @@
+===== L3_frontA =====
+CMD: python3 L3/scripts/verify_layer3_frontA.py
+Layer 3 Front A verifier: PASS
+  fiber normal forms: diagonal B^2=I; off-diagonal B^3=B and rank(B)=2
+  operator identities: diagonal L^3=L; off-diagonal L^4=L^2 and L^3!=L
+  spectral split: diagonal minpoly t(t-1)(t+1); off-diagonal t^2(t-1)(t+1)
+  Jordan split: off-diagonal has exactly one J2(0) block
+STATUS: PASS

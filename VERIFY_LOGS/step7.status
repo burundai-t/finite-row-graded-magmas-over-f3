@@ -1,0 +1,5 @@
+PASS
+Added tools/run_quick_checks.sh.
+Updated README.md to include the convenience quick-check script and explicit equivalent commands.
+Default quick path: L1, L2, and L3 Front A-H.
+All quick-check component commands passed; clean combined output is recorded in VERIFY_LOGS/quick_checks.log.

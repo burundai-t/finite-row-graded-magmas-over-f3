@@ -1,0 +1,5 @@
+Command used in a clean temporary directory:
+  lualatex -interaction=nonstopmode -halt-on-error main.tex
+  lualatex -interaction=nonstopmode -halt-on-error main.tex
+  lualatex -interaction=nonstopmode -halt-on-error main.tex
+Result: PASS, paper/main.pdf produced from paper/main.tex.

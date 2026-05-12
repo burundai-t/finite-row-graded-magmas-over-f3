@@ -1,0 +1,11 @@
+== mathcal_H: H1 artifact audit ==
+PASS S6-H1 global H range: points=10460353203, H_tot=[-2268,7302], rawH=[-378,1217], endpoint_counts=min:8 max:12, rerun=sample:8
+== mathcal_H: H2 full artifact audit skipped by default ==
+   To include it, run: tools/run_mathcal_H_audit.sh --include-h2-full
+== mathcal_H: H3 PAB/row-complement witness audit ==
+PASS S6-H3 PAB/row-complement guardrail: witnesses=PAB:111111111222222222000;row_complement:222222222111111111000, H_tot=7020, N_neg=0, nonunique_H_selector=1
+== mathcal_H: H4 signed-cancellation artifact audit ==
+PASS S6-H4 signed-cancellation frontier: points=10460353203, high_rawH>=1171 count=12, pure_high=0, pair=(rawH=1217,N_-=3,count=12), witnesses=12, rerun=sample:8
+== mathcal_H: H2 light coverage/consistency audit ==
+PASS S6-H2 coverage light: segments=[0,18540), certified_unsat=18540, SAT=0, UNKNOWN=0, unresolved=0, tail_nodes=13680, chunks=85, windows=11, rerun_rows=13683
+== mathcal_H audit: PASS ==

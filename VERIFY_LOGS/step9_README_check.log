@@ -1,0 +1,12 @@
+OK Full recomputation and spot recomputation
+OK tools/run_quick_checks.sh
+OK tools/run_mathcal_H_audit.sh
+OK --dry-run
+OK H1 full recomputation
+OK H2 full pure-frontier recomputation
+OK H4 full recomputation
+OK H1 spot recomputation
+OK H2 spot recomputation
+OK H4 spot recomputation
+OK not a replacement for the accepted full artifacts
+PASS README step9 content check

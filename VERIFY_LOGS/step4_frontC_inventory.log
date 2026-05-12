@@ -1,0 +1,27 @@
+Step 4 Front C integration/audit
+Repository: /mnt/data/pab_preprint_support
+timestamp_utc: 2026-05-12T14:52:26Z
+
+Front C files present:
+  present: L3/scripts/verify_layer3_frontC.py
+  present: L3/tables/layer3_frontC_hom_constant_formula.csv
+  present: L3/tables/layer3_frontC_fixed_space_basis.csv
+  present: L3/tables/layer3_frontC_intertwiner_dimension_audit.csv
+  present: L3/tables/layer3_frontC_automorphism_hom_audit.csv
+  present: L3/tables/layer3_frontC_collapse_tree.csv
+  present: L3/tables/layer3_frontC_summary.csv
+  present: L3/tables/layer3_frontC_verifier_checks.csv
+  present: L3/tables/layer3_frontC_status_registry.csv
+  present: L3/linearization_steps/layer3_frontC_intertwiners.md
+
+Byte-for-byte comparison against uploaded Front C files:
+  identical: verify_layer3_frontC.py
+  identical: layer3_frontC_hom_constant_formula.csv
+  identical: layer3_frontC_fixed_space_basis.csv
+  identical: layer3_frontC_intertwiner_dimension_audit.csv
+  identical: layer3_frontC_automorphism_hom_audit.csv
+  identical: layer3_frontC_collapse_tree.csv
+  identical: layer3_frontC_summary.csv
+  identical: layer3_frontC_verifier_checks.csv
+  identical: layer3_frontC_status_registry.csv
+  note: L3/linearization_steps/layer3_frontC_intertwiners.md is the same explanatory note except for the verifier command path normalized to this repository: python3 scripts/verify_layer3_frontC.py

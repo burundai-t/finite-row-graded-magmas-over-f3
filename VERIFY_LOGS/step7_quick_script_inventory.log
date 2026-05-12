@@ -1,0 +1,18 @@
+     1	#!/usr/bin/env bash
+     2	set -euo pipefail
+     3	ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+     4	cd "$ROOT"
+     5	export PYTHONDONTWRITEBYTECODE=1
+     6	run_check(){ echo "== $1 =="; shift; echo "+ $*"; "$@"; echo; }
+     7	run_check "L1 finite landscape / associativity reference" python3 -S L1/scripts/verify_layer1_v3_final.py
+     8	run_check "L2 finite selection reference" python3 -S L2/scripts/verify_layer2_selection_final.py
+     9	run_check "L3 Front A" python3 L3/scripts/verify_layer3_frontA.py
+    10	run_check "L3 Front B" python3 L3/scripts/verify_layer3_frontB.py
+    11	run_check "L3 Front B envelope" python3 L3/scripts/verify_layer3_frontB_envelope.py
+    12	run_check "L3 Front C" python3 L3/scripts/verify_layer3_frontC.py
+    13	run_check "L3 Front D" python3 L3/scripts/verify_layer3_frontD.py
+    14	run_check "L3 Front E" python3 L3/scripts/verify_layer3_frontE.py
+    15	run_check "L3 Front F" python3 L3/scripts/verify_layer3_frontF.py
+    16	run_check "L3 Front G" python3 L3/scripts/verify_layer3_frontG.py
+    17	run_check "L3 Front H" python3 L3/scripts/verify_layer3_frontH.py
+    18	echo "== quick finite-layer checks passed =="

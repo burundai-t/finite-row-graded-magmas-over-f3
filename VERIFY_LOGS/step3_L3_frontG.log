@@ -1,0 +1,10 @@
+===== L3_frontG =====
+CMD: python3 L3/scripts/verify_layer3_frontG.py
+Layer 3 Front G verifier: PASS
+  carrier: k[M] identified with Mat3 matrix units; bracket structure constants checked
+  decomposition: gl3 = kI + sl3 and adjoint carrier split 1+8 checked
+  S3 compatibility: simultaneous relabeling preserves PAB, bracket, so3, and p
+  compact sector: so3 is S3-stable, Killing-negative, and Cartan split sl3=so3+p checked
+  companion group type: SU(3) x SU(2) x U(1) recorded as the compact Lie package
+  boundary: PAB and matrix multiplication share the carrier; cross-row AJB^T and 9 basis coincidences checked
+STATUS: PASS

@@ -1,0 +1,9 @@
+===== L3_frontB =====
+CMD: python3 L3/scripts/verify_layer3_frontB.py
+Layer 3 Front B verifier: PASS
+  same-row block semigroup: |B_r|=6 with identity, tau_r, and four rank-2 maps
+  row-target classification: 17 elements per W_r = 14 row-stay forms + 3 constants
+  composition monoid: 3*17 = 51 positive elements
+  envelope dimensions: dim W_r=9 for all rows, dim E=27
+  product law: W_r W_s subset W_r checked structurally
+STATUS: PASS

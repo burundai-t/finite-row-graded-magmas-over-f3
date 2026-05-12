@@ -1,0 +1,5 @@
+Step 8 status: PASS
+Added tools/run_mathcal_H_audit.sh.
+Default route passed: H1/H3/H4 focused artifact audits + H2 light coverage/consistency audit.
+Optional route: --include-h2-full adds the focused H2 certificate-pack artifact audit.
+README.md updated with the mathcal_H audit convenience command.

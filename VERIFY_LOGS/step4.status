@@ -1,0 +1,6 @@
+PASS
+Step 4 Front C audit complete.
+Front C script and CSV tables were already present in L3 and are byte-identical to the uploaded Front C verifier/table files.
+The explanatory md was also present; it differs from the uploaded md only in the verifier command line, and the repository version is the corrected one matching the actual script path: python3 scripts/verify_layer3_frontC.py.
+Verifier commands passed from project root and from L3 root.
+No semantic replacement was necessary.

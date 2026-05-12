@@ -1,0 +1,4 @@
+PASS
+L1/L2/L3 copied from cycle2_L1_L2_L3_frozen_reference_v1.zip.
+Frozen layer directory structures preserved.
+Smoke checks passed for L1, L2, L3 fronts A-H, and L3 linearization.

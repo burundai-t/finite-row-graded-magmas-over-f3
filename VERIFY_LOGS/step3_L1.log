@@ -1,0 +1,4 @@
+===== L1 =====
+CMD: python3 -S L1/scripts/verify_layer1_v3_final.py
+Layer 1 v3 final pack checks passed.
+STATUS: PASS

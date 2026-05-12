@@ -1,0 +1,9 @@
+final_read_patch=applied
+stanley2012_removed=yes
+fiber_algebra_support=added
+fiber_algebra_verifier=PASS
+paper_pdf_pages=43
+pdf_render_pages=43
+quick_checks_wrapper=PASS
+mathcal_H_audit=PASS
+h2_full_audit=not_run_default_route

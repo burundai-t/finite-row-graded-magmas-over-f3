@@ -1,0 +1,10 @@
+===== L3_frontF =====
+CMD: python3 L3/scripts/verify_layer3_frontF.py
+Layer 3 Front F verifier: PASS
+  operator envelope: continuation operators L_(xy)L_z and L_xL_(yz) lie in E and in W_row(x)
+  distance collapse: 729 triples -> 93 normal-form pair types -> 9 (I,B,H) distance types
+  PAB H profile: I_tot=8904, B_tot=1884, H_tot=7020, H_-=0, N_-=0
+  row-pattern decomposition: rawH contributions sum to 1170, hence H_tot=6*1170=7020
+  guardrail: row-complement has the same H profile, so H is an operator bridge, not a selector
+  column-blind d=000 audit: pure H maximum 7020 is attained exactly by PAB and row-complement
+STATUS: PASS

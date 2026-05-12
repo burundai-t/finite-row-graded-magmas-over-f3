@@ -1,0 +1,13 @@
+STEP 3 LAYER CHECKS: PASS
+Commands passed:
+  python3 -S L1/scripts/verify_layer1_v3_final.py
+  python3 -S L2/scripts/verify_layer2_selection_final.py
+  python3 L3/scripts/verify_layer3_frontA.py
+  python3 L3/scripts/verify_layer3_frontB.py
+  python3 L3/scripts/verify_layer3_frontC.py
+  python3 L3/scripts/verify_layer3_frontD.py
+  python3 L3/scripts/verify_layer3_frontE.py
+  python3 L3/scripts/verify_layer3_frontF.py
+  python3 L3/scripts/verify_layer3_frontG.py
+  python3 L3/scripts/verify_layer3_frontH.py
+  python3 L3/scripts/verify_layer3_linearization_final.py
