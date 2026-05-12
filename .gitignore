@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# LaTeX transient files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+paper/*.log
+
+# Keep intentional verification logs
+!VERIFY_LOGS/*.log
+!VERIFY_LOGS/*.status
+
+# Recompute outputs, unless intentionally promoted
+runs/
+
+# Process markers
+*.pid
+
+# Local recomputation outputs
+/runs/
+/mathcal_H/runs/

@@ -1,0 +1,270 @@
+PAB PREPRINT SUPPORT INDEX
+==========================
+
+Purpose
+-------
+This file maps the current manuscript to the repository support layers and
+reviewer-facing verifier commands. It is a navigation index, not a second
+mathematical manuscript.
+
+Canonical manuscript
+--------------------
+Mathematical source:
+  paper/main.tex
+
+Compiled manuscript:
+  paper/main.pdf
+
+Build command:
+  cd paper
+  lualatex -interaction=nonstopmode -halt-on-error main.tex
+  lualatex -interaction=nonstopmode -halt-on-error main.tex
+  lualatex -interaction=nonstopmode -halt-on-error main.tex
+  cd ..
+
+The layer notes inside L1/, L2/, and L3/ are frozen reference notes. For theorem
+wording, use paper/main.tex. For support paths and commands, use this index and
+README.md.
+
+Repository roles
+----------------
+L1/        finite landscape and associativity reference layer
+L2/        finite selection reference layer
+L3/        selected-PAB operator, endomorphism, bridge, term-algebra, and
+           companion-structure reference layer
+mathcal_H/ global hidden-continuation theorem bundle
+VERIFY_LOGS/ optional run logs
+MANIFEST.sha256 release integrity manifest
+
+License policy
+--------------
+paper/                         CC BY 4.0 manuscript license; see paper/LICENSE.md
+all files outside paper/        MIT License; see LICENSE
+
+Default reviewer-facing checks
+------------------------------
+Finite L1/L2/L3 quick audit:
+  tools/run_quick_checks.sh | tee VERIFY_LOGS/quick_checks.log
+
+mathcal_H default artifact audit:
+  tools/run_mathcal_H_audit.sh | tee VERIFY_LOGS/mathcal_H_audit.log
+
+mathcal_H audit including the heavier H2 focused artifact audit:
+  tools/run_mathcal_H_audit.sh --include-h2-full | tee VERIFY_LOGS/mathcal_H_audit_with_h2_full.log
+
+The default mathcal_H audit uses the light H2 coverage/consistency check. It
+does not rerun the SMT solver. The focused H2 artifact audit is available via
+--include-h2-full, and full recomputation commands are listed below and in
+README.md.
+
+Layer L1: finite landscape and associativity
+--------------------------------------------
+Role:
+  finite landscape and associativity reference.
+
+Primary verifier:
+  python3 -S L1/scripts/verify_layer1_v3_final.py
+
+Main support locations:
+  L1/scripts/
+  L1/tables/
+  L1/generated/
+
+Key manuscript support:
+  normal-form finite landscape context
+  associativity range and endpoint data
+  associativity distribution and partition-function data
+
+Layer L2: compact selection reference
+-------------------------------------
+Role:
+  compact finite selection reference.
+
+Primary verifier:
+  python3 -S L2/scripts/verify_layer2_selection_final.py
+
+Main support locations:
+  L2/scripts/
+  L2/tables/
+  L2/generated/
+
+Key manuscript support:
+  access-zero and diagonal-compression survivor counts
+  local path-dependence table
+  pure C/J survivor separation
+  compact selection theorem support tables
+
+Layer L3: selected-PAB structure reference
+------------------------------------------
+Role:
+  selected-PAB operator, endomorphism, bridge, term-algebra, Lie, and symplectic
+  reference layer.
+
+Primary verifiers:
+  python3 L3/scripts/verify_layer3_frontA.py
+  python3 -S L3/scripts/verify_layer3_frontB.py
+  python3 -S L3/scripts/verify_layer3_frontC.py
+  python3 -S L3/scripts/verify_layer3_frontD.py
+  python3 -S L3/scripts/verify_layer3_frontE.py
+  python3 -S L3/scripts/verify_layer3_frontF.py
+  python3 -S L3/scripts/verify_layer3_frontG.py
+  python3 -S L3/scripts/verify_layer3_frontH.py
+  python3 -S L3/scripts/verify_l3_fiber_algebra_5dim.py
+
+Optional/heavier L3 repeat check:
+  python3 L3/scripts/verify_layer3_linearization_final.py
+
+Main support locations:
+  L3/scripts/
+  L3/tables/
+  L3/linearization_steps/
+
+Front C support:
+  L3/scripts/verify_layer3_frontC.py
+  L3/tables/layer3_frontC_hom_constant_formula.csv
+  L3/tables/layer3_frontC_fixed_space_basis.csv
+  L3/tables/layer3_frontC_intertwiner_dimension_audit.csv
+  L3/tables/layer3_frontC_automorphism_hom_audit.csv
+  L3/tables/layer3_frontC_collapse_tree.csv
+  L3/tables/layer3_frontC_summary.csv
+  L3/tables/layer3_frontC_verifier_checks.csv
+  L3/tables/layer3_frontC_status_registry.csv
+  L3/linearization_steps/layer3_frontC_intertwiners.md
+
+Five-dimensional row-fiber algebra support:
+  L3/scripts/verify_l3_fiber_algebra_5dim.py
+  L3/tables/l3_fiber_algebra_5dim_multiplication.csv
+  L3/tables/l3_fiber_algebra_5dim_structure.csv
+
+Key manuscript support:
+  left translations, composition envelope, and five-dimensional row-fiber algebra
+  endomorphism monoid and closed-form intertwiners
+  row-contraction bridge
+  hidden-continuation operator identity interface
+  binary term algebra at arity two
+  carrier-level companion structures
+  signed symplectic bridge
+
+mathcal_H: global hidden-continuation theorem bundle
+---------------------------------------------------
+Role:
+  global hidden-continuation theorem support. This bundle is separate from the
+  frozen L1/L2/L3 layer checks.
+
+Default audit:
+  tools/run_mathcal_H_audit.sh
+
+Focused audit commands from inside mathcal_H/:
+  PYTHONDONTWRITEBYTECODE=1 python3 verify_mathcal_H_bundle.py --only-h1
+  PYTHONDONTWRITEBYTECODE=1 python3 verify_mathcal_H_bundle.py --only-h2
+  PYTHONDONTWRITEBYTECODE=1 python3 verify_mathcal_H_bundle.py --only-h3
+  PYTHONDONTWRITEBYTECODE=1 python3 verify_mathcal_H_bundle.py --only-h4
+
+Fast static H2 coverage/consistency audit:
+  cd mathcal_H/h2
+  PYTHONDONTWRITEBYTECODE=1 python3 verify_h2_coverage_light.py
+  cd ../..
+
+Accepted artifact locations:
+  mathcal_H/h1/raw/
+  mathcal_H/h2/raw/
+  mathcal_H/h4/raw/
+
+Accepted result summary:
+  H1 unrestricted range: rawH in [-378,1217], H_tot in [-2268,7302]
+  H2 pure frontier: certified UNSAT = 18540/18540, SAT=0, UNKNOWN=0
+  H3 PAB/row-complement: rawH=1170, H_tot=7020, N_-=0
+  H4 spike layer: 12 points above pure frontier, all rawH=1217, N_-=3
+
+Full recomputation routes
+-------------------------
+Full recomputation commands can be long. They write to mathcal_H/runs/, which is
+ignored by .gitignore. Append --dry-run for a no-work preflight if supported by
+the runner.
+
+H1 full recomputation:
+  cd mathcal_H
+  PYTHONDONTWRITEBYTECODE=1 python3 h1/run_h1_evaluator.py \
+    --start-index 0 \
+    --end-index 0 \
+    --run-dir runs/h1_full \
+    --force \
+    --self-test
+  cd ..
+
+H2 full pure-frontier recomputation:
+  cd mathcal_H
+  PYTHONDONTWRITEBYTECODE=1 python3 h2/run_h2_frontier.py \
+    --depth 9 \
+    --start-offset 0 \
+    --end-offset 0 \
+    --run-dir runs/h2_full \
+    --force
+  cd ..
+
+H4 full recomputation:
+  cd mathcal_H
+  PYTHONDONTWRITEBYTECODE=1 python3 h4/run_h4_classifier.py \
+    --start-index 0 \
+    --end-index 0 \
+    --run-dir runs/h4_full \
+    --force \
+    --self-test
+  cd ..
+
+Spot recomputation routes
+-------------------------
+Spot recomputation checks arbitrary bounded segments. It is a reviewer-facing
+sanity route, not a replacement for the accepted full artifacts.
+
+H1 spot recomputation:
+  cd mathcal_H
+  PYTHONDONTWRITEBYTECODE=1 python3 h1/run_h1_evaluator.py \
+    --start-index 123456 \
+    --end-index 124456 \
+    --run-dir runs/h1_segment_123456_124456 \
+    --force \
+    --self-test
+  cd ..
+
+H2 spot recomputation:
+  cd mathcal_H
+  PYTHONDONTWRITEBYTECODE=1 python3 h2/run_h2_frontier.py \
+    --depth 9 \
+    --start-offset 1000 \
+    --end-offset 1100 \
+    --run-dir runs/h2_segment_1000_1100 \
+    --force
+  cd ..
+
+H4 spot recomputation:
+  cd mathcal_H
+  PYTHONDONTWRITEBYTECODE=1 python3 h4/run_h4_classifier.py \
+    --start-index 123456 \
+    --end-index 124456 \
+    --run-dir runs/h4_segment_123456_124456 \
+    --force \
+    --self-test
+  cd ..
+
+Integrity manifest
+------------------
+Release integrity manifest:
+  MANIFEST.sha256
+
+Generator:
+  tools/make_manifest.sh
+
+Verification command:
+  sha256sum -c MANIFEST.sha256
+
+The manifest excludes .git/, MANIFEST.sha256 itself, Python cache files,
+.DS_Store, and local recomputation outputs under runs/ or mathcal_H/runs/.
+
+Log handles
+-----------
+Current package-build/audit logs are kept under VERIFY_LOGS/. Important default
+logs include:
+  VERIFY_LOGS/paper_lualatex_step2.log
+  VERIFY_LOGS/quick_checks.log
+  VERIFY_LOGS/mathcal_H_audit.log
