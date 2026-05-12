@@ -1,0 +1,10 @@
+a,b,label,type,raw_RRR,raw_RRS,raw_RSR,raw_RSS,raw_RST,raw_total,Assoc_d000,extra_RRS_plus_RSR_over_selected
+0,0,g5=r1,trivial,19,18,18,54,54,163,489,36
+0,1,,nontrivial,19,9,9,54,0,91,273,18
+0,2,,nontrivial,19,9,9,54,0,91,273,18
+1,0,,nontrivial,19,9,9,54,0,91,273,18
+1,1,,trivial,19,0,0,54,54,127,381,0
+1,2,g1=r2 / PAB,nontrivial,19,0,0,54,0,73,219,0
+2,0,,nontrivial,19,9,9,54,0,91,273,18
+2,1,row-complement,nontrivial,19,0,0,54,0,73,219,0
+2,2,,trivial,19,0,0,54,54,127,381,0

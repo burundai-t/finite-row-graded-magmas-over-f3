@@ -1,0 +1,7 @@
+a,b,x18_cross_rule,formula_hint,label,type,H_acc_bits,Assoc_d000,selected_after_Hacc,selected_after_nontriviality,selected_after_Assoc_min,pure_CJ_pass
+0,1,000000000111111111,"h_{0,1}",,nontrivial,0,273,True,True,False,False
+0,2,000000000222222222,"h_{0,2}",,nontrivial,0,273,True,True,False,False
+1,0,111111111000000000,"h_{1,0}",,nontrivial,0,273,True,True,False,False
+1,2,111111111222222222,"h(r1,r2)=r2",g1=r2 / PAB,nontrivial,0,219,True,True,True,True
+2,0,222222222000000000,"h_{2,0}",,nontrivial,0,273,True,True,False,False
+2,1,222222222111111111,"h(r1,r2)=overline(r1,r2)",row-complement,nontrivial,0,219,True,True,True,False

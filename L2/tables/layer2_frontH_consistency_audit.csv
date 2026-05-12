@@ -1,0 +1,8 @@
+check,expected,observed,passed
+selection_chain_final_survivor,one PAB survivor,"{'stage': 4, 'criterion': 'finite pure C/J drift-kick', 'cross_rules': 1, 'diagonals': 1, 'total': 1, 'note': 'finite directed-edge separation; Front E closed'}",True
+local_Assoc_minimizers,"{(1,2),(2,1)}","[(1, 2), (2, 1)]",True
+weak_qp_rejected,both PAB and competitor have two weak passes,PAB=2; competitor=2,True
+pure_CJ_separates,PAB=True; competitor=False,PAB=True; competitor=False,True
+H_auxiliary_policy,H is not a selector dependency,guardrail table contains auxiliary-only policy,True
+H_keeps_PAB_competitor_ambiguity,same pure H profile at d=000,"PAB={'I_tot': 8904, 'B_tot': 1884, 'H_tot': 7020, 'H_pos': 7020, 'H_neg_abs': 0, 'N_neg': 0, 'h_loc_min': 0, 'h_loc_max': 16}; competitor={'I_tot': 8904, 'B_tot': 1884, 'H_tot': 7020, 'H_pos': 7020, 'H_neg_abs': 0, 'N_neg': 0, 'h_loc_min': 0, 'h_loc_max': 16}",True
+core_tables_present,40,40,True

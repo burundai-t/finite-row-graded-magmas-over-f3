@@ -1,0 +1,8 @@
+criterion,prerequisite,depends_on_prior_selection,notes
+H_acc=0,Layer 1 normal form,False,globally defined on cross-rule sector; enables column-blind absorption domain
+H_diag=0,Layer 1 diagonal sector,False,globally defined on diagonal sector
+nontriviality,"column-blind parametrization h_{a,b}",True,semantic after H_acc=0; not uniqueness-minimal after pure C/J
+diagonal idempotence,diagonal map; used after H_diag=0 in narrative,False,"alone leaves d0=0 with d1,d2 free"
+Assoc_000,d=000 selected,True,local path-dependence bridge; not a global Assoc criterion
+pure C/J drift-kick,column-blind absorption on M^x,True,finite dynamical selector; C^2 symplectic lift is auxiliary
+hidden continuation contrast H,left-regular operator lift; Layer 1H controlled strata,False,landscape bridge; not part of selector dependency in v0.7

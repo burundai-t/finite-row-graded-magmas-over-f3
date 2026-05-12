@@ -1,0 +1,4 @@
+anchor,condition,input_count,output_count,reason,status
+cross-rule nontriviality,a != b,9,6,right row direction changes output column,Front C closed
+diagonal idempotence alone,d0=0,27,9,"all (r,r) are fixed, but d1,d2 remain free",diagnostic: not sufficient alone
+diagonal idempotence after H_diag=0,constant diagonal and d0=0,3,1,"among 000,111,222 only 000 fixes (r,r)",Front C closed

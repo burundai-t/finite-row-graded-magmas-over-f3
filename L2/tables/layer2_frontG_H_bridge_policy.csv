@@ -1,0 +1,5 @@
+guardrail,reason,Layer2_decision
+"H is auxiliary, not mandatory selector",global Omega' H-range and pure-frontier certificate remain open,do not add H to the required selection chain
+H does not resolve PAB/competitor,"PAB and row-complement at d=000 both have H_tot=7020, H_neg=0, N_neg=0",final separation remains pure C/J directed-edge dynamics
+raw H_max is not pure,controlled H_max=7302 has H_neg=6 and N_neg=3,"if H is used, pure-frontier language is safer than max-H language"
+controlled frontier is strong evidence,"max{H_tot:N_-=0}=7020 on column-blind, affine, and degree<=2 strata",record as bridge to future global certificate

@@ -1,0 +1,7 @@
+item,content,status
+definition,H=I-B from left-regular operator lift; four-point continuation contrast,imported from Layer 1H
+column_blind_exact_check,Layer 2 verifier recomputes all 243 column-blind x Delta H profiles,checked in v0.7
+controlled_pure_frontier,"max{H_tot:N_-=0}=7020 on column-blind, affine, degree<=2",imported / partially recomputed
+PAB_profile,"H_tot=7020, H_pos=7020, H_neg=0, N_neg=0",checked in v0.7
+competitor_profile,row-complement has the same pure H profile at d=000,checked in v0.7
+selector_role,auxiliary bridge only; does not alter survivor count,Front G closed

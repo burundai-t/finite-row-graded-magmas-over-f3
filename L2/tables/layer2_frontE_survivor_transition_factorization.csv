@@ -1,0 +1,3 @@
+rule,absorption_transitions,drift,kick,kick_phase_shift,selected_by_pure_CJ
+PAB,"{C,J}",C,J,0,True
+row-complement,"{C^{-1},C^{-1}J}",C^{-1},C^{-1}J,1,False

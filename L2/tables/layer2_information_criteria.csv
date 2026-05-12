@@ -1,0 +1,3 @@
+criterion,domain,theorem,finite_core_check,survivors,status
+H_acc=0,cross-rules G,"I(C_out;C1,C2|R1,R2)=0 iff g is column-blind",all 3^9 one-table functions: entropy zero iff constant,9,Front B closed
+H_diag=0,diagonals Delta,"H(d0,d1,d2)=0 iff d0=d1=d2",all 27 diagonals enumerated,3,Front B closed

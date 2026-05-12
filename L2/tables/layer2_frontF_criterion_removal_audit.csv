@@ -1,0 +1,8 @@
+removed_criterion,remaining_attempt,exact_or_imported_consequence,survivor_count_or_failure,status
+H_acc=0,Assoc/path-dependence plus later dynamical ideas,Layer 1 global min Assoc=63 while PAB=219; no global minimizer/maximizer is column-blind,not a PAB selector,essential / imported guardrail
+H_diag=0,diagonal idempotence plus min Assoc on idempotent diagonals,idempotence leaves 9 diagonals; min Assoc over nontrivial CB x idempotent diagonals is 189 at d=021,"selects wrong diagonal frontier, not PAB",essential for current diagonal chain
+nontriviality,"H_acc, H_diag, idempotence, min Assoc_000, pure C/J",min Assoc_000 still discards trivial CB rules; pure C/J also rejects them,still 1,not logically essential; retained as structural guardrail
+diagonal idempotence,H_diag plus cross-rule criteria,"H_diag leaves constant diagonals 000,111,222",3 diagonal survivors,essential unless replaced by another diagonal selector
+min Assoc_000,"H_acc, H_diag, idempotence, pure C/J",pure C/J selects PAB directly from all 9 column-blind rules,still 1,not logically essential; retained as explanatory bridge
+pure C/J drift-kick,"H_acc, H_diag, idempotence, nontriviality, min Assoc_000",PAB and row-complement both have Assoc_000=219,2 cross-rule survivors,essential for uniqueness in narrative chain
+hidden continuation contrast H,main v0.7 finite selector,no change; H is auxiliary only,still 1,not a dependency

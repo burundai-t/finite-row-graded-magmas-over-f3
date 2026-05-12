@@ -1,0 +1,13 @@
+rule,x,absorbed_1,absorbed_2,T3,T2,edge_reversal_J,T3_preserves_orientation_sectors,T2_is_canonical_reversal
+PAB,"(0, 1)","(1, 0)","(1, 2)","(1, 2)","(1, 0)","(1, 0)",True,True
+PAB,"(0, 2)","(2, 0)","(2, 1)","(2, 1)","(2, 0)","(2, 0)",True,True
+PAB,"(1, 0)","(0, 1)","(0, 2)","(0, 2)","(0, 1)","(0, 1)",True,True
+PAB,"(1, 2)","(2, 0)","(2, 1)","(2, 0)","(2, 1)","(2, 1)",True,True
+PAB,"(2, 0)","(0, 1)","(0, 2)","(0, 1)","(0, 2)","(0, 2)",True,True
+PAB,"(2, 1)","(1, 0)","(1, 2)","(1, 0)","(1, 2)","(1, 2)",True,True
+row-complement,"(0, 1)","(2, 0)","(2, 1)","(2, 0)","(2, 1)","(1, 0)",True,False
+row-complement,"(0, 2)","(1, 0)","(1, 2)","(1, 0)","(1, 2)","(2, 0)",True,False
+row-complement,"(1, 0)","(2, 0)","(2, 1)","(2, 1)","(2, 0)","(0, 1)",True,False
+row-complement,"(1, 2)","(0, 1)","(0, 2)","(0, 1)","(0, 2)","(2, 1)",True,False
+row-complement,"(2, 0)","(1, 0)","(1, 2)","(1, 2)","(1, 0)","(0, 2)",True,False
+row-complement,"(2, 1)","(0, 1)","(0, 2)","(0, 2)","(0, 1)","(1, 2)",True,False

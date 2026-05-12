@@ -1,0 +1,4 @@
+label,a,b,d,x21,Assoc,I_tot,B_tot,H_tot,H_pos,H_neg_abs,N_neg,h_loc_min,h_loc_max,pure,Layer2_role
+PAB,1,2,000,111111111222222222000,219,8904,1884,7020,7020,0,0,0,16,True,main selector survivor
+row_complement,2,1,000,222222222111111111000,219,8904,1884,7020,7020,0,0,0,16,True,main selector competitor rejected by pure C/J
+column_blind_Hmax_example,0,1,220,000000000111111111220,195,9150,1848,7302,7308,6,3,-2,18,False,higher H_tot but signed-cancellation tail

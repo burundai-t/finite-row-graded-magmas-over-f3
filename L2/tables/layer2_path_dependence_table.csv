@@ -1,0 +1,7 @@
+a,b,label,formula_hint,Assoc_000,bracket_sensitive_triples,bracket_sensitive_fraction,selected_by_local_path_dependence,interpretation
+0,1,,"h_{0,1}",273,456,0.625514403292,False,discarded by extra RRS/RSR coincidences
+0,2,,"h_{0,2}",273,456,0.625514403292,False,discarded by extra RRS/RSR coincidences
+1,0,,"h_{1,0}",273,456,0.625514403292,False,discarded by extra RRS/RSR coincidences
+1,2,g1=r2 / PAB,"h(r1,r2)=r2",219,510,0.699588477366,True,minimum accidental associativity inside nontrivial column-blind
+2,0,,"h_{2,0}",273,456,0.625514403292,False,discarded by extra RRS/RSR coincidences
+2,1,row-complement,"h(r1,r2)=overline(r1,r2)",219,510,0.699588477366,True,minimum accidental associativity inside nontrivial column-blind

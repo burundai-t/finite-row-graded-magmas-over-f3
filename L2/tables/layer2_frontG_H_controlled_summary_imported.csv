@@ -1,0 +1,4 @@
+stratum,points,H_min,H_max,pure_count,pure_H_max,N_neg_max,count_above_PAB_7020,count_ge_PAB_7020,certificate_role
+column_blind_x_Delta,243,1836,7302,159,7020,108,12,18,recomputed exactly by this Layer 2 verifier
+affine_x_Delta,19683,-2268,7302,723,7020,441,12,18,imported from Layer 1H controlled atlas
+degree_le2_x_Delta_exact,14348907,-2268,7302,3177,7020,468,12,18,imported from Layer 1H controlled atlas

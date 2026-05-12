@@ -1,0 +1,7 @@
+a,b,label,d,x21,Assoc,I_tot,B_tot,H_tot,H_pos,H_neg_abs,N_neg,h_loc_min,h_loc_max,pure,above_PAB_7020,ge_PAB_7020,is_PAB,is_row_complement_d000,pure_H_frontier
+0,1,,222,000000000111111111222,219,8904,1884,7020,7020,0,0,0,16,True,False,True,False,False,True
+0,2,,111,000000000222222222111,219,8904,1884,7020,7020,0,0,0,16,True,False,True,False,False,True
+1,0,,222,111111111000000000222,219,8904,1884,7020,7020,0,0,0,16,True,False,True,False,False,True
+1,2,g1=r2 / PAB,000,111111111222222222000,219,8904,1884,7020,7020,0,0,0,16,True,False,True,True,False,True
+2,0,,111,222222222000000000111,219,8904,1884,7020,7020,0,0,0,16,True,False,True,False,False,True
+2,1,row-complement,000,222222222111111111000,219,8904,1884,7020,7020,0,0,0,16,True,False,True,False,True,True

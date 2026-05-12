@@ -1,0 +1,7 @@
+rule,H_acc_bits,H_acc_zero,column_blind,zero_iff_column_blind_on_audit,note
+PAB_h12_r2,0,True,True,True,zero-access selected survivor
+row_complement_h21,0,True,True,True,zero-access selected competitor
+left_column_c1,1.58496250072,False,False,True,maximal column access witness
+right_column_c2,1.58496250072,False,False,True,maximal column access witness
+normalized_column_sum,1.58496250072,False,False,True,maximal column access witness
+column_equality_gate,0.918295834054,False,False,True,intermediate positive access witness

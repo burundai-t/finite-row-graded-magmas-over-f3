@@ -1,0 +1,4 @@
+item,status,why_not_blocking
+C2_symplectic_realization,open geometric bridge,finite selector uses pure C/J directed-edge criterion
+global_H_certificate_on_Omega_prime,open,H is auxiliary only; controlled strata imported from Layer 1H
+hand_compression_of_all_finite_checks,future exposition improvement,verifier recomputes finite cores

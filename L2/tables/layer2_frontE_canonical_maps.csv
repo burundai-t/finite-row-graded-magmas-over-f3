@@ -1,0 +1,5 @@
+map,formula,order,role
+C,"C(r,c)=(c,overline(rc))",3,forward head-to-tail continuation / drift
+C^{-1},"C^{-1}(r,c)=(overline(rc),r)",3,backward continuation
+J,"J(r,c)=(c,r)",2,intrinsic edge reversal / pure kick
+C^{-1}J,"C^{-1}J(r,c)=(overline(cr),c)",2,drifted reversal; competitor kick

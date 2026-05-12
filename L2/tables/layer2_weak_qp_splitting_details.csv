@@ -1,0 +1,17 @@
+rule,choices,q_sector,p_sector,T3_preserves_qp,T3_switches_qp,T2_switches_qp,weak_drift_kick_pass
+PAB,000,"(0, 1) (0, 2) (1, 2)","(1, 0) (2, 0) (2, 1)",False,False,True,False
+PAB,001,"(0, 1) (0, 2) (2, 1)","(1, 0) (1, 2) (2, 0)",False,False,True,False
+PAB,010,"(0, 1) (1, 2) (2, 0)","(0, 2) (1, 0) (2, 1)",True,False,True,True
+PAB,011,"(0, 1) (2, 0) (2, 1)","(0, 2) (1, 0) (1, 2)",False,False,True,False
+PAB,100,"(0, 2) (1, 0) (1, 2)","(0, 1) (2, 0) (2, 1)",False,False,True,False
+PAB,101,"(0, 2) (1, 0) (2, 1)","(0, 1) (1, 2) (2, 0)",True,False,True,True
+PAB,110,"(1, 0) (1, 2) (2, 0)","(0, 1) (0, 2) (2, 1)",False,False,True,False
+PAB,111,"(1, 0) (2, 0) (2, 1)","(0, 1) (0, 2) (1, 2)",False,False,True,False
+row-complement,000,"(0, 1) (0, 2) (1, 0)","(1, 2) (2, 0) (2, 1)",False,False,True,False
+row-complement,001,"(0, 1) (0, 2) (2, 0)","(1, 0) (1, 2) (2, 1)",False,False,True,False
+row-complement,010,"(0, 1) (1, 0) (1, 2)","(0, 2) (2, 0) (2, 1)",False,False,True,False
+row-complement,011,"(0, 1) (1, 2) (2, 0)","(0, 2) (1, 0) (2, 1)",True,False,True,True
+row-complement,100,"(0, 2) (1, 0) (2, 1)","(0, 1) (1, 2) (2, 0)",True,False,True,True
+row-complement,101,"(0, 2) (2, 0) (2, 1)","(0, 1) (1, 0) (1, 2)",False,False,True,False
+row-complement,110,"(1, 0) (1, 2) (2, 1)","(0, 1) (0, 2) (2, 0)",False,False,True,False
+row-complement,111,"(1, 2) (2, 0) (2, 1)","(0, 1) (0, 2) (1, 0)",False,False,True,False

@@ -1,0 +1,9 @@
+front,status,deliverable
+A,closed,"package skeleton, tables, verifier"
+B,closed,H_acc and H_diag theorem blocks
+C,closed,nontriviality and diagonal idempotence anchors
+D,closed,local Assoc_000 path-dependence theorem
+E,closed finite core,pure C/J directed-edge selector; C^2 realization remains bridge
+F,closed,independence/minimality registry
+G,closed,H auxiliary bridge with guardrails
+H,closed,"integrity audit, artifact manifest, consistency audit"

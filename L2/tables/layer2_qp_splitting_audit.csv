@@ -1,0 +1,3 @@
+rule,T3_order,T2_order,weak_qp_splitting_pass_count,weak_qp_splitting_separates_PAB,T2_is_canonical_edge_reversal_J,T3_is_forward_continuation_C,T3_is_backward_continuation_C_inv,canonical_pure_drift_kick_pass,audit_note
+PAB,3,2,2,False,True,True,False,True,
+row-complement,3,2,2,False,False,False,True,False,weak split is insufficient

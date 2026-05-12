@@ -1,0 +1,2 @@
+claim,PAB_Assoc,Layer1_global_min_Assoc,Layer1_global_max_Assoc,proper_use_in_Layer2
+Assoc is not a global PAB selector,219,63,597,"minimize Assoc_000 only after H_acc=0, nontriviality, H_diag=0, and diagonal idempotence"

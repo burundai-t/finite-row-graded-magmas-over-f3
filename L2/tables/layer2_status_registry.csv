@@ -1,0 +1,16 @@
+claim,status,support
+H_acc=0 iff column-blind,V / Front B closed,MI lemma + exhaustive 3^9 one-table entropy-zero check
+column-blind count is 9,V-checked,"h_{a,b}, a,b in S"
+H_diag=0 iff d is constant,V / Front B closed,entropy of base triple + enumeration of Delta
+diagonal idempotence alone leaves 9 diagonals,V-checked,condition d0=0
+diagonal idempotence after H_diag=0 selects 000,V / Front C closed,"constant diagonals 000,111,222"
+nontriviality leaves 6 rules,V / Front C closed,a != b
+min Assoc_000 leaves PAB and row-complement,V / Front D closed,direct 729 triple count + five-block decomposition
+weak q/p split separates PAB from competitor,Rejected,both have 2 weak split passes
+finite pure C/J separates PAB,V-combinatorial / Front E closed,"PAB has {C,J}; competitor has {C^{-1},C^{-1}J}"
+C^2 symplectic realization theorem,Open geometric bridge,not a selector dependency in v0.7
+Front F independence/minimality registry,V / Front F closed,deletion audit + minimal selector sets
+H column-blind x Delta controlled atlas,V / recomputed in v0.7,243 H profiles
+Controlled H pure frontier 7020 on affine and degree<=2,V-certified imported from Layer 1H,Layer 1H controlled atlas
+H as global selector,Open / auxiliary only,global Omega' H certificate absent; PAB and row-complement share H profile
+Front H package hardening,V / Front H closed,artifact manifest + table integrity audit + consistency audit

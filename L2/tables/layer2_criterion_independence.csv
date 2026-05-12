@@ -1,0 +1,8 @@
+criterion,scope,stage_effect,role_class,independence_note,logical_minimality
+H_acc=0,cross-rule,3^18 -> 9,domain-enabling essential,"without it, global Assoc minima are column-dependent and pure C/J is not globally defined",essential for current finite selector
+H_diag=0,diagonal,27 -> 3,essential diagonal information compression,"idempotence alone leaves 9 diagonals; Assoc over idempotent diagonals prefers d=021, not d=000",essential unless replaced by another diagonal selector
+nontriviality a!=b,column-blind cross-rule,9 -> 6,structural guardrail,removes fake binary interactions before path-dependence,not essential for uniqueness once pure C/J is accepted
+diagonal idempotence,constant diagonals,3 -> 1,essential anchor,"H_diag alone leaves 000,111,222",essential unless replaced by min Assoc among constant diagonals
+min Assoc_000,six nontrivial column-blind rules at d=000,6 -> 2,explanatory algebraic bridge,exposes PAB/row-complement ambiguity and localizes extra coincidences in RRS+RSR,not essential for uniqueness once pure C/J is accepted
+pure C/J drift-kick,column-blind absorption on M^x,2 -> 1 narratively; 9 -> 1 if applied after H_acc,final finite selector,separates the exact PAB/competitor ambiguity; weak q/p does not,essential if Assoc_000 is used as the preceding cross-rule selector
+hidden continuation contrast H,controlled Layer 1H strata,no reduction in v0.7,auxiliary bridge,PAB and row-complement have the same H_tot=7020 pure profile at d=000,not a selector dependency while global H certificate is open
