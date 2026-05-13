@@ -274,9 +274,3 @@ A C++ compiler for the H1/H4 recomputation cores, such as clang++ or g++
 Z3 Python bindings for H2 recomputation
 LuaLaTeX or latexmk for rebuilding the manuscript PDF
 ```
-
-## Logs
-
-`VERIFY_LOGS/` stores package-build and audit logs. The logs are optional
-support evidence; the executable commands above are the primary reproducibility
-interface.
