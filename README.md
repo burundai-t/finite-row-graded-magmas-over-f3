@@ -144,8 +144,7 @@ material. New runs should write to a separate `--run-dir`, typically under
 `mathcal_H/runs/`.
 
 Full recomputation commands may be hours long. Spot recomputation commands are
-reviewer-facing sanity checks over an arbitrary segment; they are not a
-replacement for the accepted full artifacts.
+sanity checks over an arbitrary segment.
 
 ### H1 full recomputation
 
