@@ -23,7 +23,6 @@ pab_preprint_support/
   README.md
   SUPPORT_INDEX.txt
   PACKAGE_NOTE.md
-  MANIFEST.sha256
   LICENSE
   .gitignore
 
@@ -55,12 +54,6 @@ pab_preprint_support/
     h2/
     h4/
 
-  tools/
-    run_quick_checks.sh
-    run_mathcal_H_audit.sh
-    make_manifest.sh
-
-  VERIFY_LOGS/
 ```
 
 ## Canonical manuscript
@@ -97,12 +90,6 @@ cd ..
 
 ## Quick finite-layer verification
 
-Run the reviewer-facing quick check from the repository root:
-
-```bash
-tools/run_quick_checks.sh
-```
-
 Equivalent component commands:
 
 ```bash
@@ -134,24 +121,7 @@ Hom_{e_r} = { u eps^T : u in span(e_(r,r), sum_{c != r} e_(r,c)) }.
 
 ## `mathcal_H` hidden-continuation bundle
 
-The global hidden-continuation theorem is supported by `mathcal_H/`. This
-bundle is intentionally separate from `L1/`, `L2/`, and `L3/`.
-
-Default reviewer-facing audit:
-
-```bash
-tools/run_mathcal_H_audit.sh
-```
-
-This checks H1, H3, H4, and the light H2 coverage/consistency audit.
-The light H2 coverage check verifies accepted artifact coverage and consistency;
-it does not rerun the SMT solver.
-
-To include the heavier focused H2 artifact audit:
-
-```bash
-tools/run_mathcal_H_audit.sh --include-h2-full
-```
+The global hidden-continuation theorem is supported by `mathcal_H/`.
 
 Focused `mathcal_H` audits can also be run from inside `mathcal_H/`:
 
@@ -193,7 +163,7 @@ accepted raw artifact directories. Treat these as read-only certificate
 material. New runs should write to a separate `--run-dir`, typically under
 `mathcal_H/runs/`.
 
-Full recomputation commands may be long. Spot recomputation commands are
+Full recomputation commands may be hours long. Spot recomputation commands are
 reviewer-facing sanity checks over an arbitrary segment; they are not a
 replacement for the accepted full artifacts.
 
@@ -278,25 +248,6 @@ cd ..
 For shorter smoke runs, the H1/H2/H4 runner scripts also expose
 `--max-points`, `--max-nodes`, and `--time-limit-hours` options. Inspect each
 runner with `--help` before changing production parameters.
-
-## Integrity manifest
-
-The release manifest is:
-
-```text
-MANIFEST.sha256
-```
-
-Regenerate and verify it after intentional repository changes:
-
-```bash
-tools/make_manifest.sh
-sha256sum -c MANIFEST.sha256
-```
-
-The manifest excludes `.git/`, `MANIFEST.sha256` itself, Python cache files,
-`.DS_Store`, and local recomputation outputs under `runs/` or
-`mathcal_H/runs/`.
 
 ## License
 
