@@ -245,5 +245,4 @@ Recommended environment:
 Python 3.10+
 A C++ compiler for the H1/H4 recomputation cores, such as clang++ or g++
 Z3 Python bindings for H2 recomputation
-LuaLaTeX or latexmk for rebuilding the manuscript PDF
 ```
