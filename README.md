@@ -69,24 +69,6 @@ The compiled manuscript is:
 paper/main.pdf
 ```
 
-To rebuild the PDF from the repository root:
-
-```bash
-cd paper
-lualatex -interaction=nonstopmode -halt-on-error main.tex
-lualatex -interaction=nonstopmode -halt-on-error main.tex
-lualatex -interaction=nonstopmode -halt-on-error main.tex
-cd ..
-```
-
-If `latexmk` is available, this is also acceptable:
-
-```bash
-cd paper
-latexmk -lualatex -interaction=nonstopmode -halt-on-error main.tex
-cd ..
-```
-
 ## Quick finite-layer verification
 
 Equivalent component commands:
@@ -106,8 +88,8 @@ python3 -S L3/scripts/verify_layer3_frontH.py
 python3 -S L3/scripts/verify_l3_fiber_algebra_5dim.py
 ```
 
-These commands audit the frozen `L1/L2/L3` reference layers. They are not a
-full recomputation of the global hidden-continuation theorem. Use plain `python3` for L3 Front A.  The remaining L3 checks are dependency-free and are run with `python3 -S`.
+These commands audit the `L1/L2/L3` layers. Use plain `python3` for L3 Front A. 
+The remaining L3 checks are dependency-free and are run with `python3 -S`.
 
 ## `mathcal_H` hidden-continuation bundle
 
