@@ -109,15 +109,6 @@ python3 -S L3/scripts/verify_l3_fiber_algebra_5dim.py
 These commands audit the frozen `L1/L2/L3` reference layers. They are not a
 full recomputation of the global hidden-continuation theorem. Use plain `python3` for L3 Front A.  The remaining L3 checks are dependency-free and are run with `python3 -S`.
 
-The L3 fiber-algebra verifier checks the five-dimensional row-fiber algebra used in Proposition 15.3.
-
-The L3 Front C verifier checks the closed intertwiner formula for constant
-endomorphisms:
-
-```text
-Hom_{e_r} = { u eps^T : u in span(e_(r,r), sum_{c != r} e_(r,c)) }.
-```
-
 ## `mathcal_H` hidden-continuation bundle
 
 The global hidden-continuation theorem is supported by `mathcal_H/`.
