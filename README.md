@@ -6,8 +6,8 @@ for the preprint.
 The repository separates three roles:
 
 1. `paper/` contains the canonical manuscript source and compiled PDF.
-2. `L1/`, `L2/`, and `L3/` are frozen reference layers for finite landscape,
-   selection, and selected-PAB structural checks.
+2. `L1/`, `L2/`, and `L3/` are layers for 1. finite landscape,
+   2. selection, and 3. linearization.
 3. `mathcal_H/` is the separate global hidden-continuation bundle.
 
 The current theorem statement is in `paper/main.tex`. The layer directories are
