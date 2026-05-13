@@ -3,13 +3,12 @@
 This repository contains the current manuscript and the finite support package
 for the PAB preprint.
 
-The repository separates four roles:
+The repository separates three roles:
 
 1. `paper/` contains the canonical manuscript source and compiled PDF.
 2. `L1/`, `L2/`, and `L3/` are frozen reference layers for finite landscape,
    selection, and selected-PAB structural checks.
 3. `mathcal_H/` is the separate global hidden-continuation bundle.
-4. `VERIFY_LOGS/` contains optional logs from verification runs.
 
 The current theorem statement is in `paper/main.tex`. The layer directories are
 frozen provenance/reference packages. If wording in a layer note differs from
