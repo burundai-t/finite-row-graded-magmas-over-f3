@@ -71,6 +71,14 @@ paper/main.pdf
 
 ## Quick finite-layer verification
 
+Recommended environment:
+
+```text
+Python 3.10+
+A C++ compiler for the H1/H4 recomputation cores, such as clang++ or g++
+Z3 Python bindings for H2 recomputation
+```
+
 Equivalent component commands:
 
 ```bash
@@ -236,13 +244,3 @@ The manuscript files in `paper/`, including `paper/main.tex` and
 All other repository files, including verifier scripts, repository tools,
 finite tables, certificate artifacts, support documentation, and verification
 logs, are licensed under the MIT License; see `LICENSE`.
-
-## Reproducibility notes
-
-Recommended environment:
-
-```text
-Python 3.10+
-A C++ compiler for the H1/H4 recomputation cores, such as clang++ or g++
-Z3 Python bindings for H2 recomputation
-```
