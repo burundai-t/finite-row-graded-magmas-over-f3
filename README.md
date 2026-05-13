@@ -96,8 +96,7 @@ python3 -S L3/scripts/verify_layer3_frontH.py
 python3 -S L3/scripts/verify_l3_fiber_algebra_5dim.py
 ```
 
-These commands audit the `L1/L2/L3` layers. Use plain `python3` for L3 Front A. 
-The remaining L3 checks are dependency-free and are run with `python3 -S`.
+These commands audit the `L1/L2/L3` layers.
 
 ## `mathcal_H` hidden-continuation bundle
 
