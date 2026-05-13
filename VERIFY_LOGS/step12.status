@@ -1,6 +1,0 @@
-Step 12 status: PASS
-Added tools/make_manifest.sh.
-Generated MANIFEST.sha256.
-Verified MANIFEST.sha256 with sha256sum -c.
-Final manifest entries: 450
-Final verification output was written outside the repository to keep the manifest stable.

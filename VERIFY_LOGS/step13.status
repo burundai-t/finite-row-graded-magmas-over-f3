@@ -1,7 +1,0 @@
-paper_build=PASS
-lualatex_passes=3
-pdf_pages=43
-rendered_pages=43
-quick_checks=PASS
-mathcal_H_audit=PASS
-manifest_regenerated_after_step13=YES

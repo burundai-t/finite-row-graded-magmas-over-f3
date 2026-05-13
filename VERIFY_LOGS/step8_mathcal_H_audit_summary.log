@@ -1,5 +1,0 @@
-tools/run_mathcal_H_audit.sh added.
-Default route: H1 + H3 + H4 + H2 light coverage/consistency audit.
-Optional route: --include-h2-full / --full-h2 includes the focused full H2 artifact audit.
-README.md updated with convenience command.
-Status: PASS.

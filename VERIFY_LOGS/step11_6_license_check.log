@@ -1,9 +1,0 @@
-root_LICENSE_mentions_MIT: True
-root_LICENSE_excepts_paper: True
-paper_LICENSE_mentions_CC_BY_4: True
-README_has_split: True
-SUPPORT_INDEX_has_split: True
-SUPPORT_INDEX_no_duplicate_all_other: True
-PACKAGE_NOTE_has_split: True
-PACKAGE_NOTE_single_license_heading: True
-PASS license split checks

@@ -1,8 +1,0 @@
-===== L3_frontD =====
-CMD: python3 L3/scripts/verify_layer3_frontD.py
-Layer 3 Front D verifier: PASS
-  binary presentation tables: 630 representatives and 630x630 product table verified
-  stabilization table: final cumulative count 630, max minimal size 15
-  identity audit: I1/I2/I3/star hold but CM1 proves they are incomplete
-  compact-plus-unary audit: CM2 proves U1/U2 still do not give a complete compact basis
-STATUS: PASS

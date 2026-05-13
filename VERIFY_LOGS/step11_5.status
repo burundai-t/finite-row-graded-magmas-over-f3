@@ -1,6 +1,0 @@
-PASS step 11.5 mini-patch
-- LICENSE added using MIT License text.
-- README.md, SUPPORT_INDEX.txt, PACKAGE_NOTE.md mention LICENSE.
-- paper/main.tex contains the GitHub repository URL in the finite certificate protocol section.
-- paper/main.pdf rebuilt from paper/main.tex with lualatex x3.
-- No undefined references/citations detected in the final lualatex log.

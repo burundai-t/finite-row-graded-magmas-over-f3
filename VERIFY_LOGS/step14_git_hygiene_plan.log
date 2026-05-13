@@ -1,7 +1,0 @@
-step=14
-action=git hygiene, commit, tag, archive
-repo=/mnt/data/frgm_repo
-tag=v2.0-current-support
-commit_message=Initial current finite row-graded magmas support repository
-note=post-archive verification logs are stored outside the repository to keep MANIFEST.sha256 self-consistent
-timestamp_utc=2026-05-12T17:50:43Z

@@ -1,1 +1,0 @@
-PASS S6-H2 coverage light: segments=[0,18540), certified_unsat=18540, SAT=0, UNKNOWN=0, unresolved=0, tail_nodes=13680, chunks=85, windows=11, rerun_rows=13683

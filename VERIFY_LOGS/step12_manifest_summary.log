@@ -1,6 +1,0 @@
-Step 12 manifest summary
-Final manifest entries: 450
-Exclusions: .git/, MANIFEST.sha256, runs/, mathcal_H/runs/, Python caches, .DS_Store
-Generator: tools/make_manifest.sh
-Verification command: sha256sum -c MANIFEST.sha256
-Final verification output is kept outside the repository to keep the manifest stable.

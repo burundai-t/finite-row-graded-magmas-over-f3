@@ -1,1 +1,0 @@
-PASS S6-H3 PAB/row-complement guardrail: witnesses=PAB:111111111222222222000;row_complement:222222222111111111000, H_tot=7020, N_neg=0, nonunique_H_selector=1

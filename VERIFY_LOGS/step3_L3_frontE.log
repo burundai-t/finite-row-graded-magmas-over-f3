@@ -1,9 +1,0 @@
-===== L3_frontE =====
-CMD: python3 L3/scripts/verify_layer3_frontE.py
-Layer 3 Front E verifier: PASS
-  binary compression: |T2| = 2 * 21 * 15 = 630 checked
-  owner split: 315 x-owner and 315 y-owner functions; variable swap has 315 two-cycles
-  factor theorem: each owner sector is S21 x U15, cross-minus = phi(cross-plus)
-  multiplication compression: 630x630 table reproduced from 21x21 and 15x15 factor tables
-  arity-growth guardrail: ternary smoke through size 6 reaches 5577 functions; all-arity status remains open
-STATUS: PASS

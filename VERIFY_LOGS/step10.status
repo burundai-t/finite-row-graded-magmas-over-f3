@@ -1,6 +1,0 @@
-STEP 10 STATUS: PASS
-Created SUPPORT_INDEX.txt as reviewer-facing claim/support/verifier map.
-Updated README.md to list SUPPORT_INDEX.txt and treat it as authoritative for support paths.
-Checked SUPPORT_INDEX.txt for internal/deprecated manuscript wording: PASS.
-Checked main referenced script paths: PASS.
-SUPPORT_INDEX lines: 387
