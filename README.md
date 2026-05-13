@@ -1,7 +1,7 @@
-# PAB preprint support repository
+# Finite Row-Graded Magmas over F3: Intrinsic Selection and Linearization
 
 This repository contains the current manuscript and the finite support package
-for the PAB preprint.
+for the preprint.
 
 The repository separates three roles:
 
